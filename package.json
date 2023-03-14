@@ -17,5 +17,6 @@
         "rollup-plugin-swc": "^0.2.1"
     },
     "name": "icalendar.js",
-    "description": "Modern module to parse and stringify iCalendar to Javascript."
+    "description": "Modern module to parse and stringify iCalendar to Javascript.",
+    "version": "0.1.0"
 }
