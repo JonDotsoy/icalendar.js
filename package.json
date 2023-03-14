@@ -23,6 +23,10 @@
         "./lexer": {
             "require": "./dist/lexer.cjs",
             "import": "./dist/lexer.mjs"
+        },
+        "./ast": {
+            "require": "./dist/ast.cjs",
+            "import": "./dist/ast.mjs"
         }
     },
     "typesVersions": {

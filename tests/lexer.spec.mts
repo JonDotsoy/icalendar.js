@@ -16,11 +16,15 @@ test("tokenizer", async () => {
     const tokens = Lexer.from(payload);
 
     const snapUrl = new URL(
-        "snaps/test.spec.mts/tokenizer.snap",
+        "snaps/lexer.spec.mts/tokenizer.snap",
         import.meta.url
     );
-    if (SNAP_WRITE) await writeFile(snapUrl, inspect(tokens), "utf-8");
-    equal(inspect(tokens), await readFile(snapUrl, "utf-8"));
+    if (SNAP_WRITE)
+        await writeFile(snapUrl, inspect(tokens, { depth: Infinity }), "utf-8");
+    equal(
+        inspect(tokens, { depth: Infinity }),
+        await readFile(snapUrl, "utf-8")
+    );
 });
 
 test("tokenizer (ICS FIle)", async () => {
@@ -31,9 +35,13 @@ test("tokenizer (ICS FIle)", async () => {
     const tokens = Lexer.from(payload);
 
     const snapUrl = new URL(
-        "snaps/test.spec.mts/tokenizer_ICS_FIle.snap",
+        "snaps/lexer.spec.mts/tokenizer_ICS_FIle.snap",
         import.meta.url
     );
-    if (SNAP_WRITE) await writeFile(snapUrl, inspect(tokens), "utf-8");
-    equal(inspect(tokens), await readFile(snapUrl, "utf-8"));
+    if (SNAP_WRITE)
+        await writeFile(snapUrl, inspect(tokens, { depth: Infinity }), "utf-8");
+    equal(
+        inspect(tokens, { depth: Infinity }),
+        await readFile(snapUrl, "utf-8")
+    );
 });

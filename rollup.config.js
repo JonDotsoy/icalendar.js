@@ -5,8 +5,9 @@ import dts from "rollup-plugin-dts";
 const swc = swcModule.default;
 
 const input = {
-    lexer: "src/lexer.mts"
-}
+    lexer: "src/lexer.mts",
+    ast: "src/ast.mts",
+};
 
 /**
  * @type {import('rollup').RollupOptions}
@@ -19,7 +20,7 @@ const config = [
             entryFileNames: "[name].d.ts",
             dir: "dist",
             format: "esm",
-        }
+        },
     },
     {
         input,
@@ -42,7 +43,7 @@ const config = [
                 format: "esm",
             },
         ],
-    }
+    },
 ];
 
 export default config;
