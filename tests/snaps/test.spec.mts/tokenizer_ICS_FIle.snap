@@ -1,0 +1,594 @@
+[
+  {
+    kind: 'keyword',
+    span: { start: 0, end: 3 },
+    raw: Uint8Array(3) [ 65, 83, 68 ],
+    value: 'ASD'
+  },
+  {
+    kind: 'semicolon',
+    span: { start: 3, end: 4 },
+    raw: Uint8Array(1) [ 59 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 4, end: 6 },
+    raw: Uint8Array(2) [ 68, 65 ],
+    value: 'DA'
+  },
+  {
+    kind: 'equal',
+    span: { start: 6, end: 7 },
+    raw: Uint8Array(1) [ 61 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 7, end: 9 },
+    raw: Uint8Array(2) [ 51, 50 ],
+    value: '32'
+  },
+  {
+    kind: 'semicolon',
+    span: { start: 9, end: 10 },
+    raw: Uint8Array(1) [ 59 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 10, end: 12 },
+    raw: Uint8Array(2) [ 68, 79 ],
+    value: 'DO'
+  },
+  {
+    kind: 'equal',
+    span: { start: 12, end: 13 },
+    raw: Uint8Array(1) [ 61 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 13, end: 15 },
+    raw: Uint8Array(2) [ 51, 50 ],
+    value: '32'
+  },
+  {
+    kind: 'colon',
+    span: { start: 15, end: 16 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 16, end: 18 },
+    raw: <Buffer 33 32>,
+    value: '32'
+  },
+  {
+    kind: 'newline',
+    span: { start: 18, end: 19 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 19, end: 24 },
+    raw: Uint8Array(5) [ 66, 69, 71, 73, 78 ],
+    value: 'BEGIN'
+  },
+  {
+    kind: 'colon',
+    span: { start: 24, end: 25 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 25, end: 34 },
+    raw: <Buffer 56 43 41 4c 45 4e 44 41 52>,
+    value: 'VCALENDAR'
+  },
+  {
+    kind: 'newline',
+    span: { start: 34, end: 35 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 35, end: 41 },
+    raw: Uint8Array(6) [ 80, 82, 79, 68, 73, 68 ],
+    value: 'PRODID'
+  },
+  {
+    kind: 'colon',
+    span: { start: 41, end: 42 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 42, end: 84 },
+    raw: <Buffer 2d 2f 2f 47 6f 6f 67 6c 65 20 49 6e 63 2f 2f 47 6f 6f 67 6c 65 20 43 61 6c 65 6e 64 61 72 20 37 30 2e 39 30 35 34 2f 2f 45 4e>,
+    value: '-//Google Inc//Google Calendar 70.9054//EN'
+  },
+  {
+    kind: 'newline',
+    span: { start: 84, end: 85 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 85, end: 92 },
+    raw: Uint8Array(7) [
+      86, 69, 82, 83,
+      73, 79, 78
+    ],
+    value: 'VERSION'
+  },
+  {
+    kind: 'colon',
+    span: { start: 92, end: 93 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 93, end: 96 },
+    raw: <Buffer 32 2e 30>,
+    value: '2.0'
+  },
+  {
+    kind: 'newline',
+    span: { start: 96, end: 97 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 97, end: 105 },
+    raw: Uint8Array(8) [
+      67, 65, 76, 83,
+      67, 65, 76, 69
+    ],
+    value: 'CALSCALE'
+  },
+  {
+    kind: 'colon',
+    span: { start: 105, end: 106 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 106, end: 115 },
+    raw: <Buffer 47 52 45 47 4f 52 49 41 4e>,
+    value: 'GREGORIAN'
+  },
+  {
+    kind: 'newline',
+    span: { start: 115, end: 116 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 116, end: 122 },
+    raw: Uint8Array(6) [ 77, 69, 84, 72, 79, 68 ],
+    value: 'METHOD'
+  },
+  {
+    kind: 'colon',
+    span: { start: 122, end: 123 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 123, end: 130 },
+    raw: <Buffer 50 55 42 4c 49 53 48>,
+    value: 'PUBLISH'
+  },
+  {
+    kind: 'newline',
+    span: { start: 130, end: 131 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 131, end: 143 },
+    raw: Uint8Array(12) [
+      88, 45, 87, 82, 45,
+      67, 65, 76, 78, 65,
+      77, 69
+    ],
+    value: 'X-WR-CALNAME'
+  },
+  {
+    kind: 'colon',
+    span: { start: 143, end: 144 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 144, end: 167 },
+    raw: <Buffer 44 c3 ad 61 73 20 66 65 72 69 61 64 6f 73 20 65 6e 20 43 68 69 6c 65>,
+    value: 'Días feriados en Chile'
+  },
+  {
+    kind: 'newline',
+    span: { start: 167, end: 168 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 168, end: 181 },
+    raw: Uint8Array(13) [
+      88, 45, 87, 82, 45, 84,
+      73, 77, 69, 90, 79, 78,
+      69
+    ],
+    value: 'X-WR-TIMEZONE'
+  },
+  {
+    kind: 'colon',
+    span: { start: 181, end: 182 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 182, end: 185 },
+    raw: <Buffer 55 54 43>,
+    value: 'UTC'
+  },
+  {
+    kind: 'newline',
+    span: { start: 185, end: 186 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 186, end: 198 },
+    raw: Uint8Array(12) [
+      88, 45, 87, 82, 45,
+      67, 65, 76, 68, 69,
+      83, 67
+    ],
+    value: 'X-WR-CALDESC'
+  },
+  {
+    kind: 'colon',
+    span: { start: 198, end: 199 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 199, end: 238 },
+    raw: <Buffer 44 c3 ad 61 73 20 66 65 72 69 61 64 6f 73 20 79 20 63 65 6c 65 62 72 61 63 69 6f 6e 65 73 20 65 6e 20 43 68 69 6c 65>,
+    value: 'Días feriados y celebraciones en Chile'
+  },
+  {
+    kind: 'newline',
+    span: { start: 238, end: 239 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 239, end: 244 },
+    raw: Uint8Array(5) [ 66, 69, 71, 73, 78 ],
+    value: 'BEGIN'
+  },
+  {
+    kind: 'colon',
+    span: { start: 244, end: 245 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 245, end: 251 },
+    raw: <Buffer 56 45 56 45 4e 54>,
+    value: 'VEVENT'
+  },
+  {
+    kind: 'newline',
+    span: { start: 251, end: 252 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 252, end: 259 },
+    raw: Uint8Array(7) [
+      68, 84, 83, 84,
+      65, 82, 84
+    ],
+    value: 'DTSTART'
+  },
+  {
+    kind: 'semicolon',
+    span: { start: 259, end: 260 },
+    raw: Uint8Array(1) [ 59 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 260, end: 265 },
+    raw: Uint8Array(5) [ 86, 65, 76, 85, 69 ],
+    value: 'VALUE'
+  },
+  {
+    kind: 'equal',
+    span: { start: 265, end: 266 },
+    raw: Uint8Array(1) [ 61 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 266, end: 270 },
+    raw: Uint8Array(4) [ 68, 65, 84, 69 ],
+    value: 'DATE'
+  },
+  {
+    kind: 'colon',
+    span: { start: 270, end: 271 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 271, end: 279 },
+    raw: <Buffer 32 30 32 33 30 31 30 32>,
+    value: '20230102'
+  },
+  {
+    kind: 'newline',
+    span: { start: 279, end: 280 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 280, end: 285 },
+    raw: Uint8Array(5) [ 68, 84, 69, 78, 68 ],
+    value: 'DTEND'
+  },
+  {
+    kind: 'semicolon',
+    span: { start: 285, end: 286 },
+    raw: Uint8Array(1) [ 59 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 286, end: 291 },
+    raw: Uint8Array(5) [ 86, 65, 76, 85, 69 ],
+    value: 'VALUE'
+  },
+  {
+    kind: 'equal',
+    span: { start: 291, end: 292 },
+    raw: Uint8Array(1) [ 61 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 292, end: 296 },
+    raw: Uint8Array(4) [ 68, 65, 84, 69 ],
+    value: 'DATE'
+  },
+  {
+    kind: 'colon',
+    span: { start: 296, end: 297 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 297, end: 305 },
+    raw: <Buffer 32 30 32 33 30 31 30 33>,
+    value: '20230103'
+  },
+  {
+    kind: 'newline',
+    span: { start: 305, end: 306 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 306, end: 313 },
+    raw: Uint8Array(7) [
+      68, 84, 83, 84,
+      65, 77, 80
+    ],
+    value: 'DTSTAMP'
+  },
+  {
+    kind: 'colon',
+    span: { start: 313, end: 314 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 314, end: 330 },
+    raw: <Buffer 32 30 32 33 30 33 31 33 54 31 38 35 36 32 31 5a>,
+    value: '20230313T185621Z'
+  },
+  {
+    kind: 'newline',
+    span: { start: 330, end: 331 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 331, end: 334 },
+    raw: Uint8Array(3) [ 85, 73, 68 ],
+    value: 'UID'
+  },
+  {
+    kind: 'colon',
+    span: { start: 334, end: 335 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 335, end: 381 },
+    raw: <Buffer 32 30 32 33 30 31 30 32 5f 63 66 63 30 38 36 68 6b 6d 66 74 65 6b 67 72 73 6e 38 33 63 69 31 64 62 61 38 40 67 6f 6f 67 6c 65 2e 63 6f 6d>,
+    value: '20230102_cfc086hkmftekgrsn83ci1dba8@google.com'
+  },
+  {
+    kind: 'newline',
+    span: { start: 381, end: 382 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 382, end: 387 },
+    raw: Uint8Array(5) [ 67, 76, 65, 83, 83 ],
+    value: 'CLASS'
+  },
+  {
+    kind: 'colon',
+    span: { start: 387, end: 388 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 388, end: 394 },
+    raw: <Buffer 50 55 42 4c 49 43>,
+    value: 'PUBLIC'
+  },
+  {
+    kind: 'newline',
+    span: { start: 394, end: 395 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 395, end: 402 },
+    raw: Uint8Array(7) [
+      67, 82, 69, 65,
+      84, 69, 68
+    ],
+    value: 'CREATED'
+  },
+  {
+    kind: 'colon',
+    span: { start: 402, end: 403 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 403, end: 419 },
+    raw: <Buffer 32 30 32 32 31 32 32 31 54 30 39 34 34 32 39 5a>,
+    value: '20221221T094429Z'
+  },
+  {
+    kind: 'newline',
+    span: { start: 419, end: 420 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 420, end: 431 },
+    raw: Uint8Array(11) [
+      68, 69, 83, 67, 82,
+      73, 80, 84, 73, 79,
+      78
+    ],
+    value: 'DESCRIPTION'
+  },
+  {
+    kind: 'colon',
+    span: { start: 431, end: 432 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 432, end: 444 },
+    raw: <Buffer 44 c3 ad 61 20 66 65 73 74 69 76 6f>,
+    value: 'Día festivo'
+  },
+  {
+    kind: 'newline',
+    span: { start: 444, end: 445 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 445, end: 458 },
+    raw: Uint8Array(13) [
+      76, 65, 83, 84, 45, 77,
+      79, 68, 73, 70, 73, 69,
+      68
+    ],
+    value: 'LAST-MODIFIED'
+  },
+  {
+    kind: 'colon',
+    span: { start: 458, end: 459 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 459, end: 475 },
+    raw: <Buffer 32 30 32 32 31 32 32 31 54 30 39 34 34 32 39 5a>,
+    value: '20221221T094429Z'
+  },
+  {
+    kind: 'newline',
+    span: { start: 475, end: 476 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 476, end: 484 },
+    raw: Uint8Array(8) [
+      83, 69, 81, 85,
+      69, 78, 67, 69
+    ],
+    value: 'SEQUENCE'
+  },
+  {
+    kind: 'colon',
+    span: { start: 484, end: 485 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 485, end: 486 },
+    raw: <Buffer 30>,
+    value: '0'
+  },
+  {
+    kind: 'newline',
+    span: { start: 486, end: 487 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 487, end: 493 },
+    raw: Uint8Array(6) [ 83, 84, 65, 84, 85, 83 ],
+    value: 'STATUS'
+  },
+  {
+    kind: 'colon',
+    span: { start: 493, end: 494 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 494, end: 503 },
+    raw: <Buffer 43 4f 4e 46 49 52 4d 45 44>,
+    value: 'CONFIRMED'
+  },
+  {
+    kind: 'newline',
+    span: { start: 503, end: 504 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 504, end: 511 },
+    raw: Uint8Array(7) [
+      83, 85, 77, 77,
+      65, 82, 89
+    ],
+    value: 'SUMMARY'
+  },
+  {
+    kind: 'colon',
+    span: { start: 511, end: 512 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 512, end: 557 },
+    raw: <Buffer 64 65 73 63 61 6e 73 6f 20 6c 61 62 6f 72 61 6c 20 63 6f 72 72 65 73 70 6f 6e 64 69 65 6e 74 65 20 61 20 41 c3 b1 6f 20 4e 75 65 76 6f>,
+    value: 'descanso laboral correspondiente a Año Nuevo'
+  },
+  {
+    kind: 'newline',
+    span: { start: 557, end: 558 },
+    raw: Uint8Array(1) [ 10 ]
+  },
+  ... 3853 more items
+]

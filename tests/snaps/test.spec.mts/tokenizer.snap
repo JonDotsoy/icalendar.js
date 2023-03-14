@@ -1,0 +1,62 @@
+[
+  {
+    kind: 'keyword',
+    span: { start: 0, end: 11 },
+    raw: Uint8Array(11) [
+      68, 69, 83, 67, 82,
+      73, 80, 84, 73, 79,
+      78
+    ],
+    value: 'DESCRIPTION'
+  },
+  {
+    kind: 'semicolon',
+    span: { start: 11, end: 12 },
+    raw: Uint8Array(1) [ 59 ]
+  },
+  {
+    kind: 'keyword',
+    span: { start: 12, end: 18 },
+    raw: Uint8Array(6) [ 65, 76, 84, 82, 69, 80 ],
+    value: 'ALTREP'
+  },
+  {
+    kind: 'equal',
+    span: { start: 18, end: 19 },
+    raw: Uint8Array(1) [ 61 ]
+  },
+  {
+    kind: 'string',
+    span: { start: 19, end: 39 },
+    raw: Uint8Array(20) [
+       34, 104, 116, 116, 112,  58,
+       47,  47, 119, 119, 119,  46,
+      119, 105, 122,  46, 111, 114,
+      103,  34
+    ],
+    value: 'http://www.wiz.org'
+  },
+  {
+    kind: 'colon',
+    span: { start: 39, end: 40 },
+    raw: Uint8Array(1) [ 58 ]
+  },
+  {
+    kind: 'string_multiline',
+    span: { start: 40, end: 99 },
+    raw: Uint8Array(59) [
+       84, 104, 101,  32,  70,  97, 108, 108,  39,  57,  56,
+       32,  87, 105, 108, 100,  32,  87, 105, 122,  97, 114,
+      100, 115,  10,  32,  67, 111, 110, 102, 101, 114, 101,
+      110,  99, 101,  32,  45,  32,  45,  32,  76,  97, 115,
+       32,  86, 101, 103,  97, 115,  44,  32,  78,  86,  44,
+       32,  85,  83,  65
+    ],
+    value: "The Fall'98 Wild Wizards Conference - - Las Vegas, NV, USA"
+  },
+  {
+    kind: 'newline',
+    span: { start: 99, end: 100 },
+    raw: Uint8Array(1) [ 10 ]
+  }
+]

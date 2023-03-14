@@ -1,0 +1,16 @@
+{
+    "dependencies": {
+        "@swc/core": "^1.3.40",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.5"
+    },
+    "type": "module",
+    "scripts": {
+        "test": "node --test --loader ts-node/esm tests/*.spec.mts",
+        "fmt": "prettier -w .",
+        "lint": "prettier --check ."
+    },
+    "devDependencies": {
+        "prettier": "^2.8.4"
+    }
+}
