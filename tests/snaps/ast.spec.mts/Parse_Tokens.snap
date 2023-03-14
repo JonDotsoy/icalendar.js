@@ -20,12 +20,12 @@
           kind: 'AltRepParam',
           span: { start: 12, end: 39 },
           name: {
-            kind: 'AltRepNameParam',
+            kind: 'AltRepParamName',
             span: { start: 12, end: 18 },
             value: 'ALTREP'
           },
           value: {
-            kind: 'AltRepValueParam',
+            kind: 'AltRepParamValue',
             span: { start: 19, end: 39 },
             value: 'http://www.wiz.org'
           }

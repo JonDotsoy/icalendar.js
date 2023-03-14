@@ -11,8 +11,8 @@ Modern module to parse and stringify iCalendar to Javascript.
 -   PropertyParameterName
 -   PropertyParameterValue
 -   AltRepParam
--   AltRepNameParam
--   AltRepValueParam
+-   AltRepParamName
+-   AltRepParamValue
 
 **Sample Parser:**
 

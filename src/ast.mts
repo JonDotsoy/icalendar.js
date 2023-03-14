@@ -7,8 +7,8 @@ type Kind =
     | "PropertyParameterName"
     | "PropertyParameterValue"
     | "AltRepParam"
-    | "AltRepNameParam"
-    | "AltRepValueParam";
+    | "AltRepParamName"
+    | "AltRepParamValue";
 
 interface Node {
     kind: Kind;
@@ -37,20 +37,20 @@ interface PropertyParameterNode extends Node {
     altRepNodes: AltRepParamNode[];
 }
 
-interface AltRepNameParamNode extends Node {
-    kind: "AltRepNameParam";
+interface AltRepParamNameNode extends Node {
+    kind: "AltRepParamName";
     value: string;
 }
 
-interface AltRepValueParamNode extends Node {
-    kind: "AltRepValueParam";
+interface AltRepParamValueNode extends Node {
+    kind: "AltRepParamValue";
     value: string;
 }
 
 interface AltRepParamNode extends Node {
     kind: "AltRepParam";
-    name: AltRepNameParamNode;
-    value: AltRepValueParamNode;
+    name: AltRepParamNameNode;
+    value: AltRepParamValueNode;
 }
 
 export class AST {
@@ -127,12 +127,12 @@ export class AST {
                 end: altRepValueToken.span.end,
             },
             name: {
-                kind: "AltRepNameParam",
+                kind: "AltRepParamName",
                 span: altRepPropToken.span,
                 value: altRepPropToken.value,
             },
             value: {
-                kind: "AltRepValueParam",
+                kind: "AltRepParamValue",
                 span: altRepValueToken.span,
                 value: altRepValueToken.value,
             },
