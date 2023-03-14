@@ -1,2 +1,4 @@
 !.editorconfig
 node_modules
+!.vscode
+dist

@@ -1,4 +1,4 @@
-import { Lexer } from "../lexer.mjs";
+import { Lexer } from "../src/lexer.mjs";
 import { test } from "node:test";
 import { readFile, writeFile } from "node:fs/promises";
 import { equal } from "node:assert/strict";

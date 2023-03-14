@@ -19,7 +19,7 @@ const numbers = new Array(_9CharCode - _0CharCode + 1)
     .fill(0)
     .map((_, i) => _0CharCode + i);
 
-const KEYCHAR = new Uint8Array([
+const KEYWORD_CHARS = new Uint8Array([
     charCodeAt("_"),
     charCodeAt("-"),
     ...alphabetLower,
@@ -27,8 +27,17 @@ const KEYCHAR = new Uint8Array([
     ...numbers,
 ]);
 
+type kind =
+    | "string_multiline"
+    | "string"
+    | "keyword"
+    | "semicolon"
+    | "equal"
+    | "newline"
+    | "colon";
+
 export interface Token {
-    kind: string;
+    kind: kind;
     span: { start: number; end: number };
     raw: Uint8Array;
     value?: any;
@@ -117,7 +126,7 @@ export class Lexer {
         const chars: number[] = [];
         while (true) {
             const char = payload.at(cursor);
-            if (!char || !KEYCHAR.includes(char)) break;
+            if (!char || !KEYWORD_CHARS.includes(char)) break;
             chars.push(char);
             cursor += 1;
         }
@@ -135,7 +144,7 @@ export class Lexer {
         const tokens: Token[] = [];
         while (true) {
             if (cursor >= payload.length) break;
-            if (KEYCHAR.includes(payload.at(cursor)!)) {
+            if (KEYWORD_CHARS.includes(payload.at(cursor)!)) {
                 cursor = Lexer.toKeyWord(cursor, tokens, payload);
                 continue;
             }

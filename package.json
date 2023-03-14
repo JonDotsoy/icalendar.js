@@ -8,9 +8,14 @@
     "scripts": {
         "test": "node --test --loader ts-node/esm tests/*.spec.mts",
         "fmt": "prettier -w .",
-        "lint": "prettier --check ."
+        "lint": "prettier --check .",
+        "build": "rollup --config rollup.config.js"
     },
     "devDependencies": {
-        "prettier": "^2.8.4"
-    }
+        "prettier": "^2.8.4",
+        "rollup": "^3.19.1",
+        "rollup-plugin-swc": "^0.2.1"
+    },
+    "name": "icalendar.js",
+    "description": "Modern module to parse and stringify iCalendar to Javascript."
 }

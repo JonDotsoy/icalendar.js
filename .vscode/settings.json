@@ -1,0 +1,13 @@
+{
+    "cSpell.words": ["ALTREP", "icalendar"],
+    "cSpell.ignorePaths": [
+        "*.ics",
+        "tsconfig.json",
+        "package-lock.json",
+        "node_modules",
+        "vscode-extension",
+        ".git/objects",
+        ".vscode",
+        ".vscode-insiders"
+    ]
+}
