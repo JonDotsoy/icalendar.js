@@ -100,3 +100,27 @@ test("Parse (ICS FIle)", async () => {
         await readFile(snapUrl, "utf-8")
     );
 });
+
+test("Parse (ICS officeholidays FIle)", async () => {
+    const location = new URL("officeholidays.ics", import.meta.url);
+
+    const payload = await readFile(location);
+    const tokens = Lexer.from(payload);
+    const ast = AST.from(tokens);
+
+    const snapUrl = new URL(
+        "snaps/ast.spec.mts/Parse_ICS_officeholidays_FIle.snap",
+        import.meta.url
+    );
+
+    if (SNAP_WRITE)
+        await writeFile(
+            snapUrl,
+            inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
+            "utf-8"
+        );
+    equal(
+        inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
+        await readFile(snapUrl, "utf-8")
+    );
+});

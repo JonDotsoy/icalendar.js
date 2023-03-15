@@ -3,6 +3,8 @@ const arrayIsEqual = (a: likeArray, b: likeArray) =>
     a.length == b.length && a.every((vA, indexA) => vA === b[indexA]);
 
 const charCodeAt = (str: string) => str.charCodeAt(0);
+const LF = new Uint8Array([charCodeAt("\n")]);
+const CRLF = new Uint8Array([charCodeAt("\r"), charCodeAt("\n")]);
 const aCharCode = charCodeAt("a");
 const zCharCode = charCodeAt("z");
 const ACharCode = charCodeAt("A");
@@ -55,8 +57,12 @@ export class Lexer {
         while (true) {
             if (cursor >= payload.length) break;
             if (
+                arrayIsEqual(payload.subarray(cursor, cursor + 3), [
+                    ...CRLF,
+                    charCodeAt(" "),
+                ]) ||
                 arrayIsEqual(payload.subarray(cursor, cursor + 2), [
-                    charCodeAt("\n"),
+                    ...LF,
                     charCodeAt(" "),
                 ])
             ) {
@@ -64,7 +70,11 @@ export class Lexer {
                 chars.push(charCodeAt(" "));
                 continue;
             }
-            if (payload.at(cursor) === charCodeAt("\n")) break;
+            if (
+                arrayIsEqual(payload.subarray(cursor, cursor + 2), CRLF) ||
+                payload.at(cursor) === charCodeAt("\n")
+            )
+                break;
             chars.push(payload.at(cursor)!);
             cursor += 1;
         }
@@ -166,7 +176,10 @@ export class Lexer {
                 cursor += 1;
                 continue;
             }
-            if (charCodeAt("\n") === payload.at(cursor)!) {
+            if (
+                arrayIsEqual(payload.subarray(cursor, cursor + 2), CRLF) ||
+                charCodeAt("\n") === payload.at(cursor)
+            ) {
                 tokens.push({
                     kind: "newline",
                     span: { start: cursor, end: cursor + 1 },

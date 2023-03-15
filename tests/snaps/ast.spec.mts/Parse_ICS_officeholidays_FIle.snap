@@ -1,0 +1,4734 @@
+{
+  kind: 'Module',
+  span: { start: 0, end: 10786 },
+  nodes: [
+    {
+      kind: 'VCalendar',
+      span: { start: 0, end: 10757 },
+      nodes: [
+        {
+          kind: 'PropertyParameter',
+          span: { start: 17, end: 28 },
+          name: {
+            kind: 'PropertyParameterName',
+            span: { start: 17, end: 24 },
+            value: 'VERSION'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: { start: 25, end: 28 },
+            value: '2.0'
+          },
+          altRepNodes: []
+        },
+        {
+          kind: 'PropertyParameter',
+          span: { start: 30, end: 64 },
+          name: {
+            kind: 'PropertyParameterName',
+            span: { start: 30, end: 36 },
+            value: 'PRODID'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: { start: 37, end: 64 },
+            value: '-//Office Holidays Ltd.//EN'
+          },
+          altRepNodes: []
+        },
+        {
+          kind: 'PropertyParameter',
+          span: { start: 66, end: 101 },
+          name: {
+            kind: 'PropertyParameterName',
+            span: { start: 66, end: 78 },
+            value: 'X-WR-CALNAME'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: { start: 79, end: 101 },
+            value: 'International Holidays'
+          },
+          altRepNodes: []
+        },
+        {
+          kind: 'PropertyParameter',
+          span: { start: 103, end: 191 },
+          name: {
+            kind: 'PropertyParameterName',
+            span: { start: 103, end: 115 },
+            value: 'X-WR-CALDESC'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: { start: 116, end: 191 },
+            value: 'Public Holidays in International. Provided by http://www.officeholidays.com'
+          },
+          altRepNodes: []
+        },
+        {
+          kind: 'PropertyParameter',
+          span: { start: 193, end: 230 },
+          name: {
+            kind: 'PropertyParameterName',
+            span: { start: 193, end: 209 },
+            value: 'REFRESH-INTERVAL'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: { start: 225, end: 230 },
+            value: 'PT48H'
+          },
+          altRepNodes: [
+            {
+              kind: 'AltRepParam',
+              span: { start: 210, end: 224 },
+              name: {
+                kind: 'AltRepParamName',
+                span: { start: 210, end: 215 },
+                value: 'VALUE'
+              },
+              value: {
+                kind: 'AltRepParamValue',
+                span: { start: 216, end: 224 },
+                value: 'DURATION'
+              }
+            }
+          ]
+        },
+        {
+          kind: 'PropertyParameter',
+          span: { start: 232, end: 253 },
+          name: {
+            kind: 'PropertyParameterName',
+            span: { start: 232, end: 247 },
+            value: 'X-PUBLISHED-TTL'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: { start: 248, end: 253 },
+            value: 'PT48H'
+          },
+          altRepNodes: []
+        },
+        {
+          kind: 'PropertyParameter',
+          span: { start: 255, end: 273 },
+          name: {
+            kind: 'PropertyParameterName',
+            span: { start: 255, end: 263 },
+            value: 'CALSCALE'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: { start: 264, end: 273 },
+            value: 'GREGORIAN'
+          },
+          altRepNodes: []
+        },
+        {
+          kind: 'PropertyParameter',
+          span: { start: 275, end: 289 },
+          name: {
+            kind: 'PropertyParameterName',
+            span: { start: 275, end: 281 },
+            value: 'METHOD'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: { start: 282, end: 289 },
+            value: 'PUBLISH'
+          },
+          altRepNodes: []
+        },
+        {
+          kind: 'PropertyParameter',
+          span: { start: 291, end: 323 },
+          name: {
+            kind: 'PropertyParameterName',
+            span: { start: 291, end: 318 },
+            value: 'X-MS-OLK-FORCEINSPECTOROPEN'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: { start: 319, end: 323 },
+            value: 'TRUE'
+          },
+          altRepNodes: []
+        },
+        {
+          kind: 'VEvent',
+          span: { start: 325, end: 1255 },
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              span: { start: 339, end: 351 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 339, end: 344 },
+                value: 'CLASS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 345, end: 351 },
+                value: 'PUBLIC'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 353, end: 403 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 353, end: 356 },
+                value: 'UID'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 357, end: 403 },
+                value: '2023-02-14INTL809regnap@www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 405, end: 429 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 405, end: 412 },
+                value: 'CREATED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 413, end: 429 },
+                value: '20230314T140237Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 431, end: 679 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 431, end: 442 },
+                value: 'DESCRIPTION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 443, end: 679 },
+                value: ' Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names, as all three of the saints are martyrs.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 681, end: 750 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 681, end: 684 },
+                value: 'URL'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 685, end: 750 },
+                value: 'https://www.officeholidays.com/holidays/various/st-valentines-day'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 752, end: 779 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 752, end: 759 },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 771, end: 779 },
+                value: '20230214'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 760, end: 770 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 760, end: 765 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 766, end: 770 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 781, end: 806 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 781, end: 786 },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 798, end: 806 },
+                value: '20230215'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 787, end: 797 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 787, end: 792 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 793, end: 797 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 808, end: 832 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 808, end: 815 },
+                value: 'DTSTAMP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 816, end: 832 },
+                value: '20080101T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 834, end: 856 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 834, end: 842 },
+                value: 'LOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 843, end: 856 },
+                value: 'International'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 858, end: 868 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 858, end: 866 },
+                value: 'PRIORITY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 867, end: 868 },
+                value: '5'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 870, end: 900 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 870, end: 883 },
+                value: 'LAST-MODIFIED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 884, end: 900 },
+                value: '20210707T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 902, end: 912 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 902, end: 910 },
+                value: 'SEQUENCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 911, end: 912 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 914, end: 979 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 914, end: 921 },
+                value: 'SUMMARY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 937, end: 979 },
+                value: "St. Valentine's Day (Not a Public Holiday)"
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 922, end: 936 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 922, end: 930 },
+                    value: 'LANGUAGE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 931, end: 936 },
+                    value: 'en-us'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 981, end: 994 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 981, end: 987 },
+                value: 'TRANSP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 988, end: 994 },
+                value: 'OPAQUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 996, end: 1027 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 996, end: 1022 },
+                value: 'X-MICROSOFT-CDO-BUSYSTATUS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1023, end: 1027 },
+                value: 'BUSY'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1029, end: 1057 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1029, end: 1055 },
+                value: 'X-MICROSOFT-CDO-IMPORTANCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1056, end: 1057 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1059, end: 1093 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1059, end: 1087 },
+                value: 'X-MICROSOFT-DISALLOW-COUNTER'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1088, end: 1093 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1095, end: 1125 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1095, end: 1120 },
+                value: 'X-MS-OLK-ALLOWEXTERNCHECK'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1121, end: 1125 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1127, end: 1158 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1127, end: 1152 },
+                value: 'X-MS-OLK-AUTOFILLLOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1153, end: 1158 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1160, end: 1192 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1160, end: 1187 },
+                value: 'X-MICROSOFT-CDO-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1188, end: 1192 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1194, end: 1234 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1194, end: 1229 },
+                value: 'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1230, end: 1234 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1236, end: 1255 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1236, end: 1253 },
+                value: 'X-MS-OLK-CONFTYPE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1254, end: 1255 },
+                value: '0'
+              },
+              altRepNodes: []
+            }
+          ]
+        },
+        {
+          kind: 'VEvent',
+          span: { start: 1269, end: 2075 },
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1283, end: 1295 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1283, end: 1288 },
+                value: 'CLASS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1289, end: 1295 },
+                value: 'PUBLIC'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1297, end: 1348 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1297, end: 1300 },
+                value: 'UID'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1301, end: 1348 },
+                value: '2023-02-22INTL3320regnap@www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1350, end: 1374 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1350, end: 1357 },
+                value: 'CREATED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1358, end: 1374 },
+                value: '20230314T140237Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1376, end: 1527 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1376, end: 1387 },
+                value: 'DESCRIPTION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1388, end: 1527 },
+                value: ' Lent marks the start of the Easter cycle in the Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1529, end: 1585 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1529, end: 1532 },
+                value: 'URL'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1533, end: 1585 },
+                value: 'https://www.officeholidays.com/holidays/various/lent'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1587, end: 1614 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1587, end: 1594 },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1606, end: 1614 },
+                value: '20230222'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 1595, end: 1605 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 1595, end: 1600 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 1601, end: 1605 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1616, end: 1641 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1616, end: 1621 },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1633, end: 1641 },
+                value: '20230223'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 1622, end: 1632 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 1622, end: 1627 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 1628, end: 1632 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1643, end: 1667 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1643, end: 1650 },
+                value: 'DTSTAMP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1651, end: 1667 },
+                value: '20080101T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1669, end: 1691 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1669, end: 1677 },
+                value: 'LOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1678, end: 1691 },
+                value: 'International'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1693, end: 1703 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1693, end: 1701 },
+                value: 'PRIORITY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1702, end: 1703 },
+                value: '5'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1705, end: 1735 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1705, end: 1718 },
+                value: 'LAST-MODIFIED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1719, end: 1735 },
+                value: '20210707T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1737, end: 1747 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1737, end: 1745 },
+                value: 'SEQUENCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1746, end: 1747 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1749, end: 1799 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1749, end: 1756 },
+                value: 'SUMMARY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1772, end: 1799 },
+                value: 'Lent (Not a Public Holiday)'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 1757, end: 1771 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 1757, end: 1765 },
+                    value: 'LANGUAGE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 1766, end: 1771 },
+                    value: 'en-us'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1801, end: 1814 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1801, end: 1807 },
+                value: 'TRANSP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1808, end: 1814 },
+                value: 'OPAQUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1816, end: 1847 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1816, end: 1842 },
+                value: 'X-MICROSOFT-CDO-BUSYSTATUS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1843, end: 1847 },
+                value: 'BUSY'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1849, end: 1877 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1849, end: 1875 },
+                value: 'X-MICROSOFT-CDO-IMPORTANCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1876, end: 1877 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1879, end: 1913 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1879, end: 1907 },
+                value: 'X-MICROSOFT-DISALLOW-COUNTER'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1908, end: 1913 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1915, end: 1945 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1915, end: 1940 },
+                value: 'X-MS-OLK-ALLOWEXTERNCHECK'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1941, end: 1945 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1947, end: 1978 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1947, end: 1972 },
+                value: 'X-MS-OLK-AUTOFILLLOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 1973, end: 1978 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 1980, end: 2012 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 1980, end: 2007 },
+                value: 'X-MICROSOFT-CDO-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2008, end: 2012 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2014, end: 2054 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2014, end: 2049 },
+                value: 'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2050, end: 2054 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2056, end: 2075 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2056, end: 2073 },
+                value: 'X-MS-OLK-CONFTYPE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2074, end: 2075 },
+                value: '0'
+              },
+              altRepNodes: []
+            }
+          ]
+        },
+        {
+          kind: 'VEvent',
+          span: { start: 2089, end: 2928 },
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2103, end: 2115 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2103, end: 2108 },
+                value: 'CLASS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2109, end: 2115 },
+                value: 'PUBLIC'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2117, end: 2168 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2117, end: 2120 },
+                value: 'UID'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2121, end: 2168 },
+                value: '2023-02-27INTL3321regnap@www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2170, end: 2194 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2170, end: 2177 },
+                value: 'CREATED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2178, end: 2194 },
+                value: '20230314T140237Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2196, end: 2362 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2196, end: 2207 },
+                value: 'DESCRIPTION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2208, end: 2362 },
+                value: ' Great Lent marks the start of the Easter cycle in the Orthodox Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2364, end: 2429 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2364, end: 2367 },
+                value: 'URL'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2368, end: 2429 },
+                value: 'https://www.officeholidays.com/holidays/various/orthodox-lent'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2431, end: 2458 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2431, end: 2438 },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2450, end: 2458 },
+                value: '20230227'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 2439, end: 2449 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 2439, end: 2444 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 2445, end: 2449 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2460, end: 2485 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2460, end: 2465 },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2477, end: 2485 },
+                value: '20230228'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 2466, end: 2476 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 2466, end: 2471 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 2472, end: 2476 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2487, end: 2511 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2487, end: 2494 },
+                value: 'DTSTAMP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2495, end: 2511 },
+                value: '20080101T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2513, end: 2535 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2513, end: 2521 },
+                value: 'LOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2522, end: 2535 },
+                value: 'International'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2537, end: 2547 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2537, end: 2545 },
+                value: 'PRIORITY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2546, end: 2547 },
+                value: '5'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2549, end: 2579 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2549, end: 2562 },
+                value: 'LAST-MODIFIED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2563, end: 2579 },
+                value: '20210707T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2581, end: 2591 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2581, end: 2589 },
+                value: 'SEQUENCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2590, end: 2591 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2593, end: 2652 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2593, end: 2600 },
+                value: 'SUMMARY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2616, end: 2652 },
+                value: 'Orthodox Lent (Not a Public Holiday)'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 2601, end: 2615 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 2601, end: 2609 },
+                    value: 'LANGUAGE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 2610, end: 2615 },
+                    value: 'en-us'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2654, end: 2667 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2654, end: 2660 },
+                value: 'TRANSP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2661, end: 2667 },
+                value: 'OPAQUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2669, end: 2700 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2669, end: 2695 },
+                value: 'X-MICROSOFT-CDO-BUSYSTATUS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2696, end: 2700 },
+                value: 'BUSY'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2702, end: 2730 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2702, end: 2728 },
+                value: 'X-MICROSOFT-CDO-IMPORTANCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2729, end: 2730 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2732, end: 2766 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2732, end: 2760 },
+                value: 'X-MICROSOFT-DISALLOW-COUNTER'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2761, end: 2766 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2768, end: 2798 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2768, end: 2793 },
+                value: 'X-MS-OLK-ALLOWEXTERNCHECK'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2794, end: 2798 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2800, end: 2831 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2800, end: 2825 },
+                value: 'X-MS-OLK-AUTOFILLLOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2826, end: 2831 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2833, end: 2865 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2833, end: 2860 },
+                value: 'X-MICROSOFT-CDO-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2861, end: 2865 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2867, end: 2907 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2867, end: 2902 },
+                value: 'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2903, end: 2907 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2909, end: 2928 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2909, end: 2926 },
+                value: 'X-MS-OLK-CONFTYPE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2927, end: 2928 },
+                value: '0'
+              },
+              altRepNodes: []
+            }
+          ]
+        },
+        {
+          kind: 'VEvent',
+          span: { start: 2942, end: 3858 },
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2956, end: 2968 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2956, end: 2961 },
+                value: 'CLASS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2962, end: 2968 },
+                value: 'PUBLIC'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 2970, end: 3019 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 2970, end: 2973 },
+                value: 'UID'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 2974, end: 3019 },
+                value: '2023-04-01INTL26regnap@www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3021, end: 3045 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3021, end: 3028 },
+                value: 'CREATED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3029, end: 3045 },
+                value: '20230314T140237Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3047, end: 3288 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3047, end: 3058 },
+                value: 'DESCRIPTION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3059, end: 3288 },
+                value: ' The day is observed by trying to play a practical joke on a victim who becomes known as an April Fool. The practical jokes range from simple to elaborate.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3290, end: 3357 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3290, end: 3293 },
+                value: 'URL'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3294, end: 3357 },
+                value: 'https://www.officeholidays.com/holidays/various/april-fools-day'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3359, end: 3386 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3359, end: 3366 },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3378, end: 3386 },
+                value: '20230401'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 3367, end: 3377 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 3367, end: 3372 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 3373, end: 3377 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3388, end: 3413 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3388, end: 3393 },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3405, end: 3413 },
+                value: '20230402'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 3394, end: 3404 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 3394, end: 3399 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 3400, end: 3404 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3415, end: 3439 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3415, end: 3422 },
+                value: 'DTSTAMP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3423, end: 3439 },
+                value: '20080101T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3441, end: 3463 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3441, end: 3449 },
+                value: 'LOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3450, end: 3463 },
+                value: 'International'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3465, end: 3475 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3465, end: 3473 },
+                value: 'PRIORITY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3474, end: 3475 },
+                value: '5'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3477, end: 3507 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3477, end: 3490 },
+                value: 'LAST-MODIFIED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3491, end: 3507 },
+                value: '20210707T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3509, end: 3519 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3509, end: 3517 },
+                value: 'SEQUENCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3518, end: 3519 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3521, end: 3582 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3521, end: 3528 },
+                value: 'SUMMARY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3544, end: 3582 },
+                value: 'April Fools Day (Not a Public Holiday)'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 3529, end: 3543 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 3529, end: 3537 },
+                    value: 'LANGUAGE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 3538, end: 3543 },
+                    value: 'en-us'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3584, end: 3597 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3584, end: 3590 },
+                value: 'TRANSP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3591, end: 3597 },
+                value: 'OPAQUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3599, end: 3630 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3599, end: 3625 },
+                value: 'X-MICROSOFT-CDO-BUSYSTATUS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3626, end: 3630 },
+                value: 'BUSY'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3632, end: 3660 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3632, end: 3658 },
+                value: 'X-MICROSOFT-CDO-IMPORTANCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3659, end: 3660 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3662, end: 3696 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3662, end: 3690 },
+                value: 'X-MICROSOFT-DISALLOW-COUNTER'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3691, end: 3696 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3698, end: 3728 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3698, end: 3723 },
+                value: 'X-MS-OLK-ALLOWEXTERNCHECK'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3724, end: 3728 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3730, end: 3761 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3730, end: 3755 },
+                value: 'X-MS-OLK-AUTOFILLLOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3756, end: 3761 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3763, end: 3795 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3763, end: 3790 },
+                value: 'X-MICROSOFT-CDO-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3791, end: 3795 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3797, end: 3837 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3797, end: 3832 },
+                value: 'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3833, end: 3837 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3839, end: 3858 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3839, end: 3856 },
+                value: 'X-MS-OLK-CONFTYPE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3857, end: 3858 },
+                value: '0'
+              },
+              altRepNodes: []
+            }
+          ]
+        },
+        {
+          kind: 'VEvent',
+          span: { start: 3872, end: 4702 },
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3886, end: 3898 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3886, end: 3891 },
+                value: 'CLASS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3892, end: 3898 },
+                value: 'PUBLIC'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3900, end: 3950 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3900, end: 3903 },
+                value: 'UID'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3904, end: 3950 },
+                value: '2023-04-22INTL262regnap@www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3952, end: 3976 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3952, end: 3959 },
+                value: 'CREATED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3960, end: 3976 },
+                value: '20230314T140237Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 3978, end: 4144 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 3978, end: 3989 },
+                value: 'DESCRIPTION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 3990, end: 4144 },
+                value: ' Marks the anniversary of the birth of the modern environmental movement in 1970\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4146, end: 4207 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4146, end: 4149 },
+                value: 'URL'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4150, end: 4207 },
+                value: 'https://www.officeholidays.com/holidays/various/earth-day'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4209, end: 4236 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4209, end: 4216 },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4228, end: 4236 },
+                value: '20230422'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 4217, end: 4227 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 4217, end: 4222 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 4223, end: 4227 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4238, end: 4263 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4238, end: 4243 },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4255, end: 4263 },
+                value: '20230423'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 4244, end: 4254 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 4244, end: 4249 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 4250, end: 4254 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4265, end: 4289 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4265, end: 4272 },
+                value: 'DTSTAMP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4273, end: 4289 },
+                value: '20080101T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4291, end: 4313 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4291, end: 4299 },
+                value: 'LOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4300, end: 4313 },
+                value: 'International'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4315, end: 4325 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4315, end: 4323 },
+                value: 'PRIORITY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4324, end: 4325 },
+                value: '5'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4327, end: 4357 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4327, end: 4340 },
+                value: 'LAST-MODIFIED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4341, end: 4357 },
+                value: '20210707T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4359, end: 4369 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4359, end: 4367 },
+                value: 'SEQUENCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4368, end: 4369 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4371, end: 4426 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4371, end: 4378 },
+                value: 'SUMMARY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4394, end: 4426 },
+                value: 'Earth Day (Not a Public Holiday)'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 4379, end: 4393 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 4379, end: 4387 },
+                    value: 'LANGUAGE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 4388, end: 4393 },
+                    value: 'en-us'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4428, end: 4441 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4428, end: 4434 },
+                value: 'TRANSP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4435, end: 4441 },
+                value: 'OPAQUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4443, end: 4474 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4443, end: 4469 },
+                value: 'X-MICROSOFT-CDO-BUSYSTATUS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4470, end: 4474 },
+                value: 'BUSY'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4476, end: 4504 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4476, end: 4502 },
+                value: 'X-MICROSOFT-CDO-IMPORTANCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4503, end: 4504 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4506, end: 4540 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4506, end: 4534 },
+                value: 'X-MICROSOFT-DISALLOW-COUNTER'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4535, end: 4540 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4542, end: 4572 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4542, end: 4567 },
+                value: 'X-MS-OLK-ALLOWEXTERNCHECK'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4568, end: 4572 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4574, end: 4605 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4574, end: 4599 },
+                value: 'X-MS-OLK-AUTOFILLLOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4600, end: 4605 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4607, end: 4639 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4607, end: 4634 },
+                value: 'X-MICROSOFT-CDO-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4635, end: 4639 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4641, end: 4681 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4641, end: 4676 },
+                value: 'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4677, end: 4681 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4683, end: 4702 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4683, end: 4700 },
+                value: 'X-MS-OLK-CONFTYPE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4701, end: 4702 },
+                value: '0'
+              },
+              altRepNodes: []
+            }
+          ]
+        },
+        {
+          kind: 'VEvent',
+          span: { start: 4716, end: 5534 },
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4730, end: 4742 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4730, end: 4735 },
+                value: 'CLASS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4736, end: 4742 },
+                value: 'PUBLIC'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4744, end: 4794 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4744, end: 4747 },
+                value: 'UID'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4748, end: 4794 },
+                value: '2023-10-31INTL365regnap@www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4796, end: 4820 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4796, end: 4803 },
+                value: 'CREATED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4804, end: 4820 },
+                value: '20230314T140237Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4822, end: 4976 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4822, end: 4833 },
+                value: 'DESCRIPTION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4834, end: 4976 },
+                value: ' Ireland is believed to be the birthplace of the Halloween festival.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 4978, end: 5039 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 4978, end: 4981 },
+                value: 'URL'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 4982, end: 5039 },
+                value: 'https://www.officeholidays.com/holidays/various/halloween'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5041, end: 5068 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5041, end: 5048 },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5060, end: 5068 },
+                value: '20231031'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 5049, end: 5059 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 5049, end: 5054 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 5055, end: 5059 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5070, end: 5095 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5070, end: 5075 },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5087, end: 5095 },
+                value: '20231101'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 5076, end: 5086 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 5076, end: 5081 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 5082, end: 5086 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5097, end: 5121 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5097, end: 5104 },
+                value: 'DTSTAMP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5105, end: 5121 },
+                value: '20080101T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5123, end: 5145 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5123, end: 5131 },
+                value: 'LOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5132, end: 5145 },
+                value: 'International'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5147, end: 5157 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5147, end: 5155 },
+                value: 'PRIORITY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5156, end: 5157 },
+                value: '5'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5159, end: 5189 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5159, end: 5172 },
+                value: 'LAST-MODIFIED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5173, end: 5189 },
+                value: '20210707T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5191, end: 5201 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5191, end: 5199 },
+                value: 'SEQUENCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5200, end: 5201 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5203, end: 5258 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5203, end: 5210 },
+                value: 'SUMMARY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5226, end: 5258 },
+                value: 'Halloween (Not a Public Holiday)'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 5211, end: 5225 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 5211, end: 5219 },
+                    value: 'LANGUAGE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 5220, end: 5225 },
+                    value: 'en-us'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5260, end: 5273 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5260, end: 5266 },
+                value: 'TRANSP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5267, end: 5273 },
+                value: 'OPAQUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5275, end: 5306 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5275, end: 5301 },
+                value: 'X-MICROSOFT-CDO-BUSYSTATUS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5302, end: 5306 },
+                value: 'BUSY'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5308, end: 5336 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5308, end: 5334 },
+                value: 'X-MICROSOFT-CDO-IMPORTANCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5335, end: 5336 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5338, end: 5372 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5338, end: 5366 },
+                value: 'X-MICROSOFT-DISALLOW-COUNTER'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5367, end: 5372 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5374, end: 5404 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5374, end: 5399 },
+                value: 'X-MS-OLK-ALLOWEXTERNCHECK'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5400, end: 5404 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5406, end: 5437 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5406, end: 5431 },
+                value: 'X-MS-OLK-AUTOFILLLOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5432, end: 5437 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5439, end: 5471 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5439, end: 5466 },
+                value: 'X-MICROSOFT-CDO-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5467, end: 5471 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5473, end: 5513 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5473, end: 5508 },
+                value: 'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5509, end: 5513 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5515, end: 5534 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5515, end: 5532 },
+                value: 'X-MS-OLK-CONFTYPE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5533, end: 5534 },
+                value: '0'
+              },
+              altRepNodes: []
+            }
+          ]
+        },
+        {
+          kind: 'VEvent',
+          span: { start: 5548, end: 6478 },
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5562, end: 5574 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5562, end: 5567 },
+                value: 'CLASS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5568, end: 5574 },
+                value: 'PUBLIC'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5576, end: 5626 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5576, end: 5579 },
+                value: 'UID'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5580, end: 5626 },
+                value: '2024-02-14INTL809regnap@www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5628, end: 5652 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5628, end: 5635 },
+                value: 'CREATED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5636, end: 5652 },
+                value: '20230314T140237Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5654, end: 5902 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5654, end: 5665 },
+                value: 'DESCRIPTION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5666, end: 5902 },
+                value: ' Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names, as all three of the saints are martyrs.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5904, end: 5973 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5904, end: 5907 },
+                value: 'URL'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5908, end: 5973 },
+                value: 'https://www.officeholidays.com/holidays/various/st-valentines-day'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 5975, end: 6002 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 5975, end: 5982 },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 5994, end: 6002 },
+                value: '20240214'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 5983, end: 5993 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 5983, end: 5988 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 5989, end: 5993 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6004, end: 6029 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6004, end: 6009 },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6021, end: 6029 },
+                value: '20240215'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 6010, end: 6020 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 6010, end: 6015 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 6016, end: 6020 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6031, end: 6055 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6031, end: 6038 },
+                value: 'DTSTAMP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6039, end: 6055 },
+                value: '20080101T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6057, end: 6079 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6057, end: 6065 },
+                value: 'LOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6066, end: 6079 },
+                value: 'International'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6081, end: 6091 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6081, end: 6089 },
+                value: 'PRIORITY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6090, end: 6091 },
+                value: '5'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6093, end: 6123 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6093, end: 6106 },
+                value: 'LAST-MODIFIED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6107, end: 6123 },
+                value: '20210707T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6125, end: 6135 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6125, end: 6133 },
+                value: 'SEQUENCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6134, end: 6135 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6137, end: 6202 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6137, end: 6144 },
+                value: 'SUMMARY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6160, end: 6202 },
+                value: "St. Valentine's Day (Not a Public Holiday)"
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 6145, end: 6159 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 6145, end: 6153 },
+                    value: 'LANGUAGE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 6154, end: 6159 },
+                    value: 'en-us'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6204, end: 6217 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6204, end: 6210 },
+                value: 'TRANSP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6211, end: 6217 },
+                value: 'OPAQUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6219, end: 6250 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6219, end: 6245 },
+                value: 'X-MICROSOFT-CDO-BUSYSTATUS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6246, end: 6250 },
+                value: 'BUSY'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6252, end: 6280 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6252, end: 6278 },
+                value: 'X-MICROSOFT-CDO-IMPORTANCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6279, end: 6280 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6282, end: 6316 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6282, end: 6310 },
+                value: 'X-MICROSOFT-DISALLOW-COUNTER'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6311, end: 6316 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6318, end: 6348 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6318, end: 6343 },
+                value: 'X-MS-OLK-ALLOWEXTERNCHECK'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6344, end: 6348 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6350, end: 6381 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6350, end: 6375 },
+                value: 'X-MS-OLK-AUTOFILLLOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6376, end: 6381 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6383, end: 6415 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6383, end: 6410 },
+                value: 'X-MICROSOFT-CDO-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6411, end: 6415 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6417, end: 6457 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6417, end: 6452 },
+                value: 'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6453, end: 6457 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6459, end: 6478 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6459, end: 6476 },
+                value: 'X-MS-OLK-CONFTYPE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6477, end: 6478 },
+                value: '0'
+              },
+              altRepNodes: []
+            }
+          ]
+        },
+        {
+          kind: 'VEvent',
+          span: { start: 6492, end: 7298 },
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6506, end: 6518 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6506, end: 6511 },
+                value: 'CLASS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6512, end: 6518 },
+                value: 'PUBLIC'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6520, end: 6571 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6520, end: 6523 },
+                value: 'UID'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6524, end: 6571 },
+                value: '2024-02-14INTL3320regnap@www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6573, end: 6597 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6573, end: 6580 },
+                value: 'CREATED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6581, end: 6597 },
+                value: '20230314T140237Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6599, end: 6750 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6599, end: 6610 },
+                value: 'DESCRIPTION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6611, end: 6750 },
+                value: ' Lent marks the start of the Easter cycle in the Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6752, end: 6808 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6752, end: 6755 },
+                value: 'URL'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6756, end: 6808 },
+                value: 'https://www.officeholidays.com/holidays/various/lent'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6810, end: 6837 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6810, end: 6817 },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6829, end: 6837 },
+                value: '20240214'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 6818, end: 6828 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 6818, end: 6823 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 6824, end: 6828 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6839, end: 6864 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6839, end: 6844 },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6856, end: 6864 },
+                value: '20240215'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 6845, end: 6855 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 6845, end: 6850 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 6851, end: 6855 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6866, end: 6890 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6866, end: 6873 },
+                value: 'DTSTAMP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6874, end: 6890 },
+                value: '20080101T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6892, end: 6914 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6892, end: 6900 },
+                value: 'LOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6901, end: 6914 },
+                value: 'International'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6916, end: 6926 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6916, end: 6924 },
+                value: 'PRIORITY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6925, end: 6926 },
+                value: '5'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6928, end: 6958 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6928, end: 6941 },
+                value: 'LAST-MODIFIED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6942, end: 6958 },
+                value: '20210707T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6960, end: 6970 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6960, end: 6968 },
+                value: 'SEQUENCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6969, end: 6970 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 6972, end: 7022 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 6972, end: 6979 },
+                value: 'SUMMARY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 6995, end: 7022 },
+                value: 'Lent (Not a Public Holiday)'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 6980, end: 6994 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 6980, end: 6988 },
+                    value: 'LANGUAGE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 6989, end: 6994 },
+                    value: 'en-us'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7024, end: 7037 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7024, end: 7030 },
+                value: 'TRANSP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7031, end: 7037 },
+                value: 'OPAQUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7039, end: 7070 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7039, end: 7065 },
+                value: 'X-MICROSOFT-CDO-BUSYSTATUS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7066, end: 7070 },
+                value: 'BUSY'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7072, end: 7100 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7072, end: 7098 },
+                value: 'X-MICROSOFT-CDO-IMPORTANCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7099, end: 7100 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7102, end: 7136 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7102, end: 7130 },
+                value: 'X-MICROSOFT-DISALLOW-COUNTER'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7131, end: 7136 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7138, end: 7168 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7138, end: 7163 },
+                value: 'X-MS-OLK-ALLOWEXTERNCHECK'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7164, end: 7168 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7170, end: 7201 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7170, end: 7195 },
+                value: 'X-MS-OLK-AUTOFILLLOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7196, end: 7201 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7203, end: 7235 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7203, end: 7230 },
+                value: 'X-MICROSOFT-CDO-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7231, end: 7235 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7237, end: 7277 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7237, end: 7272 },
+                value: 'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7273, end: 7277 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7279, end: 7298 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7279, end: 7296 },
+                value: 'X-MS-OLK-CONFTYPE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7297, end: 7298 },
+                value: '0'
+              },
+              altRepNodes: []
+            }
+          ]
+        },
+        {
+          kind: 'VEvent',
+          span: { start: 7312, end: 8151 },
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7326, end: 7338 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7326, end: 7331 },
+                value: 'CLASS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7332, end: 7338 },
+                value: 'PUBLIC'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7340, end: 7391 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7340, end: 7343 },
+                value: 'UID'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7344, end: 7391 },
+                value: '2024-03-18INTL3321regnap@www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7393, end: 7417 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7393, end: 7400 },
+                value: 'CREATED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7401, end: 7417 },
+                value: '20230314T140237Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7419, end: 7585 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7419, end: 7430 },
+                value: 'DESCRIPTION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7431, end: 7585 },
+                value: ' Great Lent marks the start of the Easter cycle in the Orthodox Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7587, end: 7652 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7587, end: 7590 },
+                value: 'URL'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7591, end: 7652 },
+                value: 'https://www.officeholidays.com/holidays/various/orthodox-lent'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7654, end: 7681 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7654, end: 7661 },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7673, end: 7681 },
+                value: '20240318'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 7662, end: 7672 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 7662, end: 7667 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 7668, end: 7672 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7683, end: 7708 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7683, end: 7688 },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7700, end: 7708 },
+                value: '20240319'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 7689, end: 7699 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 7689, end: 7694 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 7695, end: 7699 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7710, end: 7734 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7710, end: 7717 },
+                value: 'DTSTAMP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7718, end: 7734 },
+                value: '20080101T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7736, end: 7758 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7736, end: 7744 },
+                value: 'LOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7745, end: 7758 },
+                value: 'International'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7760, end: 7770 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7760, end: 7768 },
+                value: 'PRIORITY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7769, end: 7770 },
+                value: '5'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7772, end: 7802 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7772, end: 7785 },
+                value: 'LAST-MODIFIED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7786, end: 7802 },
+                value: '20210707T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7804, end: 7814 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7804, end: 7812 },
+                value: 'SEQUENCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7813, end: 7814 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7816, end: 7875 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7816, end: 7823 },
+                value: 'SUMMARY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7839, end: 7875 },
+                value: 'Orthodox Lent (Not a Public Holiday)'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 7824, end: 7838 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 7824, end: 7832 },
+                    value: 'LANGUAGE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 7833, end: 7838 },
+                    value: 'en-us'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7877, end: 7890 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7877, end: 7883 },
+                value: 'TRANSP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7884, end: 7890 },
+                value: 'OPAQUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7892, end: 7923 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7892, end: 7918 },
+                value: 'X-MICROSOFT-CDO-BUSYSTATUS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7919, end: 7923 },
+                value: 'BUSY'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7925, end: 7953 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7925, end: 7951 },
+                value: 'X-MICROSOFT-CDO-IMPORTANCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7952, end: 7953 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7955, end: 7989 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7955, end: 7983 },
+                value: 'X-MICROSOFT-DISALLOW-COUNTER'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 7984, end: 7989 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 7991, end: 8021 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 7991, end: 8016 },
+                value: 'X-MS-OLK-ALLOWEXTERNCHECK'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8017, end: 8021 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8023, end: 8054 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8023, end: 8048 },
+                value: 'X-MS-OLK-AUTOFILLLOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8049, end: 8054 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8056, end: 8088 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8056, end: 8083 },
+                value: 'X-MICROSOFT-CDO-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8084, end: 8088 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8090, end: 8130 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8090, end: 8125 },
+                value: 'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8126, end: 8130 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8132, end: 8151 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8132, end: 8149 },
+                value: 'X-MS-OLK-CONFTYPE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8150, end: 8151 },
+                value: '0'
+              },
+              altRepNodes: []
+            }
+          ]
+        },
+        {
+          kind: 'VEvent',
+          span: { start: 8165, end: 9081 },
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8179, end: 8191 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8179, end: 8184 },
+                value: 'CLASS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8185, end: 8191 },
+                value: 'PUBLIC'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8193, end: 8242 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8193, end: 8196 },
+                value: 'UID'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8197, end: 8242 },
+                value: '2024-04-01INTL26regnap@www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8244, end: 8268 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8244, end: 8251 },
+                value: 'CREATED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8252, end: 8268 },
+                value: '20230314T140237Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8270, end: 8511 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8270, end: 8281 },
+                value: 'DESCRIPTION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8282, end: 8511 },
+                value: ' The day is observed by trying to play a practical joke on a victim who becomes known as an April Fool. The practical jokes range from simple to elaborate.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8513, end: 8580 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8513, end: 8516 },
+                value: 'URL'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8517, end: 8580 },
+                value: 'https://www.officeholidays.com/holidays/various/april-fools-day'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8582, end: 8609 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8582, end: 8589 },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8601, end: 8609 },
+                value: '20240401'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 8590, end: 8600 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 8590, end: 8595 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 8596, end: 8600 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8611, end: 8636 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8611, end: 8616 },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8628, end: 8636 },
+                value: '20240402'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 8617, end: 8627 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 8617, end: 8622 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 8623, end: 8627 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8638, end: 8662 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8638, end: 8645 },
+                value: 'DTSTAMP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8646, end: 8662 },
+                value: '20080101T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8664, end: 8686 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8664, end: 8672 },
+                value: 'LOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8673, end: 8686 },
+                value: 'International'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8688, end: 8698 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8688, end: 8696 },
+                value: 'PRIORITY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8697, end: 8698 },
+                value: '5'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8700, end: 8730 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8700, end: 8713 },
+                value: 'LAST-MODIFIED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8714, end: 8730 },
+                value: '20210707T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8732, end: 8742 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8732, end: 8740 },
+                value: 'SEQUENCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8741, end: 8742 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8744, end: 8805 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8744, end: 8751 },
+                value: 'SUMMARY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8767, end: 8805 },
+                value: 'April Fools Day (Not a Public Holiday)'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 8752, end: 8766 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 8752, end: 8760 },
+                    value: 'LANGUAGE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 8761, end: 8766 },
+                    value: 'en-us'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8807, end: 8820 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8807, end: 8813 },
+                value: 'TRANSP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8814, end: 8820 },
+                value: 'OPAQUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8822, end: 8853 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8822, end: 8848 },
+                value: 'X-MICROSOFT-CDO-BUSYSTATUS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8849, end: 8853 },
+                value: 'BUSY'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8855, end: 8883 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8855, end: 8881 },
+                value: 'X-MICROSOFT-CDO-IMPORTANCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8882, end: 8883 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8885, end: 8919 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8885, end: 8913 },
+                value: 'X-MICROSOFT-DISALLOW-COUNTER'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8914, end: 8919 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8921, end: 8951 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8921, end: 8946 },
+                value: 'X-MS-OLK-ALLOWEXTERNCHECK'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8947, end: 8951 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8953, end: 8984 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8953, end: 8978 },
+                value: 'X-MS-OLK-AUTOFILLLOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 8979, end: 8984 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 8986, end: 9018 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 8986, end: 9013 },
+                value: 'X-MICROSOFT-CDO-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9014, end: 9018 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9020, end: 9060 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9020, end: 9055 },
+                value: 'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9056, end: 9060 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9062, end: 9081 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9062, end: 9079 },
+                value: 'X-MS-OLK-CONFTYPE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9080, end: 9081 },
+                value: '0'
+              },
+              altRepNodes: []
+            }
+          ]
+        },
+        {
+          kind: 'VEvent',
+          span: { start: 9095, end: 9925 },
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9109, end: 9121 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9109, end: 9114 },
+                value: 'CLASS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9115, end: 9121 },
+                value: 'PUBLIC'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9123, end: 9173 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9123, end: 9126 },
+                value: 'UID'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9127, end: 9173 },
+                value: '2024-04-22INTL262regnap@www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9175, end: 9199 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9175, end: 9182 },
+                value: 'CREATED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9183, end: 9199 },
+                value: '20230314T140237Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9201, end: 9367 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9201, end: 9212 },
+                value: 'DESCRIPTION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9213, end: 9367 },
+                value: ' Marks the anniversary of the birth of the modern environmental movement in 1970\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9369, end: 9430 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9369, end: 9372 },
+                value: 'URL'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9373, end: 9430 },
+                value: 'https://www.officeholidays.com/holidays/various/earth-day'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9432, end: 9459 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9432, end: 9439 },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9451, end: 9459 },
+                value: '20240422'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 9440, end: 9450 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 9440, end: 9445 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 9446, end: 9450 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9461, end: 9486 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9461, end: 9466 },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9478, end: 9486 },
+                value: '20240423'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 9467, end: 9477 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 9467, end: 9472 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 9473, end: 9477 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9488, end: 9512 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9488, end: 9495 },
+                value: 'DTSTAMP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9496, end: 9512 },
+                value: '20080101T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9514, end: 9536 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9514, end: 9522 },
+                value: 'LOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9523, end: 9536 },
+                value: 'International'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9538, end: 9548 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9538, end: 9546 },
+                value: 'PRIORITY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9547, end: 9548 },
+                value: '5'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9550, end: 9580 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9550, end: 9563 },
+                value: 'LAST-MODIFIED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9564, end: 9580 },
+                value: '20210707T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9582, end: 9592 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9582, end: 9590 },
+                value: 'SEQUENCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9591, end: 9592 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9594, end: 9649 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9594, end: 9601 },
+                value: 'SUMMARY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9617, end: 9649 },
+                value: 'Earth Day (Not a Public Holiday)'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 9602, end: 9616 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 9602, end: 9610 },
+                    value: 'LANGUAGE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 9611, end: 9616 },
+                    value: 'en-us'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9651, end: 9664 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9651, end: 9657 },
+                value: 'TRANSP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9658, end: 9664 },
+                value: 'OPAQUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9666, end: 9697 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9666, end: 9692 },
+                value: 'X-MICROSOFT-CDO-BUSYSTATUS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9693, end: 9697 },
+                value: 'BUSY'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9699, end: 9727 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9699, end: 9725 },
+                value: 'X-MICROSOFT-CDO-IMPORTANCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9726, end: 9727 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9729, end: 9763 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9729, end: 9757 },
+                value: 'X-MICROSOFT-DISALLOW-COUNTER'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9758, end: 9763 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9765, end: 9795 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9765, end: 9790 },
+                value: 'X-MS-OLK-ALLOWEXTERNCHECK'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9791, end: 9795 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9797, end: 9828 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9797, end: 9822 },
+                value: 'X-MS-OLK-AUTOFILLLOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9823, end: 9828 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9830, end: 9862 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9830, end: 9857 },
+                value: 'X-MICROSOFT-CDO-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9858, end: 9862 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9864, end: 9904 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9864, end: 9899 },
+                value: 'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9900, end: 9904 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9906, end: 9925 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9906, end: 9923 },
+                value: 'X-MS-OLK-CONFTYPE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9924, end: 9925 },
+                value: '0'
+              },
+              altRepNodes: []
+            }
+          ]
+        },
+        {
+          kind: 'VEvent',
+          span: { start: 9939, end: 10757 },
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9953, end: 9965 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9953, end: 9958 },
+                value: 'CLASS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9959, end: 9965 },
+                value: 'PUBLIC'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 9967, end: 10017 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 9967, end: 9970 },
+                value: 'UID'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 9971, end: 10017 },
+                value: '2024-10-31INTL365regnap@www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10019, end: 10043 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10019, end: 10026 },
+                value: 'CREATED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10027, end: 10043 },
+                value: '20230314T140237Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10045, end: 10199 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10045, end: 10056 },
+                value: 'DESCRIPTION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10057, end: 10199 },
+                value: ' Ireland is believed to be the birthplace of the Halloween festival.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10201, end: 10262 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10201, end: 10204 },
+                value: 'URL'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10205, end: 10262 },
+                value: 'https://www.officeholidays.com/holidays/various/halloween'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10264, end: 10291 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10264, end: 10271 },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10283, end: 10291 },
+                value: '20241031'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 10272, end: 10282 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 10272, end: 10277 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 10278, end: 10282 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10293, end: 10318 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10293, end: 10298 },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10310, end: 10318 },
+                value: '20241101'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 10299, end: 10309 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 10299, end: 10304 },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 10305, end: 10309 },
+                    value: 'DATE'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10320, end: 10344 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10320, end: 10327 },
+                value: 'DTSTAMP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10328, end: 10344 },
+                value: '20080101T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10346, end: 10368 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10346, end: 10354 },
+                value: 'LOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10355, end: 10368 },
+                value: 'International'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10370, end: 10380 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10370, end: 10378 },
+                value: 'PRIORITY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10379, end: 10380 },
+                value: '5'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10382, end: 10412 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10382, end: 10395 },
+                value: 'LAST-MODIFIED'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10396, end: 10412 },
+                value: '20210707T000000Z'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10414, end: 10424 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10414, end: 10422 },
+                value: 'SEQUENCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10423, end: 10424 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10426, end: 10481 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10426, end: 10433 },
+                value: 'SUMMARY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10449, end: 10481 },
+                value: 'Halloween (Not a Public Holiday)'
+              },
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: { start: 10434, end: 10448 },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: { start: 10434, end: 10442 },
+                    value: 'LANGUAGE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: { start: 10443, end: 10448 },
+                    value: 'en-us'
+                  }
+                }
+              ]
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10483, end: 10496 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10483, end: 10489 },
+                value: 'TRANSP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10490, end: 10496 },
+                value: 'OPAQUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10498, end: 10529 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10498, end: 10524 },
+                value: 'X-MICROSOFT-CDO-BUSYSTATUS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10525, end: 10529 },
+                value: 'BUSY'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10531, end: 10559 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10531, end: 10557 },
+                value: 'X-MICROSOFT-CDO-IMPORTANCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10558, end: 10559 },
+                value: '1'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10561, end: 10595 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10561, end: 10589 },
+                value: 'X-MICROSOFT-DISALLOW-COUNTER'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10590, end: 10595 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10597, end: 10627 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10597, end: 10622 },
+                value: 'X-MS-OLK-ALLOWEXTERNCHECK'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10623, end: 10627 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10629, end: 10660 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10629, end: 10654 },
+                value: 'X-MS-OLK-AUTOFILLLOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10655, end: 10660 },
+                value: 'FALSE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10662, end: 10694 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10662, end: 10689 },
+                value: 'X-MICROSOFT-CDO-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10690, end: 10694 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10696, end: 10736 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10696, end: 10731 },
+                value: 'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10732, end: 10736 },
+                value: 'TRUE'
+              },
+              altRepNodes: []
+            },
+            {
+              kind: 'PropertyParameter',
+              span: { start: 10738, end: 10757 },
+              name: {
+                kind: 'PropertyParameterName',
+                span: { start: 10738, end: 10755 },
+                value: 'X-MS-OLK-CONFTYPE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: { start: 10756, end: 10757 },
+                value: '0'
+              },
+              altRepNodes: []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -31,3 +31,28 @@ test("Parse icalendar (ICS FIle)", async () => {
         await readFile(snapUrl, "utf-8")
     );
 });
+
+test("Parse icalendar (ICS officeholidays FIle)", async () => {
+    const payload = await readFile(
+        new URL("officeholidays.ics", import.meta.url)
+    );
+    const tokens = Lexer.from(payload);
+    const ast = AST.from(tokens);
+    const icalendar = ICalendar.from(ast);
+
+    const snapUrl = new URL(
+        "snaps/icalendar.spec.mts/Parse_icalendar_ICS_officeholidays_FIle.snap",
+        import.meta.url
+    );
+
+    if (SNAP_WRITE)
+        await writeFile(
+            snapUrl,
+            inspect(icalendar, { depth: Infinity, maxArrayLength: Infinity }),
+            "utf-8"
+        );
+    equal(
+        inspect(icalendar, { depth: Infinity, maxArrayLength: Infinity }),
+        await readFile(snapUrl, "utf-8")
+    );
+});

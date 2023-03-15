@@ -20,9 +20,13 @@ test("tokenizer", async () => {
         import.meta.url
     );
     if (SNAP_WRITE)
-        await writeFile(snapUrl, inspect(tokens, { depth: Infinity }), "utf-8");
+        await writeFile(
+            snapUrl,
+            inspect(tokens, { depth: Infinity, maxArrayLength: Infinity }),
+            "utf-8"
+        );
     equal(
-        inspect(tokens, { depth: Infinity }),
+        inspect(tokens, { depth: Infinity, maxArrayLength: Infinity }),
         await readFile(snapUrl, "utf-8")
     );
 });
@@ -39,9 +43,36 @@ test("tokenizer (ICS FIle)", async () => {
         import.meta.url
     );
     if (SNAP_WRITE)
-        await writeFile(snapUrl, inspect(tokens, { depth: Infinity }), "utf-8");
+        await writeFile(
+            snapUrl,
+            inspect(tokens, { depth: Infinity, maxArrayLength: Infinity }),
+            "utf-8"
+        );
     equal(
-        inspect(tokens, { depth: Infinity }),
+        inspect(tokens, { depth: Infinity, maxArrayLength: Infinity }),
+        await readFile(snapUrl, "utf-8")
+    );
+});
+
+test("tokenizer (ICS officeholidays FIle)", async () => {
+    const location = new URL("officeholidays.ics", import.meta.url);
+
+    const payload = await readFile(location);
+
+    const tokens = Lexer.from(payload);
+
+    const snapUrl = new URL(
+        "snaps/lexer.spec.mts/tokenizer_ICS_officeholidays_FIle.snap",
+        import.meta.url
+    );
+    if (SNAP_WRITE)
+        await writeFile(
+            snapUrl,
+            inspect(tokens, { depth: Infinity, maxArrayLength: Infinity }),
+            "utf-8"
+        );
+    equal(
+        inspect(tokens, { depth: Infinity, maxArrayLength: Infinity }),
         await readFile(snapUrl, "utf-8")
     );
 });
