@@ -4,7 +4,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { equal } from "node:assert/strict";
 import { inspect } from "node:util";
 
-const SNAP_WRITE = false;
+const SNAP_WRITE = process.env.SNAP_WRITE === "true";
 
 test("tokenizer", async () => {
     const payload = new TextEncoder().encode(

@@ -5,7 +5,7 @@ import { Lexer } from "../src/lexer.mjs";
 import { writeFile, readFile, mkdir } from "fs/promises";
 import { inspect } from "node:util";
 
-const SNAP_WRITE = true;
+const SNAP_WRITE = process.env.SNAP_WRITE === "true";
 
 test("Parse Simple Parameter", async () => {
     const payload = new TextEncoder().encode(`FOO:BIZ`);
