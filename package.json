@@ -4,7 +4,8 @@
         "test": "node --test --loader ts-node/esm tests/*.spec.mts",
         "fmt": "prettier -w .",
         "lint": "prettier --check .",
-        "build": "rollup --config rollup.config.js"
+        "build": "rollup --config rollup.config.js",
+        "prepare": "husky install"
     },
     "devDependencies": {
         "@swc/core": "^1.3.40",
