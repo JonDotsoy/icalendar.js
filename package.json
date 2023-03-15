@@ -9,6 +9,7 @@
     },
     "devDependencies": {
         "@swc/core": "^1.3.40",
+        "@types/node": "^18.15.3",
         "husky": "^8.0.3",
         "lint-staged": "^13.2.0",
         "prettier": "^2.8.4",
@@ -23,6 +24,10 @@
     "version": "0.1.3",
     "author": "Jonathan Delgado <hi@jon.soy> (https://jon.soy)",
     "exports": {
+        ".": {
+            "require": "./dist/icalendar.cjs",
+            "import": "./dist/icalendar.mjs"
+        },
         "./lexer": {
             "require": "./dist/lexer.cjs",
             "import": "./dist/lexer.mjs"

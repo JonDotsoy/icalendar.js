@@ -7,6 +7,7 @@ const swc = swcModule.default;
 const input = {
     lexer: "src/lexer.mts",
     ast: "src/ast.mts",
+    icalendar: "src/icalendar.mts",
 };
 
 /**

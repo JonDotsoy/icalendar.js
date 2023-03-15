@@ -1,4 +1,3 @@
-import { inspect } from "util";
 import { Token } from "./lexer.mjs";
 
 type Kind =
@@ -17,7 +16,7 @@ interface Node {
     span: { start: number; end: number };
 }
 
-interface ModuleNode extends Node {
+export interface ModuleNode extends Node {
     kind: "Module";
     nodes: (PropertyParameterNode | VCalendarNode)[];
 }
@@ -57,7 +56,7 @@ interface AltRepParamNode extends Node {
 
 interface VCalendarNode extends Node {
     kind: "VCalendar";
-    nodes: PropertyParameterNode[];
+    nodes: (PropertyParameterNode | VEventNode)[];
 }
 
 interface VEventNode extends Node {
