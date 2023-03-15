@@ -1,0 +1,9 @@
+tests/
+src/
+!dist
+rollup.config.js
+.vscode/
+.editorconfig
+.prettierignore
+*.tgz
+tsconfig.json
