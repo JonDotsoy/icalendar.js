@@ -12,7 +12,7 @@
       'X-MS-OLK-FORCEINSPECTOROPEN' => 'TRUE'
     },
     events: Set(12) {
-      VEvent {
+      VComponent {
         properties: Map(22) {
           'CLASS' => 'PUBLIC',
           'UID' => '2023-02-14INTL809regnap@www.officeholidays.com',
@@ -38,7 +38,7 @@
           'X-MS-OLK-CONFTYPE' => '0'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(22) {
           'CLASS' => 'PUBLIC',
           'UID' => '2023-02-22INTL3320regnap@www.officeholidays.com',
@@ -64,7 +64,7 @@
           'X-MS-OLK-CONFTYPE' => '0'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(22) {
           'CLASS' => 'PUBLIC',
           'UID' => '2023-02-27INTL3321regnap@www.officeholidays.com',
@@ -90,7 +90,7 @@
           'X-MS-OLK-CONFTYPE' => '0'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(22) {
           'CLASS' => 'PUBLIC',
           'UID' => '2023-04-01INTL26regnap@www.officeholidays.com',
@@ -116,7 +116,7 @@
           'X-MS-OLK-CONFTYPE' => '0'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(22) {
           'CLASS' => 'PUBLIC',
           'UID' => '2023-04-22INTL262regnap@www.officeholidays.com',
@@ -142,7 +142,7 @@
           'X-MS-OLK-CONFTYPE' => '0'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(22) {
           'CLASS' => 'PUBLIC',
           'UID' => '2023-10-31INTL365regnap@www.officeholidays.com',
@@ -168,7 +168,7 @@
           'X-MS-OLK-CONFTYPE' => '0'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(22) {
           'CLASS' => 'PUBLIC',
           'UID' => '2024-02-14INTL809regnap@www.officeholidays.com',
@@ -194,7 +194,7 @@
           'X-MS-OLK-CONFTYPE' => '0'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(22) {
           'CLASS' => 'PUBLIC',
           'UID' => '2024-02-14INTL3320regnap@www.officeholidays.com',
@@ -220,7 +220,7 @@
           'X-MS-OLK-CONFTYPE' => '0'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(22) {
           'CLASS' => 'PUBLIC',
           'UID' => '2024-03-18INTL3321regnap@www.officeholidays.com',
@@ -246,7 +246,7 @@
           'X-MS-OLK-CONFTYPE' => '0'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(22) {
           'CLASS' => 'PUBLIC',
           'UID' => '2024-04-01INTL26regnap@www.officeholidays.com',
@@ -272,7 +272,7 @@
           'X-MS-OLK-CONFTYPE' => '0'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(22) {
           'CLASS' => 'PUBLIC',
           'UID' => '2024-04-22INTL262regnap@www.officeholidays.com',
@@ -298,7 +298,7 @@
           'X-MS-OLK-CONFTYPE' => '0'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(22) {
           'CLASS' => 'PUBLIC',
           'UID' => '2024-10-31INTL365regnap@www.officeholidays.com',

@@ -10,7 +10,7 @@
       'X-WR-CALDESC' => 'Días feriados y celebraciones en Chile'
     },
     events: Set(61) {
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230102',
           'DTEND' => '20230103',
@@ -26,7 +26,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220916',
           'DTEND' => '20220917',
@@ -42,7 +42,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240329',
           'DTEND' => '20240330',
@@ -58,7 +58,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230407',
           'DTEND' => '20230408',
@@ -74,7 +74,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240330',
           'DTEND' => '20240331',
@@ -90,7 +90,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230408',
           'DTEND' => '20230409',
@@ -106,7 +106,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240629',
           'DTEND' => '20240630',
@@ -122,7 +122,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230626',
           'DTEND' => '20230627',
@@ -138,7 +138,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20241225',
           'DTEND' => '20241226',
@@ -154,7 +154,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20231225',
           'DTEND' => '20231226',
@@ -170,7 +170,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20221225',
           'DTEND' => '20221226',
@@ -186,7 +186,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240815',
           'DTEND' => '20240816',
@@ -202,7 +202,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230815',
           'DTEND' => '20230816',
@@ -218,7 +218,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240328',
           'DTEND' => '20240329',
@@ -234,7 +234,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230406',
           'DTEND' => '20230407',
@@ -250,7 +250,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240920',
           'DTEND' => '20240921',
@@ -266,7 +266,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240620',
           'DTEND' => '20240621',
@@ -282,7 +282,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230621',
           'DTEND' => '20230622',
@@ -298,7 +298,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20241031',
           'DTEND' => '20241101',
@@ -314,7 +314,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20231027',
           'DTEND' => '20231028',
@@ -330,7 +330,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20221031',
           'DTEND' => '20221101',
@@ -346,7 +346,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240501',
           'DTEND' => '20240502',
@@ -362,7 +362,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230501',
           'DTEND' => '20230502',
@@ -378,7 +378,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20241012',
           'DTEND' => '20241013',
@@ -394,7 +394,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20231009',
           'DTEND' => '20231010',
@@ -410,7 +410,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20221010',
           'DTEND' => '20221011',
@@ -426,7 +426,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20241101',
           'DTEND' => '20241102',
@@ -442,7 +442,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20231101',
           'DTEND' => '20231102',
@@ -458,7 +458,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20221101',
           'DTEND' => '20221102',
@@ -474,7 +474,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240521',
           'DTEND' => '20240522',
@@ -490,7 +490,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230521',
           'DTEND' => '20230522',
@@ -506,7 +506,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240919',
           'DTEND' => '20240920',
@@ -522,7 +522,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230919',
           'DTEND' => '20230920',
@@ -538,7 +538,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240716',
           'DTEND' => '20240717',
@@ -554,7 +554,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230716',
           'DTEND' => '20230717',
@@ -570,7 +570,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20241208',
           'DTEND' => '20241209',
@@ -586,7 +586,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20231208',
           'DTEND' => '20231209',
@@ -602,7 +602,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20221208',
           'DTEND' => '20221209',
@@ -618,7 +618,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240331',
           'DTEND' => '20240401',
@@ -634,7 +634,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230409',
           'DTEND' => '20230410',
@@ -650,7 +650,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240530',
           'DTEND' => '20240531',
@@ -666,7 +666,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230608',
           'DTEND' => '20230609',
@@ -682,7 +682,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240101',
           'DTEND' => '20240102',
@@ -698,7 +698,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230101',
           'DTEND' => '20230102',
@@ -714,7 +714,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20240918',
           'DTEND' => '20240919',
@@ -730,7 +730,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20230918',
           'DTEND' => '20230919',
@@ -746,7 +746,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220904',
           'DTEND' => '20220905',
@@ -762,7 +762,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220621',
           'DTEND' => '20220622',
@@ -778,7 +778,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220627',
           'DTEND' => '20220628',
@@ -794,7 +794,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220101',
           'DTEND' => '20220102',
@@ -810,7 +810,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220616',
           'DTEND' => '20220617',
@@ -826,7 +826,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220918',
           'DTEND' => '20220919',
@@ -842,7 +842,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220815',
           'DTEND' => '20220816',
@@ -858,7 +858,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220501',
           'DTEND' => '20220502',
@@ -874,7 +874,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220716',
           'DTEND' => '20220717',
@@ -890,7 +890,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220416',
           'DTEND' => '20220417',
@@ -906,7 +906,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220414',
           'DTEND' => '20220415',
@@ -922,7 +922,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220521',
           'DTEND' => '20220522',
@@ -938,7 +938,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220919',
           'DTEND' => '20220920',
@@ -954,7 +954,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220415',
           'DTEND' => '20220416',
@@ -970,7 +970,7 @@
           'TRANSP' => 'TRANSPARENT'
         }
       },
-      VEvent {
+      VComponent {
         properties: Map(12) {
           'DTSTART' => '20220417',
           'DTEND' => '20220418',
