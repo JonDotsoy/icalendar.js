@@ -18,8 +18,15 @@ test("Parse Simple Parameter", async () => {
     );
 
     if (SNAP_WRITE)
-        await writeFile(snapUrl, inspect(ast, { depth: Infinity }), "utf-8");
-    equal(inspect(ast, { depth: Infinity }), await readFile(snapUrl, "utf-8"));
+        await writeFile(
+            snapUrl,
+            inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
+            "utf-8"
+        );
+    equal(
+        inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
+        await readFile(snapUrl, "utf-8")
+    );
 });
 
 test("Parse Simple Multi Parameter", async () => {
@@ -33,8 +40,15 @@ test("Parse Simple Multi Parameter", async () => {
     );
 
     if (SNAP_WRITE)
-        await writeFile(snapUrl, inspect(ast, { depth: Infinity }), "utf-8");
-    equal(inspect(ast, { depth: Infinity }), await readFile(snapUrl, "utf-8"));
+        await writeFile(
+            snapUrl,
+            inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
+            "utf-8"
+        );
+    equal(
+        inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
+        await readFile(snapUrl, "utf-8")
+    );
 });
 
 test("Parse Tokens", async () => {
@@ -52,8 +66,15 @@ test("Parse Tokens", async () => {
     );
 
     if (SNAP_WRITE)
-        await writeFile(snapUrl, inspect(ast, { depth: Infinity }), "utf-8");
-    equal(inspect(ast, { depth: Infinity }), await readFile(snapUrl, "utf-8"));
+        await writeFile(
+            snapUrl,
+            inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
+            "utf-8"
+        );
+    equal(
+        inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
+        await readFile(snapUrl, "utf-8")
+    );
 });
 
 test("Parse (ICS FIle)", async () => {
@@ -69,6 +90,13 @@ test("Parse (ICS FIle)", async () => {
     );
 
     if (SNAP_WRITE)
-        await writeFile(snapUrl, inspect(ast, { depth: Infinity }), "utf-8");
-    equal(inspect(ast, { depth: Infinity }), await readFile(snapUrl, "utf-8"));
+        await writeFile(
+            snapUrl,
+            inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
+            "utf-8"
+        );
+    equal(
+        inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
+        await readFile(snapUrl, "utf-8")
+    );
 });

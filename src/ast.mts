@@ -8,7 +8,9 @@ type Kind =
     | "PropertyParameterValue"
     | "AltRepParam"
     | "AltRepParamName"
-    | "AltRepParamValue";
+    | "AltRepParamValue"
+    | "VCalendar"
+    | "VEvent";
 
 interface Node {
     kind: Kind;
@@ -17,7 +19,7 @@ interface Node {
 
 interface ModuleNode extends Node {
     kind: "Module";
-    nodes: Node[];
+    nodes: (PropertyParameterNode | VCalendarNode)[];
 }
 
 interface PropertyParameterNameNode extends Node {
@@ -53,13 +55,44 @@ interface AltRepParamNode extends Node {
     value: AltRepParamValueNode;
 }
 
+interface VCalendarNode extends Node {
+    kind: "VCalendar";
+    nodes: PropertyParameterNode[];
+}
+
+interface VEventNode extends Node {
+    kind: "VEvent";
+    nodes: PropertyParameterNode[];
+}
+
 export class AST {
-    static from(tokens: Token[]) {
+    static from(tokens: Token[]): ModuleNode {
         const spanStart = tokens.at(0)?.span.start ?? 0;
         const spanEnd = tokens.at(-1)?.span.end ?? 0;
-
         let cursor = 0;
-        const nodes: Node[] = [];
+        const nodes: ModuleNode["nodes"] = [];
+
+        cursor = this.fromModule(cursor, nodes, tokens);
+
+        const module: ModuleNode = {
+            kind: "Module",
+            span: {
+                start: spanStart,
+                end: spanEnd,
+            },
+            nodes,
+        };
+
+        return module;
+    }
+
+    static fromModule(
+        index: number,
+        nodes: (PropertyParameterNode | VCalendarNode | VEventNode)[],
+        tokens: Token[],
+        closeEnd?: string
+    ) {
+        let cursor = index;
 
         while (true) {
             const token = tokens.at(cursor);
@@ -67,6 +100,16 @@ export class AST {
 
             if (token.kind === "keyword") {
                 cursor = AST.fromPropertyParameters(cursor, nodes, tokens);
+                const lastNode = nodes.at(-1);
+                if (
+                    closeEnd &&
+                    lastNode?.kind === "PropertyParameter" &&
+                    lastNode.name.value === "END" &&
+                    lastNode.value.value === closeEnd
+                ) {
+                    nodes.pop();
+                    break;
+                }
                 continue;
             }
 
@@ -78,15 +121,7 @@ export class AST {
             throw new Error(`Invalid ${token.kind} pos ${cursor}`);
         }
 
-        const module: ModuleNode = {
-            kind: "Module",
-            span: {
-                start: spanStart,
-                end: spanEnd,
-            },
-            nodes,
-        };
-        return module;
+        return cursor;
     }
 
     static fromAltRepParam(
@@ -145,7 +180,7 @@ export class AST {
 
     static fromPropertyParameters(
         index: number,
-        nodes: Node[],
+        nodes: (PropertyParameterNode | VCalendarNode | VEventNode)[],
         tokens: Token[]
     ): number {
         let cursor = index;
@@ -187,7 +222,7 @@ export class AST {
                 };
                 snapEnd = token.span.end;
 
-                const node: PropertyParameterNode = {
+                const propertyParameterNode: PropertyParameterNode = {
                     kind: "PropertyParameter",
                     span: {
                         start: snapStart,
@@ -200,8 +235,61 @@ export class AST {
 
                 cursor += 1;
 
-                nodes.push(node);
+                if (
+                    propertyParameterNode.name.value === "BEGIN" &&
+                    propertyParameterNode.value.value === "VCALENDAR"
+                ) {
+                    const vCalendarNodes: VCalendarNode["nodes"] = [];
 
+                    cursor = AST.fromModule(
+                        cursor,
+                        vCalendarNodes,
+                        tokens,
+                        "VCALENDAR"
+                    );
+
+                    const vCalendarNode: VCalendarNode = {
+                        kind: "VCalendar",
+                        span: {
+                            start: propertyParameterNode.span.start,
+                            end:
+                                vCalendarNodes.at(-1)?.span.end ??
+                                propertyParameterNode.span.end,
+                        },
+                        nodes: vCalendarNodes,
+                    };
+                    nodes.push(vCalendarNode);
+                    break;
+                }
+
+                if (
+                    propertyParameterNode.name.value === "BEGIN" &&
+                    propertyParameterNode.value.value === "VEVENT"
+                ) {
+                    const vEventNodes: VEventNode["nodes"] = [];
+
+                    cursor = AST.fromModule(
+                        cursor,
+                        vEventNodes,
+                        tokens,
+                        "VEVENT"
+                    );
+
+                    const vEventNode: VEventNode = {
+                        kind: "VEvent",
+                        span: {
+                            start: propertyParameterNode.span.start,
+                            end:
+                                vEventNodes.at(-1)?.span.end ??
+                                propertyParameterNode.span.end,
+                        },
+                        nodes: vEventNodes,
+                    };
+                    nodes.push(vEventNode);
+                    break;
+                }
+
+                nodes.push(propertyParameterNode);
                 break;
             }
 
