@@ -3,7 +3,8 @@
   span: { start: 0, end: 21123 },
   nodes: [
     {
-      kind: 'VCalendar',
+      kind: 'VComponent',
+      componentKind: 'VCALENDAR',
       span: { start: 0, end: 21097 },
       nodes: [
         {
@@ -112,7 +113,8 @@
           altRepNodes: []
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 220, end: 557 },
           nodes: [
             {
@@ -328,7 +330,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 569, end: 926 },
           nodes: [
             {
@@ -544,7 +547,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 938, end: 1243 },
           nodes: [
             {
@@ -760,7 +764,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 1255, end: 1560 },
           nodes: [
             {
@@ -976,7 +981,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 1572, end: 1877 },
           nodes: [
             {
@@ -1192,7 +1198,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 1889, end: 2194 },
           nodes: [
             {
@@ -1408,7 +1415,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 2206, end: 2519 },
           nodes: [
             {
@@ -1624,7 +1632,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 2531, end: 2844 },
           nodes: [
             {
@@ -1840,7 +1849,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 2856, end: 3155 },
           nodes: [
             {
@@ -2056,7 +2066,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 3167, end: 3466 },
           nodes: [
             {
@@ -2272,7 +2283,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 3478, end: 3777 },
           nodes: [
             {
@@ -2488,7 +2500,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 3789, end: 4106 },
           nodes: [
             {
@@ -2704,7 +2717,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 4118, end: 4435 },
           nodes: [
             {
@@ -2920,7 +2934,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 4447, end: 4846 },
           nodes: [
             {
@@ -3136,7 +3151,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 4858, end: 5257 },
           nodes: [
             {
@@ -3352,7 +3368,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 5269, end: 5576 },
           nodes: [
             {
@@ -3568,7 +3585,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 5588, end: 5919 },
           nodes: [
             {
@@ -3784,7 +3802,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 5931, end: 6262 },
           nodes: [
             {
@@ -4000,7 +4019,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 6274, end: 6623 },
           nodes: [
             {
@@ -4216,7 +4236,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 6635, end: 6984 },
           nodes: [
             {
@@ -4432,7 +4453,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 6996, end: 7345 },
           nodes: [
             {
@@ -4648,7 +4670,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 7357, end: 7665 },
           nodes: [
             {
@@ -4864,7 +4887,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 7677, end: 7985 },
           nodes: [
             {
@@ -5080,7 +5104,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 7997, end: 8321 },
           nodes: [
             {
@@ -5296,7 +5321,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 8333, end: 8657 },
           nodes: [
             {
@@ -5512,7 +5538,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 8669, end: 8993 },
           nodes: [
             {
@@ -5728,7 +5755,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 9005, end: 9321 },
           nodes: [
             {
@@ -5944,7 +5972,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 9333, end: 9649 },
           nodes: [
             {
@@ -6160,7 +6189,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 9661, end: 9977 },
           nodes: [
             {
@@ -6376,7 +6406,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 9989, end: 10308 },
           nodes: [
             {
@@ -6592,7 +6623,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 10320, end: 10639 },
           nodes: [
             {
@@ -6808,7 +6840,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 10651, end: 10976 },
           nodes: [
             {
@@ -7024,7 +7057,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 10988, end: 11313 },
           nodes: [
             {
@@ -7240,7 +7274,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 11325, end: 11645 },
           nodes: [
             {
@@ -7456,7 +7491,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 11657, end: 11977 },
           nodes: [
             {
@@ -7672,7 +7708,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 11989, end: 12314 },
           nodes: [
             {
@@ -7888,7 +7925,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 12326, end: 12651 },
           nodes: [
             {
@@ -8104,7 +8142,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 12663, end: 12988 },
           nodes: [
             {
@@ -8320,7 +8359,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 13000, end: 13404 },
           nodes: [
             {
@@ -8536,7 +8576,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 13416, end: 13820 },
           nodes: [
             {
@@ -8752,7 +8793,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 13832, end: 14233 },
           nodes: [
             {
@@ -8968,7 +9010,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 14245, end: 14646 },
           nodes: [
             {
@@ -9184,7 +9227,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 14658, end: 14960 },
           nodes: [
             {
@@ -9400,7 +9444,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 14972, end: 15274 },
           nodes: [
             {
@@ -9616,7 +9661,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 15286, end: 15608 },
           nodes: [
             {
@@ -9832,7 +9878,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 15620, end: 15942 },
           nodes: [
             {
@@ -10048,7 +10095,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 15954, end: 16258 },
           nodes: [
             {
@@ -10264,7 +10312,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 16270, end: 16601 },
           nodes: [
             {
@@ -10480,7 +10529,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 16613, end: 16926 },
           nodes: [
             {
@@ -10696,7 +10746,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 16938, end: 17240 },
           nodes: [
             {
@@ -10912,7 +10963,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 17252, end: 17653 },
           nodes: [
             {
@@ -11128,7 +11180,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 17665, end: 17987 },
           nodes: [
             {
@@ -11344,7 +11397,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 17999, end: 18316 },
           nodes: [
             {
@@ -11560,7 +11614,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 18328, end: 18636 },
           nodes: [
             {
@@ -11776,7 +11831,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 18648, end: 18968 },
           nodes: [
             {
@@ -11992,7 +12048,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 18980, end: 19285 },
           nodes: [
             {
@@ -12208,7 +12265,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 19297, end: 19696 },
           nodes: [
             {
@@ -12424,7 +12482,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 19708, end: 20027 },
           nodes: [
             {
@@ -12640,7 +12699,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 20039, end: 20364 },
           nodes: [
             {
@@ -12856,7 +12916,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 20376, end: 20681 },
           nodes: [
             {
@@ -13072,7 +13133,8 @@
           ]
         },
         {
-          kind: 'VEvent',
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
           span: { start: 20693, end: 21097 },
           nodes: [
             {

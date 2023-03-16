@@ -8,60 +8,55 @@ type Kind =
     | "AltRepParam"
     | "AltRepParamName"
     | "AltRepParamValue"
-    | "VCalendar"
-    | "VEvent";
+    | "VComponent";
 
-interface Node {
+export interface Node {
     kind: Kind;
     span: { start: number; end: number };
 }
 
 export interface ModuleNode extends Node {
     kind: "Module";
-    nodes: (PropertyParameterNode | VCalendarNode)[];
+    nodes: (PropertyParameterNode | VComponentNode)[];
 }
 
-interface PropertyParameterNameNode extends Node {
+export interface PropertyParameterNameNode extends Node {
     kind: "PropertyParameterName";
     value: string;
 }
 
-interface PropertyParameterValueNode extends Node {
+export interface PropertyParameterValueNode extends Node {
     kind: "PropertyParameterValue";
     value: any;
 }
 
-interface PropertyParameterNode extends Node {
+export interface PropertyParameterNode extends Node {
     kind: "PropertyParameter";
     name: PropertyParameterNameNode;
     value: PropertyParameterValueNode;
     altRepNodes: AltRepParamNode[];
 }
 
-interface AltRepParamNameNode extends Node {
+export interface AltRepParamNameNode extends Node {
     kind: "AltRepParamName";
     value: string;
 }
 
-interface AltRepParamValueNode extends Node {
+export interface AltRepParamValueNode extends Node {
     kind: "AltRepParamValue";
     value: string;
 }
 
-interface AltRepParamNode extends Node {
+export interface AltRepParamNode extends Node {
     kind: "AltRepParam";
     name: AltRepParamNameNode;
     value: AltRepParamValueNode;
 }
 
-interface VCalendarNode extends Node {
-    kind: "VCalendar";
-    nodes: (PropertyParameterNode | VEventNode)[];
-}
-
-interface VEventNode extends Node {
-    kind: "VEvent";
-    nodes: PropertyParameterNode[];
+export interface VComponentNode extends Node {
+    kind: "VComponent";
+    componentKind: string;
+    nodes: (VComponentNode | PropertyParameterNode)[];
 }
 
 export class AST {
@@ -87,7 +82,7 @@ export class AST {
 
     static fromModule(
         index: number,
-        nodes: (PropertyParameterNode | VCalendarNode | VEventNode)[],
+        nodes: (PropertyParameterNode | VComponentNode)[],
         tokens: Token[],
         closeEnd?: string
     ) {
@@ -179,7 +174,7 @@ export class AST {
 
     static fromPropertyParameters(
         index: number,
-        nodes: (PropertyParameterNode | VCalendarNode | VEventNode)[],
+        nodes: (PropertyParameterNode | VComponentNode)[],
         tokens: Token[]
     ): number {
         let cursor = index;
@@ -236,55 +231,29 @@ export class AST {
 
                 if (
                     propertyParameterNode.name.value === "BEGIN" &&
-                    propertyParameterNode.value.value === "VCALENDAR"
+                    typeof propertyParameterNode.value.value === "string"
                 ) {
-                    const vCalendarNodes: VCalendarNode["nodes"] = [];
+                    const vComponentNodes: VComponentNode["nodes"] = [];
 
                     cursor = AST.fromModule(
                         cursor,
-                        vCalendarNodes,
+                        vComponentNodes,
                         tokens,
-                        "VCALENDAR"
+                        propertyParameterNode.value.value
                     );
 
-                    const vCalendarNode: VCalendarNode = {
-                        kind: "VCalendar",
+                    const vCalendarNode: VComponentNode = {
+                        kind: "VComponent",
+                        componentKind: propertyParameterNode.value.value,
                         span: {
                             start: propertyParameterNode.span.start,
                             end:
-                                vCalendarNodes.at(-1)?.span.end ??
+                                vComponentNodes.at(-1)?.span.end ??
                                 propertyParameterNode.span.end,
                         },
-                        nodes: vCalendarNodes,
+                        nodes: vComponentNodes,
                     };
                     nodes.push(vCalendarNode);
-                    break;
-                }
-
-                if (
-                    propertyParameterNode.name.value === "BEGIN" &&
-                    propertyParameterNode.value.value === "VEVENT"
-                ) {
-                    const vEventNodes: VEventNode["nodes"] = [];
-
-                    cursor = AST.fromModule(
-                        cursor,
-                        vEventNodes,
-                        tokens,
-                        "VEVENT"
-                    );
-
-                    const vEventNode: VEventNode = {
-                        kind: "VEvent",
-                        span: {
-                            start: propertyParameterNode.span.start,
-                            end:
-                                vEventNodes.at(-1)?.span.end ??
-                                propertyParameterNode.span.end,
-                        },
-                        nodes: vEventNodes,
-                    };
-                    nodes.push(vEventNode);
                     break;
                 }
 

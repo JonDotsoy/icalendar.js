@@ -15,26 +15,26 @@ const tokens = Lexer.from(payload);
 const ast = AST.from(tokens);
 const icalendar = ICalendar.from(ast);
 // =>
-// [
-//   ICalendar {
-//     properties: Map(7) {
-//       'PRODID' => '-//Google Inc//Google Calendar 70.9054//EN',
-//       'VERSION' => '2.0',
-//       'CALSCALE' => 'GREGORIAN',
-//       'METHOD' => 'PUBLISH',
-//       'X-WR-CALNAME' => 'Días feriados en Chile',
-//       'X-WR-TIMEZONE' => 'UTC',
-//       'X-WR-CALDESC' => 'Días feriados y celebraciones en Chile'
+// ICalendar
+//   kind: 'VCALENDAR',
+//   properties: Map(9) {
+//     'VERSION' => PropertyValue { value: '2.0', parameters: Map(0) {} },
+//     'PRODID' => PropertyValue {
+//       value: '-//Office Holidays Ltd.//EN',
+//       parameters: Map(0) {}
 //     },
-//     events: Set(61) {
-//       VEvent {
-//         properties: Map(12) {
-//           'DTSTART' => '20230102',
-//           'DTEND' => '20230103',
-//           'DTSTAMP' => '20230313T185621Z',
-//           'UID' => '20230102_cfc086hkmftekgrsn83ci1dba8@google.com',
-//           'CLASS' => 'PUBLIC',
-//           'CREATED' => '20221221T094429Z',
+//     'X-WR-CALNAME' => PropertyValue {
+//       value: 'International Holidays',
+//       parameters: Map(0) {}
+//     },
+//     'X-WR-CALDESC' => PropertyValue {
+//       value: 'Public Holidays in International. Provided by http://www.officeholidays.com',
+//       parameters: Map(0) {}
+//     },
+//     'REFRESH-INTERVAL' => PropertyValue {
+//       value: 'PT48H',
+//       parameters: Map(1) { 'VALUE' => 'DURATION' }
+//     },
 // ...
 ```
 
