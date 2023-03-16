@@ -1,10 +1,9 @@
 import { Lexer } from "../src/lexer.mjs";
 import { test } from "node:test";
-import { readFile, writeFile } from "node:fs/promises";
-import { equal } from "node:assert/strict";
-import { inspect } from "node:util";
+import { readFile } from "node:fs/promises";
+import { createSnapDirectory } from "./snaps/snap.js";
 
-const SNAP_WRITE = process.env.SNAP_WRITE === "true";
+const snap = createSnapDirectory(import.meta.url);
 
 test("tokenizer", async () => {
     const payload = new TextEncoder().encode(
@@ -15,20 +14,7 @@ test("tokenizer", async () => {
 
     const tokens = Lexer.from(payload);
 
-    const snapUrl = new URL(
-        "snaps/lexer.spec.mts/tokenizer.snap",
-        import.meta.url
-    );
-    if (SNAP_WRITE)
-        await writeFile(
-            snapUrl,
-            inspect(tokens, { depth: Infinity, maxArrayLength: Infinity }),
-            "utf-8"
-        );
-    equal(
-        inspect(tokens, { depth: Infinity, maxArrayLength: Infinity }),
-        await readFile(snapUrl, "utf-8")
-    );
+    await snap("tokenizer").assertSnapOf(tokens);
 });
 
 test("tokenizer (ICS FIle)", async () => {
@@ -38,20 +24,7 @@ test("tokenizer (ICS FIle)", async () => {
 
     const tokens = Lexer.from(payload);
 
-    const snapUrl = new URL(
-        "snaps/lexer.spec.mts/tokenizer_ICS_FIle.snap",
-        import.meta.url
-    );
-    if (SNAP_WRITE)
-        await writeFile(
-            snapUrl,
-            inspect(tokens, { depth: Infinity, maxArrayLength: Infinity }),
-            "utf-8"
-        );
-    equal(
-        inspect(tokens, { depth: Infinity, maxArrayLength: Infinity }),
-        await readFile(snapUrl, "utf-8")
-    );
+    await snap("tokenizer_ICS_FIle").assertSnapOf(tokens);
 });
 
 test("tokenizer (ICS officeholidays FIle)", async () => {
@@ -61,18 +34,5 @@ test("tokenizer (ICS officeholidays FIle)", async () => {
 
     const tokens = Lexer.from(payload);
 
-    const snapUrl = new URL(
-        "snaps/lexer.spec.mts/tokenizer_ICS_officeholidays_FIle.snap",
-        import.meta.url
-    );
-    if (SNAP_WRITE)
-        await writeFile(
-            snapUrl,
-            inspect(tokens, { depth: Infinity, maxArrayLength: Infinity }),
-            "utf-8"
-        );
-    equal(
-        inspect(tokens, { depth: Infinity, maxArrayLength: Infinity }),
-        await readFile(snapUrl, "utf-8")
-    );
+    await snap("tokenizer_ICS_officeholidays_FIle").assertSnapOf(tokens);
 });

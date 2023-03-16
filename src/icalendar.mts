@@ -140,6 +140,8 @@ const customProperties = (entry: Record<string, any>) => {
     }
 };
 
+type LikeICalendarPayload = ast.ModuleNode;
+
 /**
  * @external https://www.rfc-editor.org/rfc/rfc2445.txt
  */
@@ -186,7 +188,8 @@ export class ICalendar extends VComponent {
         return vComponent;
     }
 
-    static from(module: ast.ModuleNode) {
+    static from(module?: LikeICalendarPayload) {
+        if (!module) return new ICalendar(new VComponent("VCALENDAR"));
         return ICalendar.fromMultiple(module).at(0) ?? null;
     }
 

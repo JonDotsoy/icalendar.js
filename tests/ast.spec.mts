@@ -1,32 +1,17 @@
-import { equal } from "node:assert/strict";
 import { test } from "node:test";
 import { AST } from "../src/ast.mjs";
 import { Lexer } from "../src/lexer.mjs";
-import { writeFile, readFile, mkdir } from "fs/promises";
-import { inspect } from "node:util";
+import { readFile } from "fs/promises";
+import { createSnapDirectory } from "./snaps/snap.js";
 
-const SNAP_WRITE = process.env.SNAP_WRITE === "true";
+const snap = createSnapDirectory(import.meta.url);
 
 test("Parse Simple Parameter", async () => {
     const payload = new TextEncoder().encode(`FOO:BIZ`);
     const tokens = Lexer.from(payload);
     const ast = AST.from(tokens);
 
-    const snapUrl = new URL(
-        "snaps/ast.spec.mts/Parse_Simple_Parameter.snap",
-        import.meta.url
-    );
-
-    if (SNAP_WRITE)
-        await writeFile(
-            snapUrl,
-            inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
-            "utf-8"
-        );
-    equal(
-        inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
-        await readFile(snapUrl, "utf-8")
-    );
+    await snap("Parse_Simple_Parameter").assertSnapOf(ast);
 });
 
 test("Parse Simple Multi Parameter", async () => {
@@ -34,21 +19,7 @@ test("Parse Simple Multi Parameter", async () => {
     const tokens = Lexer.from(payload);
     const ast = AST.from(tokens);
 
-    const snapUrl = new URL(
-        "snaps/ast.spec.mts/Parse_Simple_Multi_Parameter.snap",
-        import.meta.url
-    );
-
-    if (SNAP_WRITE)
-        await writeFile(
-            snapUrl,
-            inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
-            "utf-8"
-        );
-    equal(
-        inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
-        await readFile(snapUrl, "utf-8")
-    );
+    await snap("Parse_Simple_Multi_Parameter").assertSnapOf(ast);
 });
 
 test("Parse Tokens", async () => {
@@ -60,21 +31,7 @@ test("Parse Tokens", async () => {
     const tokens = Lexer.from(payload);
     const ast = AST.from(tokens);
 
-    const snapUrl = new URL(
-        "snaps/ast.spec.mts/Parse_Tokens.snap",
-        import.meta.url
-    );
-
-    if (SNAP_WRITE)
-        await writeFile(
-            snapUrl,
-            inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
-            "utf-8"
-        );
-    equal(
-        inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
-        await readFile(snapUrl, "utf-8")
-    );
+    await snap("Parse_Tokens").assertSnapOf(ast);
 });
 
 test("Parse (ICS FIle)", async () => {
@@ -84,21 +41,7 @@ test("Parse (ICS FIle)", async () => {
     const tokens = Lexer.from(payload);
     const ast = AST.from(tokens);
 
-    const snapUrl = new URL(
-        "snaps/ast.spec.mts/Parse_ICS_FIle.snap",
-        import.meta.url
-    );
-
-    if (SNAP_WRITE)
-        await writeFile(
-            snapUrl,
-            inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
-            "utf-8"
-        );
-    equal(
-        inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
-        await readFile(snapUrl, "utf-8")
-    );
+    await snap("Parse_ICS_FIle").assertSnapOf(ast);
 });
 
 test("Parse (ICS officeholidays FIle)", async () => {
@@ -108,19 +51,5 @@ test("Parse (ICS officeholidays FIle)", async () => {
     const tokens = Lexer.from(payload);
     const ast = AST.from(tokens);
 
-    const snapUrl = new URL(
-        "snaps/ast.spec.mts/Parse_ICS_officeholidays_FIle.snap",
-        import.meta.url
-    );
-
-    if (SNAP_WRITE)
-        await writeFile(
-            snapUrl,
-            inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
-            "utf-8"
-        );
-    equal(
-        inspect(ast, { depth: Infinity, maxArrayLength: Infinity }),
-        await readFile(snapUrl, "utf-8")
-    );
+    await snap("Parse_ICS_officeholidays_FIle").assertSnapOf(ast);
 });

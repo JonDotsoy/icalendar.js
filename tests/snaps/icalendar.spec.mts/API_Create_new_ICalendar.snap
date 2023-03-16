@@ -1,0 +1,5 @@
+ICalendar {
+  kind: 'VCALENDAR',
+  properties: Map(0) {},
+  components: Set(0) {}
+}
