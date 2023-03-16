@@ -53,6 +53,8 @@
     },
     "keywords": [
         "icalendar",
-        "ics"
+        "ics",
+        "RFC2445",
+        "RFC5545"
     ]
 }
