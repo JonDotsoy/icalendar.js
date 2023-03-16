@@ -50,5 +50,9 @@
     "license": "MIT",
     "lint-staged": {
         "*.{mts,json,md}": "prettier --write"
-    }
+    },
+    "keywords": [
+        "icalendar",
+        "ics"
+    ]
 }
