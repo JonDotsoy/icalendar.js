@@ -1,0 +1,43 @@
+{
+  kind: 'Module',
+  nodes: [
+    {
+      kind: 'VComponent',
+      componentKind: 'VCALENDAR',
+      nodes: [
+        {
+          kind: 'PropertyParameter',
+          altRepNodes: [],
+          span: {
+            start: { pos: 17, line: 2, col: 2 },
+            end: { pos: 69, line: 3, col: 47 }
+          },
+          name: {
+            kind: 'PropertyParameterName',
+            span: {
+              start: { pos: 17, line: 2, col: 2 },
+              end: { pos: 26, line: 3, col: 4 }
+            },
+            value: 'PRODID'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: {
+              start: { pos: 27, line: 3, col: 5 },
+              end: { pos: 69, line: 3, col: 47 }
+            },
+            value: '-//Google Inc//Google Calendar 70.9054//EN'
+          }
+        }
+      ],
+      span: {
+        start: { pos: 0, line: 1, col: 1 },
+        end: { pos: 71, line: 4, col: 2 }
+      }
+    }
+  ],
+  span: {
+    start: { pos: 0, line: 1, col: 1 },
+    end: { pos: 71, line: 4, col: 2 }
+  }
+}

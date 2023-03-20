@@ -1,0 +1,1092 @@
+'{\n' +
+  '  "tokens": [\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 0,\n' +
+  '          "line": 1,\n' +
+  '          "col": 1\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 4,\n' +
+  '          "line": 1,\n' +
+  '          "col": 5\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "BEGI"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "latinCapitalLetterN",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 4,\n' +
+  '          "line": 1,\n' +
+  '          "col": 5\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 5,\n' +
+  '          "line": 1,\n' +
+  '          "col": 6\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "N"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "colon",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 5,\n' +
+  '          "line": 1,\n' +
+  '          "col": 6\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 6,\n' +
+  '          "line": 1,\n' +
+  '          "col": 7\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": ":"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 6,\n' +
+  '          "line": 1,\n' +
+  '          "col": 7\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 11,\n' +
+  '          "line": 1,\n' +
+  '          "col": 12\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "VCALE"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "latinCapitalLetterN",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 11,\n' +
+  '          "line": 1,\n' +
+  '          "col": 12\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 12,\n' +
+  '          "line": 1,\n' +
+  '          "col": 13\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "N"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 12,\n' +
+  '          "line": 1,\n' +
+  '          "col": 13\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 15,\n' +
+  '          "line": 1,\n' +
+  '          "col": 16\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "DAR"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "crlf",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 15,\n' +
+  '          "line": 1,\n' +
+  '          "col": 16\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 17,\n' +
+  '          "line": 2,\n' +
+  '          "col": 2\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "\\r\\n"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "semicolon",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 17,\n' +
+  '          "line": 2,\n' +
+  '          "col": 2\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 18,\n' +
+  '          "line": 2,\n' +
+  '          "col": 3\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": ";"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "space",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 18,\n' +
+  '          "line": 2,\n' +
+  '          "col": 3\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 19,\n' +
+  '          "line": 2,\n' +
+  '          "col": 4\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": " "\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 19,\n' +
+  '          "line": 2,\n' +
+  '          "col": 4\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 22,\n' +
+  '          "line": 2,\n' +
+  '          "col": 7\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "ABC"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "semicolon",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 22,\n' +
+  '          "line": 2,\n' +
+  '          "col": 7\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 23,\n' +
+  '          "line": 2,\n' +
+  '          "col": 8\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": ";"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 23,\n' +
+  '          "line": 2,\n' +
+  '          "col": 8\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 24,\n' +
+  '          "line": 2,\n' +
+  '          "col": 9\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "A"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "equalSign",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 24,\n' +
+  '          "line": 2,\n' +
+  '          "col": 9\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 25,\n' +
+  '          "line": 2,\n' +
+  '          "col": 10\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "="\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 25,\n' +
+  '          "line": 2,\n' +
+  '          "col": 10\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 27,\n' +
+  '          "line": 2,\n' +
+  '          "col": 12\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "sd"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "dobleQuote",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 27,\n' +
+  '          "line": 2,\n' +
+  '          "col": 12\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 28,\n' +
+  '          "line": 2,\n' +
+  '          "col": 13\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "\\""\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 28,\n' +
+  '          "line": 2,\n' +
+  '          "col": 13\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 31,\n' +
+  '          "line": 2,\n' +
+  '          "col": 16\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "asd"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "backslash",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 31,\n' +
+  '          "line": 2,\n' +
+  '          "col": 16\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 32,\n' +
+  '          "line": 2,\n' +
+  '          "col": 17\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "\\\\"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "dobleQuote",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 32,\n' +
+  '          "line": 2,\n' +
+  '          "col": 17\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 33,\n' +
+  '          "line": 2,\n' +
+  '          "col": 18\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "\\""\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 33,\n' +
+  '          "line": 2,\n' +
+  '          "col": 18\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 36,\n' +
+  '          "line": 2,\n' +
+  '          "col": 21\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "fgh"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "dobleQuote",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 36,\n' +
+  '          "line": 2,\n' +
+  '          "col": 21\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 37,\n' +
+  '          "line": 2,\n' +
+  '          "col": 22\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "\\""\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "colon",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 37,\n' +
+  '          "line": 2,\n' +
+  '          "col": 22\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 38,\n' +
+  '          "line": 2,\n' +
+  '          "col": 23\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": ":"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 38,\n' +
+  '          "line": 2,\n' +
+  '          "col": 23\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 41,\n' +
+  '          "line": 2,\n' +
+  '          "col": 26\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "123"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "crlf",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 41,\n' +
+  '          "line": 2,\n' +
+  '          "col": 26\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 43,\n' +
+  '          "line": 3,\n' +
+  '          "col": 2\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "\\r\\n"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "semicolon",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 43,\n' +
+  '          "line": 3,\n' +
+  '          "col": 2\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 44,\n' +
+  '          "line": 3,\n' +
+  '          "col": 3\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": ";"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "space",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 44,\n' +
+  '          "line": 3,\n' +
+  '          "col": 3\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 45,\n' +
+  '          "line": 3,\n' +
+  '          "col": 4\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": " "\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 45,\n' +
+  '          "line": 3,\n' +
+  '          "col": 4\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 49,\n' +
+  '          "line": 3,\n' +
+  '          "col": 8\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "BEGI"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "latinCapitalLetterN",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 49,\n' +
+  '          "line": 3,\n' +
+  '          "col": 8\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 50,\n' +
+  '          "line": 3,\n' +
+  '          "col": 9\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "N"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "colon",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 50,\n' +
+  '          "line": 3,\n' +
+  '          "col": 9\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 51,\n' +
+  '          "line": 3,\n' +
+  '          "col": 10\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": ":"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 51,\n' +
+  '          "line": 3,\n' +
+  '          "col": 10\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 56,\n' +
+  '          "line": 3,\n' +
+  '          "col": 15\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "VCALE"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "latinCapitalLetterN",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 56,\n' +
+  '          "line": 3,\n' +
+  '          "col": 15\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 57,\n' +
+  '          "line": 3,\n' +
+  '          "col": 16\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "N"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 57,\n' +
+  '          "line": 3,\n' +
+  '          "col": 16\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 60,\n' +
+  '          "line": 3,\n' +
+  '          "col": 19\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "DAR"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "crlf",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 60,\n' +
+  '          "line": 3,\n' +
+  '          "col": 19\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 62,\n' +
+  '          "line": 4,\n' +
+  '          "col": 2\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "\\r\\n"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "semicolon",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 62,\n' +
+  '          "line": 4,\n' +
+  '          "col": 2\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 63,\n' +
+  '          "line": 4,\n' +
+  '          "col": 3\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": ";"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "space",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 63,\n' +
+  '          "line": 4,\n' +
+  '          "col": 3\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 64,\n' +
+  '          "line": 4,\n' +
+  '          "col": 4\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": " "\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 64,\n' +
+  '          "line": 4,\n' +
+  '          "col": 4\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 70,\n' +
+  '          "line": 4,\n' +
+  '          "col": 10\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "PRODID"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "colon",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 70,\n' +
+  '          "line": 4,\n' +
+  '          "col": 10\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 71,\n' +
+  '          "line": 4,\n' +
+  '          "col": 11\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": ":"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "hyphenMinus",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 71,\n' +
+  '          "line": 4,\n' +
+  '          "col": 11\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 72,\n' +
+  '          "line": 4,\n' +
+  '          "col": 12\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "-"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "solidus",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 72,\n' +
+  '          "line": 4,\n' +
+  '          "col": 12\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 73,\n' +
+  '          "line": 4,\n' +
+  '          "col": 13\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "/"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "solidus",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 73,\n' +
+  '          "line": 4,\n' +
+  '          "col": 13\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 74,\n' +
+  '          "line": 4,\n' +
+  '          "col": 14\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "/"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 74,\n' +
+  '          "line": 4,\n' +
+  '          "col": 14\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 80,\n' +
+  '          "line": 4,\n' +
+  '          "col": 20\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "Google"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "space",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 80,\n' +
+  '          "line": 4,\n' +
+  '          "col": 20\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 81,\n' +
+  '          "line": 4,\n' +
+  '          "col": 21\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": " "\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 81,\n' +
+  '          "line": 4,\n' +
+  '          "col": 21\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 82,\n' +
+  '          "line": 4,\n' +
+  '          "col": 22\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "I"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "latinSmallLetterN",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 82,\n' +
+  '          "line": 4,\n' +
+  '          "col": 22\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 83,\n' +
+  '          "line": 4,\n' +
+  '          "col": 23\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "n"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 83,\n' +
+  '          "line": 4,\n' +
+  '          "col": 23\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 84,\n' +
+  '          "line": 4,\n' +
+  '          "col": 24\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "c"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "solidus",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 84,\n' +
+  '          "line": 4,\n' +
+  '          "col": 24\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 85,\n' +
+  '          "line": 4,\n' +
+  '          "col": 25\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "/"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "solidus",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 85,\n' +
+  '          "line": 4,\n' +
+  '          "col": 25\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 86,\n' +
+  '          "line": 4,\n' +
+  '          "col": 26\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "/"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 86,\n' +
+  '          "line": 4,\n' +
+  '          "col": 26\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 92,\n' +
+  '          "line": 4,\n' +
+  '          "col": 32\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "Google"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "space",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 92,\n' +
+  '          "line": 4,\n' +
+  '          "col": 32\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 93,\n' +
+  '          "line": 4,\n' +
+  '          "col": 33\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": " "\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 93,\n' +
+  '          "line": 4,\n' +
+  '          "col": 33\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 97,\n' +
+  '          "line": 4,\n' +
+  '          "col": 37\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "Cale"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "latinSmallLetterN",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 97,\n' +
+  '          "line": 4,\n' +
+  '          "col": 37\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 98,\n' +
+  '          "line": 4,\n' +
+  '          "col": 38\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "n"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 98,\n' +
+  '          "line": 4,\n' +
+  '          "col": 38\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 101,\n' +
+  '          "line": 4,\n' +
+  '          "col": 41\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "dar"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "space",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 101,\n' +
+  '          "line": 4,\n' +
+  '          "col": 41\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 102,\n' +
+  '          "line": 4,\n' +
+  '          "col": 42\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": " "\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 102,\n' +
+  '          "line": 4,\n' +
+  '          "col": 42\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 104,\n' +
+  '          "line": 4,\n' +
+  '          "col": 44\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "70"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "period",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 104,\n' +
+  '          "line": 4,\n' +
+  '          "col": 44\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 105,\n' +
+  '          "line": 4,\n' +
+  '          "col": 45\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "."\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 105,\n' +
+  '          "line": 4,\n' +
+  '          "col": 45\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 109,\n' +
+  '          "line": 4,\n' +
+  '          "col": 49\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "9054"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "solidus",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 109,\n' +
+  '          "line": 4,\n' +
+  '          "col": 49\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 110,\n' +
+  '          "line": 4,\n' +
+  '          "col": 50\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "/"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "solidus",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 110,\n' +
+  '          "line": 4,\n' +
+  '          "col": 50\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 111,\n' +
+  '          "line": 4,\n' +
+  '          "col": 51\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "/"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 111,\n' +
+  '          "line": 4,\n' +
+  '          "col": 51\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 112,\n' +
+  '          "line": 4,\n' +
+  '          "col": 52\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "E"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "latinCapitalLetterN",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 112,\n' +
+  '          "line": 4,\n' +
+  '          "col": 52\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 113,\n' +
+  '          "line": 4,\n' +
+  '          "col": 53\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "N"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "crlf",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 113,\n' +
+  '          "line": 4,\n' +
+  '          "col": 53\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 115,\n' +
+  '          "line": 5,\n' +
+  '          "col": 2\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "\\r\\n"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 115,\n' +
+  '          "line": 5,\n' +
+  '          "col": 2\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 116,\n' +
+  '          "line": 5,\n' +
+  '          "col": 3\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "E"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "latinCapitalLetterN",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 116,\n' +
+  '          "line": 5,\n' +
+  '          "col": 3\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 117,\n' +
+  '          "line": 5,\n' +
+  '          "col": 4\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "N"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 117,\n' +
+  '          "line": 5,\n' +
+  '          "col": 4\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 118,\n' +
+  '          "line": 5,\n' +
+  '          "col": 5\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "D"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "colon",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 118,\n' +
+  '          "line": 5,\n' +
+  '          "col": 5\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 119,\n' +
+  '          "line": 5,\n' +
+  '          "col": 6\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": ":"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 119,\n' +
+  '          "line": 5,\n' +
+  '          "col": 6\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 124,\n' +
+  '          "line": 5,\n' +
+  '          "col": 11\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "VCALE"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "latinCapitalLetterN",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 124,\n' +
+  '          "line": 5,\n' +
+  '          "col": 11\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 125,\n' +
+  '          "line": 5,\n' +
+  '          "col": 12\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "N"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "word",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 125,\n' +
+  '          "line": 5,\n' +
+  '          "col": 12\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 128,\n' +
+  '          "line": 5,\n' +
+  '          "col": 15\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "DAR"\n' +
+  '    },\n' +
+  '    {\n' +
+  '      "kind": "crlf",\n' +
+  '      "span": {\n' +
+  '        "start": {\n' +
+  '          "pos": 128,\n' +
+  '          "line": 5,\n' +
+  '          "col": 15\n' +
+  '        },\n' +
+  '        "end": {\n' +
+  '          "pos": 130,\n' +
+  '          "line": 6,\n' +
+  '          "col": 1\n' +
+  '        }\n' +
+  '      },\n' +
+  '      "debug": "\\r\\n"\n' +
+  '    }\n' +
+  '  ]\n' +
+  '}'

@@ -1,0 +1,53 @@
+{
+  kind: 'Module',
+  nodes: [
+    {
+      kind: 'VComponent',
+      componentKind: 'VCALENDAR',
+      nodes: [
+        {
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 31, line: 3, col: 2 },
+                end: { pos: 45, line: 4, col: 2 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 31, line: 3, col: 2 },
+                  end: { pos: 42, line: 3, col: 13 }
+                },
+                value: 'DESCRIPTION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 45, line: 4, col: 2 },
+                  end: { pos: 45, line: 4, col: 2 }
+                },
+                value: ''
+              }
+            }
+          ],
+          span: {
+            start: { pos: 17, line: 2, col: 2 },
+            end: { pos: 45, line: 4, col: 2 }
+          }
+        }
+      ],
+      span: {
+        start: { pos: 0, line: 1, col: 1 },
+        end: { pos: 57, line: 5, col: 2 }
+      }
+    }
+  ],
+  span: {
+    start: { pos: 0, line: 1, col: 1 },
+    end: { pos: 57, line: 5, col: 2 }
+  }
+}

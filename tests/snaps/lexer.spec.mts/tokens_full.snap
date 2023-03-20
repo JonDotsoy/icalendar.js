@@ -1,0 +1,548 @@
+TokenList {
+  tokens: [
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 0, line: 1, col: 1 },
+        end: { pos: 4, line: 1, col: 5 }
+      },
+      debug: 'BEGI'
+    },
+    Token {
+      kind: 'latinCapitalLetterN',
+      span: {
+        start: { pos: 4, line: 1, col: 5 },
+        end: { pos: 5, line: 1, col: 6 }
+      },
+      debug: 'N'
+    },
+    Token {
+      kind: 'colon',
+      span: {
+        start: { pos: 5, line: 1, col: 6 },
+        end: { pos: 6, line: 1, col: 7 }
+      },
+      debug: ':'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 6, line: 1, col: 7 },
+        end: { pos: 11, line: 1, col: 12 }
+      },
+      debug: 'VCALE'
+    },
+    Token {
+      kind: 'latinCapitalLetterN',
+      span: {
+        start: { pos: 11, line: 1, col: 12 },
+        end: { pos: 12, line: 1, col: 13 }
+      },
+      debug: 'N'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 12, line: 1, col: 13 },
+        end: { pos: 15, line: 1, col: 16 }
+      },
+      debug: 'DAR'
+    },
+    Token {
+      kind: 'crlf',
+      span: {
+        start: { pos: 15, line: 1, col: 16 },
+        end: { pos: 17, line: 2, col: 2 }
+      },
+      debug: '\r\n'
+    },
+    Token {
+      kind: 'semicolon',
+      span: {
+        start: { pos: 17, line: 2, col: 2 },
+        end: { pos: 18, line: 2, col: 3 }
+      },
+      debug: ';'
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 18, line: 2, col: 3 },
+        end: { pos: 19, line: 2, col: 4 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 19, line: 2, col: 4 },
+        end: { pos: 22, line: 2, col: 7 }
+      },
+      debug: 'ABC'
+    },
+    Token {
+      kind: 'semicolon',
+      span: {
+        start: { pos: 22, line: 2, col: 7 },
+        end: { pos: 23, line: 2, col: 8 }
+      },
+      debug: ';'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 23, line: 2, col: 8 },
+        end: { pos: 24, line: 2, col: 9 }
+      },
+      debug: 'A'
+    },
+    Token {
+      kind: 'equalSign',
+      span: {
+        start: { pos: 24, line: 2, col: 9 },
+        end: { pos: 25, line: 2, col: 10 }
+      },
+      debug: '='
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 25, line: 2, col: 10 },
+        end: { pos: 27, line: 2, col: 12 }
+      },
+      debug: 'sd'
+    },
+    Token {
+      kind: 'dobleQuote',
+      span: {
+        start: { pos: 27, line: 2, col: 12 },
+        end: { pos: 28, line: 2, col: 13 }
+      },
+      debug: '"'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 28, line: 2, col: 13 },
+        end: { pos: 31, line: 2, col: 16 }
+      },
+      debug: 'asd'
+    },
+    Token {
+      kind: 'backslash',
+      span: {
+        start: { pos: 31, line: 2, col: 16 },
+        end: { pos: 32, line: 2, col: 17 }
+      },
+      debug: '\\'
+    },
+    Token {
+      kind: 'dobleQuote',
+      span: {
+        start: { pos: 32, line: 2, col: 17 },
+        end: { pos: 33, line: 2, col: 18 }
+      },
+      debug: '"'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 33, line: 2, col: 18 },
+        end: { pos: 36, line: 2, col: 21 }
+      },
+      debug: 'fgh'
+    },
+    Token {
+      kind: 'dobleQuote',
+      span: {
+        start: { pos: 36, line: 2, col: 21 },
+        end: { pos: 37, line: 2, col: 22 }
+      },
+      debug: '"'
+    },
+    Token {
+      kind: 'colon',
+      span: {
+        start: { pos: 37, line: 2, col: 22 },
+        end: { pos: 38, line: 2, col: 23 }
+      },
+      debug: ':'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 38, line: 2, col: 23 },
+        end: { pos: 41, line: 2, col: 26 }
+      },
+      debug: '123'
+    },
+    Token {
+      kind: 'crlf',
+      span: {
+        start: { pos: 41, line: 2, col: 26 },
+        end: { pos: 43, line: 3, col: 2 }
+      },
+      debug: '\r\n'
+    },
+    Token {
+      kind: 'semicolon',
+      span: {
+        start: { pos: 43, line: 3, col: 2 },
+        end: { pos: 44, line: 3, col: 3 }
+      },
+      debug: ';'
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 44, line: 3, col: 3 },
+        end: { pos: 45, line: 3, col: 4 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 45, line: 3, col: 4 },
+        end: { pos: 49, line: 3, col: 8 }
+      },
+      debug: 'BEGI'
+    },
+    Token {
+      kind: 'latinCapitalLetterN',
+      span: {
+        start: { pos: 49, line: 3, col: 8 },
+        end: { pos: 50, line: 3, col: 9 }
+      },
+      debug: 'N'
+    },
+    Token {
+      kind: 'colon',
+      span: {
+        start: { pos: 50, line: 3, col: 9 },
+        end: { pos: 51, line: 3, col: 10 }
+      },
+      debug: ':'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 51, line: 3, col: 10 },
+        end: { pos: 56, line: 3, col: 15 }
+      },
+      debug: 'VCALE'
+    },
+    Token {
+      kind: 'latinCapitalLetterN',
+      span: {
+        start: { pos: 56, line: 3, col: 15 },
+        end: { pos: 57, line: 3, col: 16 }
+      },
+      debug: 'N'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 57, line: 3, col: 16 },
+        end: { pos: 60, line: 3, col: 19 }
+      },
+      debug: 'DAR'
+    },
+    Token {
+      kind: 'crlf',
+      span: {
+        start: { pos: 60, line: 3, col: 19 },
+        end: { pos: 62, line: 4, col: 2 }
+      },
+      debug: '\r\n'
+    },
+    Token {
+      kind: 'semicolon',
+      span: {
+        start: { pos: 62, line: 4, col: 2 },
+        end: { pos: 63, line: 4, col: 3 }
+      },
+      debug: ';'
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 63, line: 4, col: 3 },
+        end: { pos: 64, line: 4, col: 4 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 64, line: 4, col: 4 },
+        end: { pos: 70, line: 4, col: 10 }
+      },
+      debug: 'PRODID'
+    },
+    Token {
+      kind: 'colon',
+      span: {
+        start: { pos: 70, line: 4, col: 10 },
+        end: { pos: 71, line: 4, col: 11 }
+      },
+      debug: ':'
+    },
+    Token {
+      kind: 'hyphenMinus',
+      span: {
+        start: { pos: 71, line: 4, col: 11 },
+        end: { pos: 72, line: 4, col: 12 }
+      },
+      debug: '-'
+    },
+    Token {
+      kind: 'solidus',
+      span: {
+        start: { pos: 72, line: 4, col: 12 },
+        end: { pos: 73, line: 4, col: 13 }
+      },
+      debug: '/'
+    },
+    Token {
+      kind: 'solidus',
+      span: {
+        start: { pos: 73, line: 4, col: 13 },
+        end: { pos: 74, line: 4, col: 14 }
+      },
+      debug: '/'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 74, line: 4, col: 14 },
+        end: { pos: 80, line: 4, col: 20 }
+      },
+      debug: 'Google'
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 80, line: 4, col: 20 },
+        end: { pos: 81, line: 4, col: 21 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 81, line: 4, col: 21 },
+        end: { pos: 82, line: 4, col: 22 }
+      },
+      debug: 'I'
+    },
+    Token {
+      kind: 'latinSmallLetterN',
+      span: {
+        start: { pos: 82, line: 4, col: 22 },
+        end: { pos: 83, line: 4, col: 23 }
+      },
+      debug: 'n'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 83, line: 4, col: 23 },
+        end: { pos: 84, line: 4, col: 24 }
+      },
+      debug: 'c'
+    },
+    Token {
+      kind: 'solidus',
+      span: {
+        start: { pos: 84, line: 4, col: 24 },
+        end: { pos: 85, line: 4, col: 25 }
+      },
+      debug: '/'
+    },
+    Token {
+      kind: 'solidus',
+      span: {
+        start: { pos: 85, line: 4, col: 25 },
+        end: { pos: 86, line: 4, col: 26 }
+      },
+      debug: '/'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 86, line: 4, col: 26 },
+        end: { pos: 92, line: 4, col: 32 }
+      },
+      debug: 'Google'
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 92, line: 4, col: 32 },
+        end: { pos: 93, line: 4, col: 33 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 93, line: 4, col: 33 },
+        end: { pos: 97, line: 4, col: 37 }
+      },
+      debug: 'Cale'
+    },
+    Token {
+      kind: 'latinSmallLetterN',
+      span: {
+        start: { pos: 97, line: 4, col: 37 },
+        end: { pos: 98, line: 4, col: 38 }
+      },
+      debug: 'n'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 98, line: 4, col: 38 },
+        end: { pos: 101, line: 4, col: 41 }
+      },
+      debug: 'dar'
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 101, line: 4, col: 41 },
+        end: { pos: 102, line: 4, col: 42 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 102, line: 4, col: 42 },
+        end: { pos: 104, line: 4, col: 44 }
+      },
+      debug: '70'
+    },
+    Token {
+      kind: 'period',
+      span: {
+        start: { pos: 104, line: 4, col: 44 },
+        end: { pos: 105, line: 4, col: 45 }
+      },
+      debug: '.'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 105, line: 4, col: 45 },
+        end: { pos: 109, line: 4, col: 49 }
+      },
+      debug: '9054'
+    },
+    Token {
+      kind: 'solidus',
+      span: {
+        start: { pos: 109, line: 4, col: 49 },
+        end: { pos: 110, line: 4, col: 50 }
+      },
+      debug: '/'
+    },
+    Token {
+      kind: 'solidus',
+      span: {
+        start: { pos: 110, line: 4, col: 50 },
+        end: { pos: 111, line: 4, col: 51 }
+      },
+      debug: '/'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 111, line: 4, col: 51 },
+        end: { pos: 112, line: 4, col: 52 }
+      },
+      debug: 'E'
+    },
+    Token {
+      kind: 'latinCapitalLetterN',
+      span: {
+        start: { pos: 112, line: 4, col: 52 },
+        end: { pos: 113, line: 4, col: 53 }
+      },
+      debug: 'N'
+    },
+    Token {
+      kind: 'crlf',
+      span: {
+        start: { pos: 113, line: 4, col: 53 },
+        end: { pos: 115, line: 5, col: 2 }
+      },
+      debug: '\r\n'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 115, line: 5, col: 2 },
+        end: { pos: 116, line: 5, col: 3 }
+      },
+      debug: 'E'
+    },
+    Token {
+      kind: 'latinCapitalLetterN',
+      span: {
+        start: { pos: 116, line: 5, col: 3 },
+        end: { pos: 117, line: 5, col: 4 }
+      },
+      debug: 'N'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 117, line: 5, col: 4 },
+        end: { pos: 118, line: 5, col: 5 }
+      },
+      debug: 'D'
+    },
+    Token {
+      kind: 'colon',
+      span: {
+        start: { pos: 118, line: 5, col: 5 },
+        end: { pos: 119, line: 5, col: 6 }
+      },
+      debug: ':'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 119, line: 5, col: 6 },
+        end: { pos: 124, line: 5, col: 11 }
+      },
+      debug: 'VCALE'
+    },
+    Token {
+      kind: 'latinCapitalLetterN',
+      span: {
+        start: { pos: 124, line: 5, col: 11 },
+        end: { pos: 125, line: 5, col: 12 }
+      },
+      debug: 'N'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 125, line: 5, col: 12 },
+        end: { pos: 128, line: 5, col: 15 }
+      },
+      debug: 'DAR'
+    },
+    Token {
+      kind: 'crlf',
+      span: {
+        start: { pos: 128, line: 5, col: 15 },
+        end: { pos: 130, line: 6, col: 1 }
+      },
+      debug: '\r\n'
+    }
+  ]
+}

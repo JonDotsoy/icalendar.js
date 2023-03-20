@@ -1,0 +1,461 @@
+{
+  kind: 'Module',
+  nodes: [
+    {
+      kind: 'VComponent',
+      componentKind: 'VCALENDAR',
+      nodes: [
+        {
+          kind: 'PropertyParameter',
+          altRepNodes: [],
+          span: {
+            start: { pos: 17, line: 2, col: 2 },
+            end: { pos: 28, line: 2, col: 13 }
+          },
+          name: {
+            kind: 'PropertyParameterName',
+            span: {
+              start: { pos: 17, line: 2, col: 2 },
+              end: { pos: 24, line: 2, col: 9 }
+            },
+            value: 'VERSION'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: {
+              start: { pos: 25, line: 2, col: 10 },
+              end: { pos: 28, line: 2, col: 13 }
+            },
+            value: '2.0'
+          }
+        },
+        {
+          kind: 'PropertyParameter',
+          altRepNodes: [],
+          span: {
+            start: { pos: 30, line: 3, col: 2 },
+            end: { pos: 74, line: 3, col: 46 }
+          },
+          name: {
+            kind: 'PropertyParameterName',
+            span: {
+              start: { pos: 30, line: 3, col: 2 },
+              end: { pos: 36, line: 3, col: 8 }
+            },
+            value: 'PRODID'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: {
+              start: { pos: 37, line: 3, col: 9 },
+              end: { pos: 74, line: 3, col: 46 }
+            },
+            value: '-//ZContent.net//Zap Calendar 1.0//EN'
+          }
+        },
+        {
+          kind: 'PropertyParameter',
+          altRepNodes: [],
+          span: {
+            start: { pos: 76, line: 4, col: 2 },
+            end: { pos: 94, line: 4, col: 20 }
+          },
+          name: {
+            kind: 'PropertyParameterName',
+            span: {
+              start: { pos: 76, line: 4, col: 2 },
+              end: { pos: 84, line: 4, col: 10 }
+            },
+            value: 'CALSCALE'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: {
+              start: { pos: 85, line: 4, col: 11 },
+              end: { pos: 94, line: 4, col: 20 }
+            },
+            value: 'GREGORIAN'
+          }
+        },
+        {
+          kind: 'PropertyParameter',
+          altRepNodes: [],
+          span: {
+            start: { pos: 96, line: 5, col: 2 },
+            end: { pos: 110, line: 5, col: 16 }
+          },
+          name: {
+            kind: 'PropertyParameterName',
+            span: {
+              start: { pos: 96, line: 5, col: 2 },
+              end: { pos: 102, line: 5, col: 8 }
+            },
+            value: 'METHOD'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: {
+              start: { pos: 103, line: 5, col: 9 },
+              end: { pos: 110, line: 5, col: 16 }
+            },
+            value: 'PUBLISH'
+          }
+        },
+        {
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 126, line: 7, col: 2 },
+                end: { pos: 149, line: 7, col: 25 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 126, line: 7, col: 2 },
+                  end: { pos: 133, line: 7, col: 9 }
+                },
+                value: 'SUMMARY'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 134, line: 7, col: 10 },
+                  end: { pos: 149, line: 7, col: 25 }
+                },
+                value: 'Abraham Lincoln'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 151, line: 8, col: 2 },
+                end: { pos: 191, line: 8, col: 42 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 151, line: 8, col: 2 },
+                  end: { pos: 154, line: 8, col: 5 }
+                },
+                value: 'UID'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 155, line: 8, col: 6 },
+                  end: { pos: 191, line: 8, col: 42 }
+                },
+                value: 'c7614cff-3549-4a00-9152-d25cc1fe077d'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 193, line: 9, col: 2 },
+                end: { pos: 203, line: 9, col: 12 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 193, line: 9, col: 2 },
+                  end: { pos: 201, line: 9, col: 10 }
+                },
+                value: 'SEQUENCE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 202, line: 9, col: 11 },
+                  end: { pos: 203, line: 9, col: 12 }
+                },
+                value: '0'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 205, line: 10, col: 2 },
+                end: { pos: 221, line: 10, col: 18 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 205, line: 10, col: 2 },
+                  end: { pos: 211, line: 10, col: 8 }
+                },
+                value: 'STATUS'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 212, line: 10, col: 9 },
+                  end: { pos: 221, line: 10, col: 18 }
+                },
+                value: 'CONFIRMED'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 223, line: 11, col: 2 },
+                end: { pos: 241, line: 11, col: 20 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 223, line: 11, col: 2 },
+                  end: { pos: 229, line: 11, col: 8 }
+                },
+                value: 'TRANSP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 230, line: 11, col: 9 },
+                  end: { pos: 241, line: 11, col: 20 }
+                },
+                value: 'TRANSPARENT'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 243, line: 12, col: 2 },
+                end: { pos: 295, line: 12, col: 54 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 243, line: 12, col: 2 },
+                  end: { pos: 248, line: 12, col: 7 }
+                },
+                value: 'RRULE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 249, line: 12, col: 8 },
+                  end: { pos: 295, line: 12, col: 54 }
+                },
+                value: 'FREQ=YEARLY;INTERVAL=1;BYMONTH=2;BYMONTHDAY=12'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 297, line: 13, col: 2 },
+                end: { pos: 313, line: 13, col: 18 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 297, line: 13, col: 2 },
+                  end: { pos: 304, line: 13, col: 9 }
+                },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 305, line: 13, col: 10 },
+                  end: { pos: 313, line: 13, col: 18 }
+                },
+                value: '20080212'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 315, line: 14, col: 2 },
+                end: { pos: 329, line: 14, col: 16 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 315, line: 14, col: 2 },
+                  end: { pos: 320, line: 14, col: 7 }
+                },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 321, line: 14, col: 8 },
+                  end: { pos: 329, line: 14, col: 16 }
+                },
+                value: '20080213'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 331, line: 15, col: 2 },
+                end: { pos: 354, line: 15, col: 25 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 331, line: 15, col: 2 },
+                  end: { pos: 338, line: 15, col: 9 }
+                },
+                value: 'DTSTAMP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 339, line: 15, col: 10 },
+                  end: { pos: 354, line: 15, col: 25 }
+                },
+                value: '20150421T141403'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 356, line: 16, col: 2 },
+                end: { pos: 399, line: 16, col: 45 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 356, line: 16, col: 2 },
+                  end: { pos: 366, line: 16, col: 12 }
+                },
+                value: 'CATEGORIES'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 367, line: 16, col: 13 },
+                  end: { pos: 399, line: 16, col: 45 }
+                },
+                value: 'U.S. Presidents,Civil War People'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 401, line: 17, col: 2 },
+                end: { pos: 432, line: 17, col: 33 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 401, line: 17, col: 2 },
+                  end: { pos: 409, line: 17, col: 10 }
+                },
+                value: 'LOCATION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 410, line: 17, col: 11 },
+                  end: { pos: 432, line: 17, col: 33 }
+                },
+                value: 'Hodgenville\\, Kentucky'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 434, line: 18, col: 2 },
+                end: { pos: 460, line: 18, col: 28 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 434, line: 18, col: 2 },
+                  end: { pos: 437, line: 18, col: 5 }
+                },
+                value: 'GEO'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 438, line: 18, col: 6 },
+                  end: { pos: 460, line: 18, col: 28 }
+                },
+                value: '37.5739497;-85.7399606'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 462, line: 19, col: 2 },
+                end: { pos: 575, line: 20, col: 39 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 462, line: 19, col: 2 },
+                  end: { pos: 473, line: 19, col: 13 }
+                },
+                value: 'DESCRIPTION'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 474, line: 19, col: 14 },
+                  end: { pos: 575, line: 20, col: 39 }
+                },
+                value: 'Born February 12\\, 1809\\nSixteenth President (1861-1865)\\n\\n\\n\\nhttp://AmericanHistoryCalendar.com'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 577, line: 21, col: 2 },
+                end: { pos: 655, line: 22, col: 4 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 577, line: 21, col: 2 },
+                  end: { pos: 580, line: 21, col: 5 }
+                },
+                value: 'URL'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 581, line: 21, col: 6 },
+                  end: { pos: 655, line: 22, col: 4 }
+                },
+                value: 'http://americanhistorycalendar.com/peoplecalendar/1,328-abraham-lincoln'
+              }
+            }
+          ],
+          span: {
+            start: { pos: 112, line: 6, col: 2 },
+            end: { pos: 657, line: 23, col: 2 }
+          }
+        }
+      ],
+      span: {
+        start: { pos: 0, line: 1, col: 1 },
+        end: { pos: 669, line: 24, col: 2 }
+      }
+    }
+  ],
+  span: {
+    start: { pos: 0, line: 1, col: 1 },
+    end: { pos: 669, line: 24, col: 2 }
+  }
+}

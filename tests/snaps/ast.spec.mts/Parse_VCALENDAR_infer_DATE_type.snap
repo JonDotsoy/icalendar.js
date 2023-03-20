@@ -1,0 +1,43 @@
+{
+  kind: 'Module',
+  nodes: [
+    {
+      kind: 'VComponent',
+      componentKind: 'VCALENDAR',
+      nodes: [
+        {
+          kind: 'PropertyParameter',
+          altRepNodes: [],
+          span: {
+            start: { pos: 17, line: 2, col: 2 },
+            end: { pos: 41, line: 2, col: 26 }
+          },
+          name: {
+            kind: 'PropertyParameterName',
+            span: {
+              start: { pos: 17, line: 2, col: 2 },
+              end: { pos: 24, line: 2, col: 9 }
+            },
+            value: 'DTSTAMP'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: {
+              start: { pos: 25, line: 2, col: 10 },
+              end: { pos: 41, line: 2, col: 26 }
+            },
+            value: '20230313T185621Z'
+          }
+        }
+      ],
+      span: {
+        start: { pos: 0, line: 1, col: 1 },
+        end: { pos: 43, line: 3, col: 2 }
+      }
+    }
+  ],
+  span: {
+    start: { pos: 0, line: 1, col: 1 },
+    end: { pos: 43, line: 3, col: 2 }
+  }
+}

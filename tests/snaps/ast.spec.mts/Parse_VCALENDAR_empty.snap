@@ -1,0 +1,18 @@
+{
+  kind: 'Module',
+  nodes: [
+    {
+      kind: 'VComponent',
+      componentKind: 'VCALENDAR',
+      nodes: [],
+      span: {
+        start: { pos: 0, line: 1, col: 1 },
+        end: { pos: 17, line: 2, col: 2 }
+      }
+    }
+  ],
+  span: {
+    start: { pos: 0, line: 1, col: 1 },
+    end: { pos: 17, line: 2, col: 2 }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  kind: 'Module',
+  nodes: [
+    {
+      kind: 'VComponent',
+      componentKind: 'VCALENDAR',
+      nodes: [
+        {
+          kind: 'PropertyParameter',
+          altRepNodes: [],
+          span: {
+            start: { pos: 17, line: 2, col: 2 },
+            end: { pos: 66, line: 2, col: 51 }
+          },
+          name: {
+            kind: 'PropertyParameterName',
+            span: {
+              start: { pos: 17, line: 2, col: 2 },
+              end: { pos: 23, line: 2, col: 8 }
+            },
+            value: 'PRODID'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: {
+              start: { pos: 24, line: 2, col: 9 },
+              end: { pos: 66, line: 2, col: 51 }
+            },
+            value: '-//Google Inc//Google Calendar 70.9054//EN'
+          }
+        },
+        {
+          kind: 'PropertyParameter',
+          altRepNodes: [],
+          span: {
+            start: { pos: 68, line: 3, col: 2 },
+            end: { pos: 79, line: 3, col: 13 }
+          },
+          name: {
+            kind: 'PropertyParameterName',
+            span: {
+              start: { pos: 68, line: 3, col: 2 },
+              end: { pos: 75, line: 3, col: 9 }
+            },
+            value: 'VERSION'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: {
+              start: { pos: 76, line: 3, col: 10 },
+              end: { pos: 79, line: 3, col: 13 }
+            },
+            value: '2.0'
+          }
+        },
+        {
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: {
+                    start: { pos: 103, line: 5, col: 10 },
+                    end: { pos: 113, line: 5, col: 20 }
+                  },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: {
+                      start: { pos: 103, line: 5, col: 10 },
+                      end: { pos: 108, line: 5, col: 15 }
+                    },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: {
+                      start: { pos: 109, line: 5, col: 16 },
+                      end: { pos: 113, line: 5, col: 20 }
+                    },
+                    value: 'DATE'
+                  }
+                }
+              ],
+              span: {
+                start: { pos: 95, line: 5, col: 2 },
+                end: { pos: 122, line: 5, col: 29 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 95, line: 5, col: 2 },
+                  end: { pos: 102, line: 5, col: 9 }
+                },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 114, line: 5, col: 21 },
+                  end: { pos: 122, line: 5, col: 29 }
+                },
+                value: '20230102'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: {
+                    start: { pos: 130, line: 6, col: 8 },
+                    end: { pos: 140, line: 6, col: 18 }
+                  },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: {
+                      start: { pos: 130, line: 6, col: 8 },
+                      end: { pos: 135, line: 6, col: 13 }
+                    },
+                    value: 'VALUE'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: {
+                      start: { pos: 136, line: 6, col: 14 },
+                      end: { pos: 140, line: 6, col: 18 }
+                    },
+                    value: 'DATE'
+                  }
+                }
+              ],
+              span: {
+                start: { pos: 124, line: 6, col: 2 },
+                end: { pos: 149, line: 6, col: 27 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 124, line: 6, col: 2 },
+                  end: { pos: 129, line: 6, col: 7 }
+                },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 141, line: 6, col: 19 },
+                  end: { pos: 149, line: 6, col: 27 }
+                },
+                value: '20230103'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 151, line: 7, col: 2 },
+                end: { pos: 175, line: 7, col: 26 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 151, line: 7, col: 2 },
+                  end: { pos: 158, line: 7, col: 9 }
+                },
+                value: 'DTSTAMP'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 159, line: 7, col: 10 },
+                  end: { pos: 175, line: 7, col: 26 }
+                },
+                value: '20230313T185621Z'
+              }
+            }
+          ],
+          span: {
+            start: { pos: 81, line: 4, col: 2 },
+            end: { pos: 177, line: 8, col: 2 }
+          }
+        }
+      ],
+      span: {
+        start: { pos: 0, line: 1, col: 1 },
+        end: { pos: 189, line: 9, col: 2 }
+      }
+    }
+  ],
+  span: {
+    start: { pos: 0, line: 1, col: 1 },
+    end: { pos: 189, line: 9, col: 2 }
+  }
+}

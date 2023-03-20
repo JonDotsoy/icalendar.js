@@ -1,62 +1,420 @@
-[
-  {
-    kind: 'keyword',
-    span: { start: 0, end: 11 },
-    raw: Uint8Array(11) [
-      68, 69, 83, 67, 82,
-      73, 80, 84, 73, 79,
-      78
-    ],
-    value: 'DESCRIPTION'
-  },
-  {
-    kind: 'semicolon',
-    span: { start: 11, end: 12 },
-    raw: Uint8Array(1) [ 59 ]
-  },
-  {
-    kind: 'keyword',
-    span: { start: 12, end: 18 },
-    raw: Uint8Array(6) [ 65, 76, 84, 82, 69, 80 ],
-    value: 'ALTREP'
-  },
-  {
-    kind: 'equal',
-    span: { start: 18, end: 19 },
-    raw: Uint8Array(1) [ 61 ]
-  },
-  {
-    kind: 'string',
-    span: { start: 19, end: 39 },
-    raw: Uint8Array(20) [
-       34, 104, 116, 116, 112,  58,
-       47,  47, 119, 119, 119,  46,
-      119, 105, 122,  46, 111, 114,
-      103,  34
-    ],
-    value: 'http://www.wiz.org'
-  },
-  {
-    kind: 'colon',
-    span: { start: 39, end: 40 },
-    raw: Uint8Array(1) [ 58 ]
-  },
-  {
-    kind: 'string_multiline',
-    span: { start: 40, end: 99 },
-    raw: Uint8Array(59) [
-       84, 104, 101,  32,  70,  97, 108, 108,  39,  57,  56,
-       32,  87, 105, 108, 100,  32,  87, 105, 122,  97, 114,
-      100, 115,  10,  32,  67, 111, 110, 102, 101, 114, 101,
-      110,  99, 101,  32,  45,  32,  45,  32,  76,  97, 115,
-       32,  86, 101, 103,  97, 115,  44,  32,  78,  86,  44,
-       32,  85,  83,  65
-    ],
-    value: "The Fall'98 Wild Wizards Conference - - Las Vegas, NV, USA"
-  },
-  {
-    kind: 'newline',
-    span: { start: 99, end: 100 },
-    raw: Uint8Array(1) [ 10 ]
-  }
-]
+TokenList {
+  tokens: [
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 0, line: 1, col: 1 },
+        end: { pos: 7, line: 1, col: 8 }
+      },
+      debug: 'DESCRIP'
+    },
+    Token {
+      kind: 'latinCapitalLetterT',
+      span: {
+        start: { pos: 7, line: 1, col: 8 },
+        end: { pos: 8, line: 1, col: 9 }
+      },
+      debug: 'T'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 8, line: 1, col: 9 },
+        end: { pos: 10, line: 1, col: 11 }
+      },
+      debug: 'IO'
+    },
+    Token {
+      kind: 'latinCapitalLetterN',
+      span: {
+        start: { pos: 10, line: 1, col: 11 },
+        end: { pos: 11, line: 1, col: 12 }
+      },
+      debug: 'N'
+    },
+    Token {
+      kind: 'semicolon',
+      span: {
+        start: { pos: 11, line: 1, col: 12 },
+        end: { pos: 12, line: 1, col: 13 }
+      },
+      debug: ';'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 12, line: 1, col: 13 },
+        end: { pos: 14, line: 1, col: 15 }
+      },
+      debug: 'AL'
+    },
+    Token {
+      kind: 'latinCapitalLetterT',
+      span: {
+        start: { pos: 14, line: 1, col: 15 },
+        end: { pos: 15, line: 1, col: 16 }
+      },
+      debug: 'T'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 15, line: 1, col: 16 },
+        end: { pos: 18, line: 1, col: 19 }
+      },
+      debug: 'REP'
+    },
+    Token {
+      kind: 'equalSign',
+      span: {
+        start: { pos: 18, line: 1, col: 19 },
+        end: { pos: 19, line: 1, col: 20 }
+      },
+      debug: '='
+    },
+    Token {
+      kind: 'dobleQuote',
+      span: {
+        start: { pos: 19, line: 1, col: 20 },
+        end: { pos: 20, line: 1, col: 21 }
+      },
+      debug: '"'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 20, line: 1, col: 21 },
+        end: { pos: 24, line: 1, col: 25 }
+      },
+      debug: 'http'
+    },
+    Token {
+      kind: 'colon',
+      span: {
+        start: { pos: 24, line: 1, col: 25 },
+        end: { pos: 25, line: 1, col: 26 }
+      },
+      debug: ':'
+    },
+    Token {
+      kind: 'solidus',
+      span: {
+        start: { pos: 25, line: 1, col: 26 },
+        end: { pos: 26, line: 1, col: 27 }
+      },
+      debug: '/'
+    },
+    Token {
+      kind: 'solidus',
+      span: {
+        start: { pos: 26, line: 1, col: 27 },
+        end: { pos: 27, line: 1, col: 28 }
+      },
+      debug: '/'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 27, line: 1, col: 28 },
+        end: { pos: 30, line: 1, col: 31 }
+      },
+      debug: 'www'
+    },
+    Token {
+      kind: 'period',
+      span: {
+        start: { pos: 30, line: 1, col: 31 },
+        end: { pos: 31, line: 1, col: 32 }
+      },
+      debug: '.'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 31, line: 1, col: 32 },
+        end: { pos: 34, line: 1, col: 35 }
+      },
+      debug: 'wiz'
+    },
+    Token {
+      kind: 'period',
+      span: {
+        start: { pos: 34, line: 1, col: 35 },
+        end: { pos: 35, line: 1, col: 36 }
+      },
+      debug: '.'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 35, line: 1, col: 36 },
+        end: { pos: 38, line: 1, col: 39 }
+      },
+      debug: 'org'
+    },
+    Token {
+      kind: 'dobleQuote',
+      span: {
+        start: { pos: 38, line: 1, col: 39 },
+        end: { pos: 39, line: 1, col: 40 }
+      },
+      debug: '"'
+    },
+    Token {
+      kind: 'colon',
+      span: {
+        start: { pos: 39, line: 1, col: 40 },
+        end: { pos: 40, line: 1, col: 41 }
+      },
+      debug: ':'
+    },
+    Token {
+      kind: 'latinCapitalLetterT',
+      span: {
+        start: { pos: 40, line: 1, col: 41 },
+        end: { pos: 41, line: 1, col: 42 }
+      },
+      debug: 'T'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 41, line: 1, col: 42 },
+        end: { pos: 43, line: 1, col: 44 }
+      },
+      debug: 'he'
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 43, line: 1, col: 44 },
+        end: { pos: 44, line: 1, col: 45 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 44, line: 1, col: 45 },
+        end: { pos: 51, line: 1, col: 52 }
+      },
+      debug: "Fall'98"
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 51, line: 1, col: 52 },
+        end: { pos: 52, line: 1, col: 53 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 52, line: 1, col: 53 },
+        end: { pos: 56, line: 1, col: 57 }
+      },
+      debug: 'Wild'
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 56, line: 1, col: 57 },
+        end: { pos: 57, line: 1, col: 58 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 57, line: 1, col: 58 },
+        end: { pos: 64, line: 2, col: 1 }
+      },
+      debug: 'Wizards'
+    },
+    Token {
+      kind: 'lf',
+      span: {
+        start: { pos: 64, line: 2, col: 1 },
+        end: { pos: 65, line: 2, col: 2 }
+      },
+      debug: '\n'
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 65, line: 2, col: 2 },
+        end: { pos: 66, line: 2, col: 3 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 66, line: 2, col: 3 },
+        end: { pos: 68, line: 2, col: 5 }
+      },
+      debug: 'Co'
+    },
+    Token {
+      kind: 'latinSmallLetterN',
+      span: {
+        start: { pos: 68, line: 2, col: 5 },
+        end: { pos: 69, line: 2, col: 6 }
+      },
+      debug: 'n'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 69, line: 2, col: 6 },
+        end: { pos: 73, line: 2, col: 10 }
+      },
+      debug: 'fere'
+    },
+    Token {
+      kind: 'latinSmallLetterN',
+      span: {
+        start: { pos: 73, line: 2, col: 10 },
+        end: { pos: 74, line: 2, col: 11 }
+      },
+      debug: 'n'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 74, line: 2, col: 11 },
+        end: { pos: 76, line: 2, col: 13 }
+      },
+      debug: 'ce'
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 76, line: 2, col: 13 },
+        end: { pos: 77, line: 2, col: 14 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'hyphenMinus',
+      span: {
+        start: { pos: 77, line: 2, col: 14 },
+        end: { pos: 78, line: 2, col: 15 }
+      },
+      debug: '-'
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 78, line: 2, col: 15 },
+        end: { pos: 79, line: 2, col: 16 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'hyphenMinus',
+      span: {
+        start: { pos: 79, line: 2, col: 16 },
+        end: { pos: 80, line: 2, col: 17 }
+      },
+      debug: '-'
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 80, line: 2, col: 17 },
+        end: { pos: 81, line: 2, col: 18 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 81, line: 2, col: 18 },
+        end: { pos: 84, line: 2, col: 21 }
+      },
+      debug: 'Las'
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 84, line: 2, col: 21 },
+        end: { pos: 85, line: 2, col: 22 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 85, line: 2, col: 22 },
+        end: { pos: 90, line: 2, col: 27 }
+      },
+      debug: 'Vegas'
+    },
+    Token {
+      kind: 'comma',
+      span: {
+        start: { pos: 90, line: 2, col: 27 },
+        end: { pos: 91, line: 2, col: 28 }
+      },
+      debug: ','
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 91, line: 2, col: 28 },
+        end: { pos: 92, line: 2, col: 29 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'latinCapitalLetterN',
+      span: {
+        start: { pos: 92, line: 2, col: 29 },
+        end: { pos: 93, line: 2, col: 30 }
+      },
+      debug: 'N'
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 93, line: 2, col: 30 },
+        end: { pos: 94, line: 2, col: 31 }
+      },
+      debug: 'V'
+    },
+    Token {
+      kind: 'comma',
+      span: {
+        start: { pos: 94, line: 2, col: 31 },
+        end: { pos: 95, line: 2, col: 32 }
+      },
+      debug: ','
+    },
+    Token {
+      kind: 'space',
+      span: {
+        start: { pos: 95, line: 2, col: 32 },
+        end: { pos: 96, line: 2, col: 33 }
+      },
+      debug: ' '
+    },
+    Token {
+      kind: 'word',
+      span: {
+        start: { pos: 96, line: 2, col: 33 },
+        end: { pos: 99, line: 3, col: 1 }
+      },
+      debug: 'USA'
+    },
+    Token {
+      kind: 'lf',
+      span: {
+        start: { pos: 99, line: 3, col: 1 },
+        end: { pos: 100, line: 3, col: 1 }
+      },
+      debug: '\n'
+    }
+  ]
+}

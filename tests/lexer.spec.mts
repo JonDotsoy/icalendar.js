@@ -3,7 +3,7 @@ import { test } from "node:test";
 import { readFile } from "node:fs/promises";
 import { createSnapDirectory } from "./snaps/snap.js";
 
-const snap = createSnapDirectory(import.meta.url);
+const { snap } = createSnapDirectory(import.meta.url);
 
 test("tokenizer", async () => {
     const payload = new TextEncoder().encode(
@@ -35,4 +35,12 @@ test("tokenizer (ICS officeholidays FIle)", async () => {
     const tokens = Lexer.from(payload);
 
     await snap("tokenizer_ICS_officeholidays_FIle").assertSnapOf(tokens);
+});
+
+test("Tokenizer (ICS FIle)", async () => {
+    const payload = await readFile(new URL("sample2.ics", import.meta.url));
+    const tokens = Lexer.from(payload);
+
+    await snap("tokens_full").assertSnapOf(tokens);
+    await snap("tokens_full", "json").assertSnapOf(tokens);
 });

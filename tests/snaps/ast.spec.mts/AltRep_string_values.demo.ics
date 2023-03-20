@@ -1,0 +1,8 @@
+BEGIN:VCALENDAR
+DESCRIPTION;ALTREP="cid:part1.0001@example.org":The Fall'98 Wild
+ Wizards Conference - - Las Vegas\, NV\, USA
+DESCRIPTION;ALTREP="CID:part3.msg.970415T083000@example.com":
+ Project XYZ Review Meeting will include the following agenda
+  items: (a) Market Overview\, (b) Finances\, (c) Project Man
+ agement
+END:VCALENDAR

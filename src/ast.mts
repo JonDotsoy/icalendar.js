@@ -1,4 +1,46 @@
-import { Token } from "./lexer.mjs";
+import { appendFileSync, writeFileSync } from "fs";
+import Module from "module";
+import util from "util";
+import * as lexer from "./lexer.mjs";
+
+writeFileSync(".dbg", new Uint8Array([]));
+const inspect = (o: any) =>
+    util.inspect(o, {
+        depth: Infinity,
+        maxArrayLength: Infinity,
+        maxStringLength: Infinity,
+    });
+const dbg = (...args: any[]) =>
+    appendFileSync(
+        ".dbg",
+        `${new Date().toLocaleString(undefined, {
+            timeStyle: "full",
+            dateStyle: "full",
+        })}\n${getStack()}\n${args.map((a) => `${inspect(a)}\n`).join("")}\n`
+    );
+
+const getStack = () => {
+    const err = new Error();
+    Error.captureStackTrace(err, dbg);
+    return err.stack;
+};
+
+function tokensToString(payload: Uint8Array, tokens: lexer.Token[]): string {
+    return new TextDecoder().decode(
+        new Uint8Array(
+            tokens.reduce(
+                (a: number[], token: lexer.Token): number[] => [
+                    ...a,
+                    ...payload.subarray(
+                        token.span.start.pos,
+                        token.span.end.pos
+                    ),
+                ],
+                []
+            )
+        )
+    );
+}
 
 type Kind =
     | "Module"
@@ -8,11 +50,12 @@ type Kind =
     | "AltRepParam"
     | "AltRepParamName"
     | "AltRepParamValue"
+    | "VComment"
     | "VComponent";
 
 export interface Node {
     kind: Kind;
-    span: { start: number; end: number };
+    span: { start: lexer.Span; end: lexer.Span };
 }
 
 export interface ModuleNode extends Node {
@@ -28,6 +71,7 @@ export interface PropertyParameterNameNode extends Node {
 export interface PropertyParameterValueNode extends Node {
     kind: "PropertyParameterValue";
     value: any;
+    // tokens: lexer.Token[]
 }
 
 export interface PropertyParameterNode extends Node {
@@ -59,211 +103,400 @@ export interface VComponentNode extends Node {
     nodes: (VComponentNode | PropertyParameterNode)[];
 }
 
-export class AST {
-    static from(tokens: Token[]): ModuleNode {
-        const spanStart = tokens.at(0)?.span.start ?? 0;
-        const spanEnd = tokens.at(-1)?.span.end ?? 0;
-        let cursor = 0;
-        const nodes: ModuleNode["nodes"] = [];
+export interface CommentNode extends Node {
+    kind: "VComment";
+    value: string;
+}
 
-        cursor = this.fromModule(cursor, nodes, tokens);
+class TokenListReader {
+    constructor(
+        readonly tokenList: lexer.TokenList,
+        readonly cursor: { pos: number }
+    ) {}
 
-        const module: ModuleNode = {
-            kind: "Module",
+    forward() {
+        this.cursor.pos += 1;
+    }
+    backward() {
+        this.cursor.pos -= 1;
+    }
+
+    current() {
+        const token = this.tokenList.at(this.cursor.pos) ?? null;
+        if (token)
+            Reflect.set(token, Symbol.for("cursor.pos"), this.cursor.pos);
+        return token;
+    }
+
+    currentOrLast() {
+        const token =
+            this.tokenList.at(this.cursor.pos) ?? this.tokenList.at(-1) ?? null;
+        if (!token) throw new Error("Token indeterminate");
+        return token;
+    }
+
+    continueWithByKind(kind: lexer.Kind) {
+        return this.tokenList.at(this.cursor.pos + 1)?.kind === kind;
+    }
+}
+
+class TokenSyntaxError extends Error {
+    constructor(token: lexer.Token) {
+        super(
+            `Invalid token ${token.kind} [${token.span.start.line}:${token.span.start.col} - ${token.span.end.line}:${token.span.end.col}]`,
+            { cause: token }
+        );
+    }
+}
+
+class LineContentReader {
+    constructor(
+        readonly payload: Uint8Array,
+        readonly tokenListReader: TokenListReader,
+        readonly nodes: Set<Node>
+    ) {}
+
+    private _getTokensUntil(conditionBreak: (token: lexer.Token) => boolean) {
+        const tokens: lexer.Token[] = [];
+        while (true) {
+            const token = this.tokenListReader.current();
+            if (!token) break;
+            if (token.kind === "unfolded") {
+                this.tokenListReader.forward();
+                continue;
+            }
+            if (conditionBreak(token)) break;
+            tokens.push(token);
+            this.tokenListReader.forward();
+        }
+        return tokens;
+    }
+
+    getTokensUntil(...kind: lexer.Kind[]) {
+        return this._getTokensUntil((token) => kind.includes(token.kind));
+    }
+
+    getTokensUntilNotMatch(...kind: lexer.Kind[]) {
+        return this._getTokensUntil((token) => !kind.includes(token.kind));
+    }
+
+    tokenIsWord(token: lexer.Token) {
+        const kinds: lexer.Kind[] = [
+            "word",
+            "latinCapitalLetterN",
+            "latinCapitalLetterT",
+            "latinCapitalLetterX",
+            "latinCapitalLetterZ",
+            "latinSmallLetterN",
+            "hyphenMinus",
+        ];
+
+        return kinds.includes(token.kind);
+    }
+
+    getTokensMatchKeyword() {
+        return this._getTokensUntil((t) => !this.tokenIsWord(t));
+    }
+
+    toErrorInvalidExpectedToken(expectedTokenKind: string): never {
+        const token = this.tokenListReader.currentOrLast();
+        throw new Error(
+            `Expected token ${expectedTokenKind} ${token?.span.start.line}:${token?.span.start.col}`
+        );
+    }
+
+    toErrorInvalidToken(): never {
+        const token = this.tokenListReader.currentOrLast();
+        throw new Error(
+            `Invalid token ${token?.span.start.line}:${token?.span.start.col} (${token?.kind})`
+        );
+    }
+
+    parseNextAltRepParamValueNode(): AltRepParamValueNode {
+        const firstToken = this.tokenListReader.current();
+        if (!firstToken)
+            this.toErrorInvalidExpectedToken("colon, semicolon or dobleQuote");
+        const isString = firstToken.kind === "dobleQuote";
+
+        if (isString) this.tokenListReader.forward();
+        const tokens = isString
+            ? this.getTokensUntil("dobleQuote")
+            : this.getTokensUntil("colon", "semicolon");
+        if (isString) this.tokenListReader.forward();
+
+        const altRepParamValueNode: AltRepParamValueNode = {
+            kind: "AltRepParamValue",
             span: {
-                start: spanStart,
-                end: spanEnd,
+                start: tokens.at(0)!.span.start,
+                end: tokens.at(-1)!.span.end,
             },
-            nodes,
+            value: tokensToString(this.payload, tokens),
         };
 
-        return module;
+        return altRepParamValueNode;
     }
 
-    static fromModule(
-        index: number,
-        nodes: (PropertyParameterNode | VComponentNode)[],
-        tokens: Token[],
-        closeEnd?: string
-    ) {
-        let cursor = index;
+    parseNextAltRepParamNameNode(): AltRepParamNameNode {
+        const AltRepParamNameTokens = this.getTokensMatchKeyword();
 
-        while (true) {
-            const token = tokens.at(cursor);
-            if (!token) break;
+        const altRepParamNameNode: AltRepParamNameNode = {
+            kind: "AltRepParamName",
+            span: {
+                start: AltRepParamNameTokens.at(0)!.span.start,
+                end: AltRepParamNameTokens.at(-1)!.span.end,
+            },
+            value: tokensToString(this.payload, AltRepParamNameTokens),
+        };
 
-            if (token.kind === "keyword") {
-                cursor = AST.fromPropertyParameters(cursor, nodes, tokens);
-                const lastNode = nodes.at(-1);
-                if (
-                    closeEnd &&
-                    lastNode?.kind === "PropertyParameter" &&
-                    lastNode.name.value === "END" &&
-                    lastNode.value.value === closeEnd
-                ) {
-                    nodes.pop();
-                    break;
-                }
-                continue;
-            }
-
-            if (token.kind === "newline") {
-                cursor += 1;
-                continue;
-            }
-
-            throw new Error(`Invalid ${token.kind} pos ${cursor}`);
-        }
-
-        return cursor;
+        return altRepParamNameNode;
     }
 
-    static fromAltRepParam(
-        index: number,
-        nodes: AltRepParamNode[],
-        tokens: Token[]
-    ): number {
-        let cursor = index;
+    parseNextAltRepParam(): AltRepParamNode {
+        const altRepParamNameNode = this.parseNextAltRepParamNameNode();
 
-        const altRepPropToken = tokens.at(cursor);
-        if (
-            altRepPropToken?.kind !== "keyword" &&
-            altRepPropToken?.kind !== "string"
-        )
-            throw new Error("Expect keyword or string");
-        cursor += 1;
+        if (this.tokenListReader.current()?.kind !== "equalSign")
+            this.toErrorInvalidExpectedToken("equalSign");
+        this.tokenListReader.forward();
 
-        if (tokens.at(cursor)?.kind !== "equal")
-            throw new Error(
-                `Expect an equal token but receive an ${
-                    tokens.at(cursor)?.kind
-                }`
-            );
-        cursor += 1;
+        const altRepParamValueNode = this.parseNextAltRepParamValueNode();
 
-        const altRepValueToken = tokens.at(cursor);
-        if (
-            altRepValueToken?.kind !== "keyword" &&
-            altRepValueToken?.kind !== "string"
-        )
-            throw new Error("Expect keyword or string");
-        cursor += 1;
-
-        const altRepParam: AltRepParamNode = {
+        const altRepParamNode: AltRepParamNode = {
             kind: "AltRepParam",
             span: {
-                start: altRepPropToken.span.start,
-                end: altRepValueToken.span.end,
+                start: altRepParamNameNode.span.start,
+                end: altRepParamValueNode.span.end,
             },
-            name: {
-                kind: "AltRepParamName",
-                span: altRepPropToken.span,
-                value: altRepPropToken.value,
-            },
-            value: {
-                kind: "AltRepParamValue",
-                span: altRepValueToken.span,
-                value: altRepValueToken.value,
-            },
+            name: altRepParamNameNode,
+            value: altRepParamValueNode,
         };
 
-        nodes.push(altRepParam);
-
-        return cursor;
+        return altRepParamNode;
     }
 
-    static fromPropertyParameters(
-        index: number,
-        nodes: (PropertyParameterNode | VComponentNode)[],
-        tokens: Token[]
-    ): number {
-        let cursor = index;
+    parseNextPropertyParameterValueNode(): PropertyParameterValueNode {
+        const propertyParameterValueTokens: lexer.Token[] =
+            this.getTokensUntil("crlf");
 
-        const paramToken = tokens.at(cursor);
-        if (!paramToken) throw new Error(`Invalid token`);
-        const snapStart = paramToken.span.start;
-        let snapEnd: number;
+        if (!propertyParameterValueTokens.length)
+            return {
+                kind: "PropertyParameterValue",
+                span: {
+                    start: this.tokenListReader.currentOrLast().span.end,
+                    end: this.tokenListReader.currentOrLast().span.end,
+                },
+                value: "",
+            };
 
-        const paramName: PropertyParameterNameNode = {
-            kind: "PropertyParameterName",
-            span: paramToken.span,
-            value: paramToken.value,
+        const propertyParameterValueNode: PropertyParameterValueNode = {
+            kind: "PropertyParameterValue",
+            span: {
+                start: propertyParameterValueTokens.at(0)!.span.start,
+                end: propertyParameterValueTokens.at(-1)!.span.end,
+            },
+            value: tokensToString(this.payload, propertyParameterValueTokens),
         };
 
+        return propertyParameterValueNode;
+    }
+
+    parseNextPropertyParameter(): PropertyParameterNode {
         const altRepNodes: AltRepParamNode[] = [];
 
-        cursor += 1;
+        const propertyParameterNameTokens = this.getTokensMatchKeyword();
 
-        while (true) {
-            const token = tokens.at(cursor);
-            if (!token) break;
+        if (!propertyParameterNameTokens.length) this.toErrorInvalidToken();
 
-            if (token.kind === "semicolon") {
-                cursor += 1;
-                cursor = AST.fromAltRepParam(cursor, altRepNodes, tokens);
-                continue;
-            }
+        const propertyParameterNameNode: PropertyParameterNameNode = {
+            kind: "PropertyParameterName",
+            span: {
+                start: propertyParameterNameTokens.at(0)!.span.start,
+                end: propertyParameterNameTokens.at(-1)!.span.end,
+            },
+            value: tokensToString(this.payload, propertyParameterNameTokens),
+        };
 
-            if (token.kind === "colon") {
-                cursor += 1;
-                const token = tokens.at(cursor);
-                if (token?.kind !== "string_multiline")
-                    throw new Error(`Expected a string_multiline token`);
-                const value: PropertyParameterValueNode = {
-                    kind: "PropertyParameterValue",
-                    span: token.span,
-                    value: token.value,
-                };
-                snapEnd = token.span.end;
-
-                const propertyParameterNode: PropertyParameterNode = {
-                    kind: "PropertyParameter",
-                    span: {
-                        start: snapStart,
-                        end: snapEnd,
-                    },
-                    name: paramName,
-                    value,
-                    altRepNodes: altRepNodes,
-                };
-
-                cursor += 1;
-
-                if (
-                    propertyParameterNode.name.value === "BEGIN" &&
-                    typeof propertyParameterNode.value.value === "string"
-                ) {
-                    const vComponentNodes: VComponentNode["nodes"] = [];
-
-                    cursor = AST.fromModule(
-                        cursor,
-                        vComponentNodes,
-                        tokens,
-                        propertyParameterNode.value.value
-                    );
-
-                    const vCalendarNode: VComponentNode = {
-                        kind: "VComponent",
-                        componentKind: propertyParameterNode.value.value,
-                        span: {
-                            start: propertyParameterNode.span.start,
-                            end:
-                                vComponentNodes.at(-1)?.span.end ??
-                                propertyParameterNode.span.end,
-                        },
-                        nodes: vComponentNodes,
-                    };
-                    nodes.push(vCalendarNode);
-                    break;
-                }
-
-                nodes.push(propertyParameterNode);
-                break;
-            }
-
-            throw new Error(`Invalid ${token.kind} pos ${cursor}`);
+        while (this.tokenListReader.current()?.kind === "semicolon") {
+            this.tokenListReader.forward();
+            const altRepParam = this.parseNextAltRepParam();
+            altRepNodes.push(altRepParam);
         }
 
-        return cursor;
+        if (this.tokenListReader.current()?.kind !== "colon")
+            this.toErrorInvalidExpectedToken("colon");
+        this.tokenListReader.forward();
+
+        const propertyParameterValueNode =
+            this.parseNextPropertyParameterValueNode();
+
+        return {
+            kind: "PropertyParameter",
+            altRepNodes,
+            span: {
+                start: propertyParameterNameNode.span.start,
+                end:
+                    propertyParameterValueNode?.span.end ??
+                    propertyParameterNameNode.span.end,
+            },
+            name: propertyParameterNameNode,
+            value: propertyParameterValueNode,
+        };
+    }
+
+    parseNextComment(): CommentNode {
+        const token = this.tokenListReader.current();
+        if (token?.kind !== "semicolon")
+            throw this.toErrorInvalidExpectedToken("semicolon");
+        const start = token.span.start;
+        const defaultEnd = token.span.end;
+        this.tokenListReader.forward();
+        const tokenValues: lexer.Token[] = [];
+        while (true) {
+            const token = this.tokenListReader.current();
+            if (!token) break;
+            if (token.kind === "crlf") {
+                this.tokenListReader.forward();
+                break;
+            }
+            tokenValues.push(token);
+            this.tokenListReader.forward();
+        }
+
+        return {
+            kind: "VComment",
+            span: {
+                start,
+                end: tokenValues.at(-1)?.span.end ?? defaultEnd,
+            },
+            value: tokensToString(this.payload, tokenValues),
+        };
+    }
+
+    parseNextLineContent() {
+        while (true) {
+            const token = this.tokenListReader.current();
+            if (!token) return null;
+            if (token?.kind === "semicolon") return this.parseNextComment();
+            if (this.tokenIsWord(token))
+                return this.parseNextPropertyParameter();
+            if (token?.kind === "crlf") {
+                this.tokenListReader.forward();
+                continue;
+            }
+            this.toErrorInvalidToken();
+        }
+    }
+}
+
+export class AST {
+    lineContentReader: LineContentReader;
+
+    private constructor(
+        readonly payload: Uint8Array,
+        readonly tokenListReader: TokenListReader,
+        readonly nodes: Set<Node>
+    ) {
+        this.lineContentReader = new LineContentReader(
+            payload,
+            tokenListReader,
+            nodes
+        );
+    }
+
+    toErrorInvalidExpectedToken(expectedTokenKind: string): never {
+        const token = this.tokenListReader.currentOrLast();
+        throw new Error(
+            `Expected token ${expectedTokenKind} ${token?.span.start.line}:${token?.span.start.col}`
+        );
+    }
+
+    toErrorInvalidToken(): never {
+        const token = this.tokenListReader.currentOrLast();
+        throw new Error(
+            `Invalid token ${token?.span.start.line}:${token?.span.start.col} (${token?.kind})`
+        );
+    }
+
+    parseComponent(beginNode: PropertyParameterNode): VComponentNode {
+        let endNode: Node | null = null;
+        const nodes: (VComponentNode | PropertyParameterNode)[] = [];
+        const componentKind = beginNode.value?.value;
+
+        if (!componentKind) this.toErrorInvalidToken();
+
+        while (true) {
+            const lineContent = this.lineContentReader.parseNextLineContent();
+            if (!lineContent) break;
+            if (lineContent.kind === "VComment") continue;
+            if (
+                lineContent.kind === "PropertyParameter" &&
+                lineContent.name.value === "BEGIN"
+            ) {
+                nodes.push(this.parseComponent(lineContent));
+                continue;
+            }
+            if (
+                lineContent.kind === "PropertyParameter" &&
+                lineContent.name.value === "END" &&
+                lineContent.value?.value === componentKind
+            ) {
+                endNode = lineContent;
+                break;
+            }
+            if (lineContent.kind === "PropertyParameter") {
+                nodes.push(lineContent);
+                continue;
+            }
+            throw this.toErrorInvalidToken();
+        }
+
+        if (!endNode) throw new Error(`Expected a END:${componentKind}`);
+
+        return {
+            kind: "VComponent",
+            componentKind,
+            nodes,
+            span: {
+                start: beginNode.span.start,
+                end: endNode.span.start,
+            },
+        };
+    }
+
+    parse(): ModuleNode {
+        const nodes: (PropertyParameterNode | VComponentNode)[] = [];
+        while (true) {
+            const lineContent = this.lineContentReader.parseNextLineContent();
+            if (!lineContent) break;
+            if (lineContent.kind === "VComment") continue;
+            if (
+                lineContent.kind === "PropertyParameter" &&
+                lineContent.name.value === "BEGIN"
+            ) {
+                nodes.push(this.parseComponent(lineContent));
+                continue;
+            }
+            this.toErrorInvalidToken();
+        }
+
+        return {
+            kind: "Module",
+            nodes,
+            span: {
+                start: nodes.at(0)!.span.start,
+                end: nodes.at(-1)!.span.end,
+            },
+        };
+    }
+
+    static from(payload: Uint8Array, tokens: lexer.TokenList): ModuleNode {
+        const ast = new AST(
+            payload,
+            new TokenListReader(tokens, { pos: 0 }),
+            new Set()
+        );
+        dbg(tokens);
+        const moduleNode = ast.parse();
+        dbg(moduleNode);
+        return moduleNode;
     }
 }

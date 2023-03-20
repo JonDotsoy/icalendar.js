@@ -1,0 +1,149 @@
+{
+  kind: 'Module',
+  nodes: [
+    {
+      kind: 'VComponent',
+      componentKind: 'VCALENDAR',
+      nodes: [
+        {
+          kind: 'VComponent',
+          componentKind: 'VEVENT',
+          nodes: [
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: {
+                    start: { pos: 39, line: 3, col: 10 },
+                    end: { pos: 74, line: 3, col: 45 }
+                  },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: {
+                      start: { pos: 39, line: 3, col: 10 },
+                      end: { pos: 43, line: 3, col: 14 }
+                    },
+                    value: 'TZID'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: {
+                      start: { pos: 44, line: 3, col: 15 },
+                      end: { pos: 74, line: 3, col: 45 }
+                    },
+                    value: 'America/Argentina/Buenos_Aires'
+                  }
+                }
+              ],
+              span: {
+                start: { pos: 31, line: 3, col: 2 },
+                end: { pos: 90, line: 3, col: 61 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 31, line: 3, col: 2 },
+                  end: { pos: 38, line: 3, col: 9 }
+                },
+                value: 'DTSTART'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 75, line: 3, col: 46 },
+                  end: { pos: 90, line: 3, col: 61 }
+                },
+                value: '20141004T220000'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [
+                {
+                  kind: 'AltRepParam',
+                  span: {
+                    start: { pos: 98, line: 4, col: 8 },
+                    end: { pos: 133, line: 4, col: 43 }
+                  },
+                  name: {
+                    kind: 'AltRepParamName',
+                    span: {
+                      start: { pos: 98, line: 4, col: 8 },
+                      end: { pos: 102, line: 4, col: 12 }
+                    },
+                    value: 'TZID'
+                  },
+                  value: {
+                    kind: 'AltRepParamValue',
+                    span: {
+                      start: { pos: 103, line: 4, col: 13 },
+                      end: { pos: 133, line: 4, col: 43 }
+                    },
+                    value: 'America/Argentina/Buenos_Aires'
+                  }
+                }
+              ],
+              span: {
+                start: { pos: 92, line: 4, col: 2 },
+                end: { pos: 149, line: 4, col: 59 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 92, line: 4, col: 2 },
+                  end: { pos: 97, line: 4, col: 7 }
+                },
+                value: 'DTEND'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 134, line: 4, col: 44 },
+                  end: { pos: 149, line: 4, col: 59 }
+                },
+                value: '20141004T230000'
+              }
+            },
+            {
+              kind: 'PropertyParameter',
+              altRepNodes: [],
+              span: {
+                start: { pos: 151, line: 5, col: 2 },
+                end: { pos: 200, line: 5, col: 51 }
+              },
+              name: {
+                kind: 'PropertyParameterName',
+                span: {
+                  start: { pos: 151, line: 5, col: 2 },
+                  end: { pos: 156, line: 5, col: 7 }
+                },
+                value: 'RRULE'
+              },
+              value: {
+                kind: 'PropertyParameterValue',
+                span: {
+                  start: { pos: 157, line: 5, col: 8 },
+                  end: { pos: 200, line: 5, col: 51 }
+                },
+                value: 'FREQ=WEEKLY;UNTIL=20141201T010000Z;BYDAY=SA'
+              }
+            }
+          ],
+          span: {
+            start: { pos: 17, line: 2, col: 2 },
+            end: { pos: 202, line: 6, col: 2 }
+          }
+        }
+      ],
+      span: {
+        start: { pos: 0, line: 1, col: 1 },
+        end: { pos: 214, line: 7, col: 2 }
+      }
+    }
+  ],
+  span: {
+    start: { pos: 0, line: 1, col: 1 },
+    end: { pos: 214, line: 7, col: 2 }
+  }
+}

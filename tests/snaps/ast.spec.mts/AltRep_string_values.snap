@@ -1,0 +1,115 @@
+{
+  kind: 'Module',
+  nodes: [
+    {
+      kind: 'VComponent',
+      componentKind: 'VCALENDAR',
+      nodes: [
+        {
+          kind: 'PropertyParameter',
+          altRepNodes: [
+            {
+              kind: 'AltRepParam',
+              span: {
+                start: { pos: 29, line: 2, col: 14 },
+                end: { pos: 63, line: 2, col: 48 }
+              },
+              name: {
+                kind: 'AltRepParamName',
+                span: {
+                  start: { pos: 29, line: 2, col: 14 },
+                  end: { pos: 35, line: 2, col: 20 }
+                },
+                value: 'ALTREP'
+              },
+              value: {
+                kind: 'AltRepParamValue',
+                span: {
+                  start: { pos: 37, line: 2, col: 22 },
+                  end: { pos: 63, line: 2, col: 48 }
+                },
+                value: 'cid:part1.0001@example.org'
+              }
+            }
+          ],
+          span: {
+            start: { pos: 17, line: 2, col: 2 },
+            end: { pos: 127, line: 3, col: 46 }
+          },
+          name: {
+            kind: 'PropertyParameterName',
+            span: {
+              start: { pos: 17, line: 2, col: 2 },
+              end: { pos: 28, line: 2, col: 13 }
+            },
+            value: 'DESCRIPTION'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: {
+              start: { pos: 65, line: 2, col: 50 },
+              end: { pos: 127, line: 3, col: 46 }
+            },
+            value: "The Fall'98 WildWizards Conference - - Las Vegas\\, NV\\, USA"
+          }
+        },
+        {
+          kind: 'PropertyParameter',
+          altRepNodes: [
+            {
+              kind: 'AltRepParam',
+              span: {
+                start: { pos: 141, line: 4, col: 14 },
+                end: { pos: 188, line: 4, col: 61 }
+              },
+              name: {
+                kind: 'AltRepParamName',
+                span: {
+                  start: { pos: 141, line: 4, col: 14 },
+                  end: { pos: 147, line: 4, col: 20 }
+                },
+                value: 'ALTREP'
+              },
+              value: {
+                kind: 'AltRepParamValue',
+                span: {
+                  start: { pos: 149, line: 4, col: 22 },
+                  end: { pos: 188, line: 4, col: 61 }
+                },
+                value: 'CID:part3.msg.970415T083000@example.com'
+              }
+            }
+          ],
+          span: {
+            start: { pos: 129, line: 4, col: 2 },
+            end: { pos: 326, line: 7, col: 10 }
+          },
+          name: {
+            kind: 'PropertyParameterName',
+            span: {
+              start: { pos: 129, line: 4, col: 2 },
+              end: { pos: 140, line: 4, col: 13 }
+            },
+            value: 'DESCRIPTION'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: {
+              start: { pos: 193, line: 5, col: 3 },
+              end: { pos: 326, line: 7, col: 10 }
+            },
+            value: 'Project XYZ Review Meeting will include the following agenda items: (a) Market Overview\\, (b) Finances\\, (c) Project Management'
+          }
+        }
+      ],
+      span: {
+        start: { pos: 0, line: 1, col: 1 },
+        end: { pos: 328, line: 8, col: 2 }
+      }
+    }
+  ],
+  span: {
+    start: { pos: 0, line: 1, col: 1 },
+    end: { pos: 328, line: 8, col: 2 }
+  }
+}

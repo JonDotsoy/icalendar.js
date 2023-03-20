@@ -1,0 +1,67 @@
+{
+  kind: 'Module',
+  nodes: [
+    {
+      kind: 'VComponent',
+      componentKind: 'VCALENDAR',
+      nodes: [
+        {
+          kind: 'PropertyParameter',
+          altRepNodes: [],
+          span: {
+            start: { pos: 17, line: 2, col: 2 },
+            end: { pos: 66, line: 2, col: 51 }
+          },
+          name: {
+            kind: 'PropertyParameterName',
+            span: {
+              start: { pos: 17, line: 2, col: 2 },
+              end: { pos: 23, line: 2, col: 8 }
+            },
+            value: 'PRODID'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: {
+              start: { pos: 24, line: 2, col: 9 },
+              end: { pos: 66, line: 2, col: 51 }
+            },
+            value: '-//Google Inc//Google Calendar 70.9054//EN'
+          }
+        },
+        {
+          kind: 'PropertyParameter',
+          altRepNodes: [],
+          span: {
+            start: { pos: 68, line: 3, col: 2 },
+            end: { pos: 79, line: 3, col: 13 }
+          },
+          name: {
+            kind: 'PropertyParameterName',
+            span: {
+              start: { pos: 68, line: 3, col: 2 },
+              end: { pos: 75, line: 3, col: 9 }
+            },
+            value: 'VERSION'
+          },
+          value: {
+            kind: 'PropertyParameterValue',
+            span: {
+              start: { pos: 76, line: 3, col: 10 },
+              end: { pos: 79, line: 3, col: 13 }
+            },
+            value: '2.0'
+          }
+        }
+      ],
+      span: {
+        start: { pos: 0, line: 1, col: 1 },
+        end: { pos: 81, line: 4, col: 2 }
+      }
+    }
+  ],
+  span: {
+    start: { pos: 0, line: 1, col: 1 },
+    end: { pos: 81, line: 4, col: 2 }
+  }
+}
