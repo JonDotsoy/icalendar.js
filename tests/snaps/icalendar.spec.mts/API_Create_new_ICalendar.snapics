@@ -1,13 +1,7 @@
 ICalendar {
   kind: 'VCALENDAR',
   properties: Map(1) {
-    'FOO' => PropertyValue {
-      value: Date {
-        value: { fullYear: 2023, month: 3, monthDay: 19 },
-        meta: undefined
-      },
-      parameters: Map(0) {}
-    }
+    'FOO' => PropertyValue { value: { '$Text': 'asd' }, parameters: Map(0) {} }
   },
   components: Set(1) {
     VComponent {

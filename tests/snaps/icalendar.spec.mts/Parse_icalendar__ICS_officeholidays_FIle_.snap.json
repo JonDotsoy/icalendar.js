@@ -1,0 +1,1275 @@
+{
+  "kind": "VCALENDAR",
+  "properties": {
+    "VERSION": {
+      "$Text": "2.0"
+    },
+    "PRODID": {
+      "$Text": "-//Office Holidays Ltd.//EN"
+    },
+    "X-WR-CALNAME": {
+      "$Text": "International Holidays"
+    },
+    "X-WR-CALDESC": {
+      "$Text": "Public Holidays in International. Provided by http://www.officeholidays.com"
+    },
+    "REFRESH-INTERVAL": {
+      "value": {
+        "$Duration": "PT48H"
+      },
+      "parameters": {
+        "VALUE": "DURATION"
+      }
+    },
+    "X-PUBLISHED-TTL": {
+      "$Text": "PT48H"
+    },
+    "CALSCALE": {
+      "$Text": "GREGORIAN"
+    },
+    "METHOD": {
+      "$Text": "PUBLISH"
+    },
+    "X-MS-OLK-FORCEINSPECTOROPEN": {
+      "$Text": "TRUE"
+    }
+  },
+  "components": [
+    {
+      "kind": "VEVENT",
+      "properties": {
+        "CLASS": {
+          "$Text": "PUBLIC"
+        },
+        "UID": {
+          "$Text": "2023-02-14INTL809regnap@www.officeholidays.com"
+        },
+        "CREATED": {
+          "$Text": "20230314T140237Z"
+        },
+        "DESCRIPTION": {
+          "$Text": " Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names, as all three of the saints are martyrs.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com"
+        },
+        "URL": {
+          "$Text": "https://www.officeholidays.com/holidays/various/st-valentines-day"
+        },
+        "DTSTART": {
+          "value": {
+            "$Date": {
+              "fullYear": 2023,
+              "month": 2,
+              "monthDay": 14
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTEND": {
+          "value": {
+            "$Date": {
+              "fullYear": 2023,
+              "month": 2,
+              "monthDay": 15
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTSTAMP": {
+          "$DateTime": {
+            "fullYear": 2008,
+            "month": 1,
+            "monthDay": 1,
+            "hour": 0,
+            "minute": 0,
+            "seconds": 0,
+            "utc": true
+          }
+        },
+        "LOCATION": {
+          "$Text": "International"
+        },
+        "PRIORITY": {
+          "$Text": "5"
+        },
+        "LAST-MODIFIED": {
+          "$Text": "20210707T000000Z"
+        },
+        "SEQUENCE": {
+          "$Text": "1"
+        },
+        "SUMMARY": {
+          "value": {
+            "$Text": "St. Valentine's Day (Not a Public Holiday)"
+          },
+          "parameters": {
+            "LANGUAGE": "en-us"
+          }
+        },
+        "TRANSP": {
+          "$Text": "OPAQUE"
+        },
+        "X-MICROSOFT-CDO-BUSYSTATUS": {
+          "$Text": "BUSY"
+        },
+        "X-MICROSOFT-CDO-IMPORTANCE": {
+          "$Text": "1"
+        },
+        "X-MICROSOFT-DISALLOW-COUNTER": {
+          "$Text": "FALSE"
+        },
+        "X-MS-OLK-ALLOWEXTERNCHECK": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-AUTOFILLLOCATION": {
+          "$Text": "FALSE"
+        },
+        "X-MICROSOFT-CDO-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-CONFTYPE": {
+          "$Text": "0"
+        }
+      },
+      "components": []
+    },
+    {
+      "kind": "VEVENT",
+      "properties": {
+        "CLASS": {
+          "$Text": "PUBLIC"
+        },
+        "UID": {
+          "$Text": "2023-02-22INTL3320regnap@www.officeholidays.com"
+        },
+        "CREATED": {
+          "$Text": "20230314T140237Z"
+        },
+        "DESCRIPTION": {
+          "$Text": " Lent marks the start of the Easter cycle in the Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com"
+        },
+        "URL": {
+          "$Text": "https://www.officeholidays.com/holidays/various/lent"
+        },
+        "DTSTART": {
+          "value": {
+            "$Date": {
+              "fullYear": 2023,
+              "month": 2,
+              "monthDay": 22
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTEND": {
+          "value": {
+            "$Date": {
+              "fullYear": 2023,
+              "month": 2,
+              "monthDay": 23
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTSTAMP": {
+          "$DateTime": {
+            "fullYear": 2008,
+            "month": 1,
+            "monthDay": 1,
+            "hour": 0,
+            "minute": 0,
+            "seconds": 0,
+            "utc": true
+          }
+        },
+        "LOCATION": {
+          "$Text": "International"
+        },
+        "PRIORITY": {
+          "$Text": "5"
+        },
+        "LAST-MODIFIED": {
+          "$Text": "20210707T000000Z"
+        },
+        "SEQUENCE": {
+          "$Text": "1"
+        },
+        "SUMMARY": {
+          "value": {
+            "$Text": "Lent (Not a Public Holiday)"
+          },
+          "parameters": {
+            "LANGUAGE": "en-us"
+          }
+        },
+        "TRANSP": {
+          "$Text": "OPAQUE"
+        },
+        "X-MICROSOFT-CDO-BUSYSTATUS": {
+          "$Text": "BUSY"
+        },
+        "X-MICROSOFT-CDO-IMPORTANCE": {
+          "$Text": "1"
+        },
+        "X-MICROSOFT-DISALLOW-COUNTER": {
+          "$Text": "FALSE"
+        },
+        "X-MS-OLK-ALLOWEXTERNCHECK": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-AUTOFILLLOCATION": {
+          "$Text": "FALSE"
+        },
+        "X-MICROSOFT-CDO-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-CONFTYPE": {
+          "$Text": "0"
+        }
+      },
+      "components": []
+    },
+    {
+      "kind": "VEVENT",
+      "properties": {
+        "CLASS": {
+          "$Text": "PUBLIC"
+        },
+        "UID": {
+          "$Text": "2023-02-27INTL3321regnap@www.officeholidays.com"
+        },
+        "CREATED": {
+          "$Text": "20230314T140237Z"
+        },
+        "DESCRIPTION": {
+          "$Text": " Great Lent marks the start of the Easter cycle in the Orthodox Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com"
+        },
+        "URL": {
+          "$Text": "https://www.officeholidays.com/holidays/various/orthodox-lent"
+        },
+        "DTSTART": {
+          "value": {
+            "$Date": {
+              "fullYear": 2023,
+              "month": 2,
+              "monthDay": 27
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTEND": {
+          "value": {
+            "$Date": {
+              "fullYear": 2023,
+              "month": 2,
+              "monthDay": 28
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTSTAMP": {
+          "$DateTime": {
+            "fullYear": 2008,
+            "month": 1,
+            "monthDay": 1,
+            "hour": 0,
+            "minute": 0,
+            "seconds": 0,
+            "utc": true
+          }
+        },
+        "LOCATION": {
+          "$Text": "International"
+        },
+        "PRIORITY": {
+          "$Text": "5"
+        },
+        "LAST-MODIFIED": {
+          "$Text": "20210707T000000Z"
+        },
+        "SEQUENCE": {
+          "$Text": "1"
+        },
+        "SUMMARY": {
+          "value": {
+            "$Text": "Orthodox Lent (Not a Public Holiday)"
+          },
+          "parameters": {
+            "LANGUAGE": "en-us"
+          }
+        },
+        "TRANSP": {
+          "$Text": "OPAQUE"
+        },
+        "X-MICROSOFT-CDO-BUSYSTATUS": {
+          "$Text": "BUSY"
+        },
+        "X-MICROSOFT-CDO-IMPORTANCE": {
+          "$Text": "1"
+        },
+        "X-MICROSOFT-DISALLOW-COUNTER": {
+          "$Text": "FALSE"
+        },
+        "X-MS-OLK-ALLOWEXTERNCHECK": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-AUTOFILLLOCATION": {
+          "$Text": "FALSE"
+        },
+        "X-MICROSOFT-CDO-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-CONFTYPE": {
+          "$Text": "0"
+        }
+      },
+      "components": []
+    },
+    {
+      "kind": "VEVENT",
+      "properties": {
+        "CLASS": {
+          "$Text": "PUBLIC"
+        },
+        "UID": {
+          "$Text": "2023-04-01INTL26regnap@www.officeholidays.com"
+        },
+        "CREATED": {
+          "$Text": "20230314T140237Z"
+        },
+        "DESCRIPTION": {
+          "$Text": " The day is observed by trying to play a practical joke on a victim who becomes known as an April Fool. The practical jokes range from simple to elaborate.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com"
+        },
+        "URL": {
+          "$Text": "https://www.officeholidays.com/holidays/various/april-fools-day"
+        },
+        "DTSTART": {
+          "value": {
+            "$Date": {
+              "fullYear": 2023,
+              "month": 4,
+              "monthDay": 1
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTEND": {
+          "value": {
+            "$Date": {
+              "fullYear": 2023,
+              "month": 4,
+              "monthDay": 2
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTSTAMP": {
+          "$DateTime": {
+            "fullYear": 2008,
+            "month": 1,
+            "monthDay": 1,
+            "hour": 0,
+            "minute": 0,
+            "seconds": 0,
+            "utc": true
+          }
+        },
+        "LOCATION": {
+          "$Text": "International"
+        },
+        "PRIORITY": {
+          "$Text": "5"
+        },
+        "LAST-MODIFIED": {
+          "$Text": "20210707T000000Z"
+        },
+        "SEQUENCE": {
+          "$Text": "1"
+        },
+        "SUMMARY": {
+          "value": {
+            "$Text": "April Fools Day (Not a Public Holiday)"
+          },
+          "parameters": {
+            "LANGUAGE": "en-us"
+          }
+        },
+        "TRANSP": {
+          "$Text": "OPAQUE"
+        },
+        "X-MICROSOFT-CDO-BUSYSTATUS": {
+          "$Text": "BUSY"
+        },
+        "X-MICROSOFT-CDO-IMPORTANCE": {
+          "$Text": "1"
+        },
+        "X-MICROSOFT-DISALLOW-COUNTER": {
+          "$Text": "FALSE"
+        },
+        "X-MS-OLK-ALLOWEXTERNCHECK": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-AUTOFILLLOCATION": {
+          "$Text": "FALSE"
+        },
+        "X-MICROSOFT-CDO-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-CONFTYPE": {
+          "$Text": "0"
+        }
+      },
+      "components": []
+    },
+    {
+      "kind": "VEVENT",
+      "properties": {
+        "CLASS": {
+          "$Text": "PUBLIC"
+        },
+        "UID": {
+          "$Text": "2023-04-22INTL262regnap@www.officeholidays.com"
+        },
+        "CREATED": {
+          "$Text": "20230314T140237Z"
+        },
+        "DESCRIPTION": {
+          "$Text": " Marks the anniversary of the birth of the modern environmental movement in 1970\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com"
+        },
+        "URL": {
+          "$Text": "https://www.officeholidays.com/holidays/various/earth-day"
+        },
+        "DTSTART": {
+          "value": {
+            "$Date": {
+              "fullYear": 2023,
+              "month": 4,
+              "monthDay": 22
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTEND": {
+          "value": {
+            "$Date": {
+              "fullYear": 2023,
+              "month": 4,
+              "monthDay": 23
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTSTAMP": {
+          "$DateTime": {
+            "fullYear": 2008,
+            "month": 1,
+            "monthDay": 1,
+            "hour": 0,
+            "minute": 0,
+            "seconds": 0,
+            "utc": true
+          }
+        },
+        "LOCATION": {
+          "$Text": "International"
+        },
+        "PRIORITY": {
+          "$Text": "5"
+        },
+        "LAST-MODIFIED": {
+          "$Text": "20210707T000000Z"
+        },
+        "SEQUENCE": {
+          "$Text": "1"
+        },
+        "SUMMARY": {
+          "value": {
+            "$Text": "Earth Day (Not a Public Holiday)"
+          },
+          "parameters": {
+            "LANGUAGE": "en-us"
+          }
+        },
+        "TRANSP": {
+          "$Text": "OPAQUE"
+        },
+        "X-MICROSOFT-CDO-BUSYSTATUS": {
+          "$Text": "BUSY"
+        },
+        "X-MICROSOFT-CDO-IMPORTANCE": {
+          "$Text": "1"
+        },
+        "X-MICROSOFT-DISALLOW-COUNTER": {
+          "$Text": "FALSE"
+        },
+        "X-MS-OLK-ALLOWEXTERNCHECK": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-AUTOFILLLOCATION": {
+          "$Text": "FALSE"
+        },
+        "X-MICROSOFT-CDO-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-CONFTYPE": {
+          "$Text": "0"
+        }
+      },
+      "components": []
+    },
+    {
+      "kind": "VEVENT",
+      "properties": {
+        "CLASS": {
+          "$Text": "PUBLIC"
+        },
+        "UID": {
+          "$Text": "2023-10-31INTL365regnap@www.officeholidays.com"
+        },
+        "CREATED": {
+          "$Text": "20230314T140237Z"
+        },
+        "DESCRIPTION": {
+          "$Text": " Ireland is believed to be the birthplace of the Halloween festival.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com"
+        },
+        "URL": {
+          "$Text": "https://www.officeholidays.com/holidays/various/halloween"
+        },
+        "DTSTART": {
+          "value": {
+            "$Date": {
+              "fullYear": 2023,
+              "month": 10,
+              "monthDay": 31
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTEND": {
+          "value": {
+            "$Date": {
+              "fullYear": 2023,
+              "month": 11,
+              "monthDay": 1
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTSTAMP": {
+          "$DateTime": {
+            "fullYear": 2008,
+            "month": 1,
+            "monthDay": 1,
+            "hour": 0,
+            "minute": 0,
+            "seconds": 0,
+            "utc": true
+          }
+        },
+        "LOCATION": {
+          "$Text": "International"
+        },
+        "PRIORITY": {
+          "$Text": "5"
+        },
+        "LAST-MODIFIED": {
+          "$Text": "20210707T000000Z"
+        },
+        "SEQUENCE": {
+          "$Text": "1"
+        },
+        "SUMMARY": {
+          "value": {
+            "$Text": "Halloween (Not a Public Holiday)"
+          },
+          "parameters": {
+            "LANGUAGE": "en-us"
+          }
+        },
+        "TRANSP": {
+          "$Text": "OPAQUE"
+        },
+        "X-MICROSOFT-CDO-BUSYSTATUS": {
+          "$Text": "BUSY"
+        },
+        "X-MICROSOFT-CDO-IMPORTANCE": {
+          "$Text": "1"
+        },
+        "X-MICROSOFT-DISALLOW-COUNTER": {
+          "$Text": "FALSE"
+        },
+        "X-MS-OLK-ALLOWEXTERNCHECK": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-AUTOFILLLOCATION": {
+          "$Text": "FALSE"
+        },
+        "X-MICROSOFT-CDO-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-CONFTYPE": {
+          "$Text": "0"
+        }
+      },
+      "components": []
+    },
+    {
+      "kind": "VEVENT",
+      "properties": {
+        "CLASS": {
+          "$Text": "PUBLIC"
+        },
+        "UID": {
+          "$Text": "2024-02-14INTL809regnap@www.officeholidays.com"
+        },
+        "CREATED": {
+          "$Text": "20230314T140237Z"
+        },
+        "DESCRIPTION": {
+          "$Text": " Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names, as all three of the saints are martyrs.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com"
+        },
+        "URL": {
+          "$Text": "https://www.officeholidays.com/holidays/various/st-valentines-day"
+        },
+        "DTSTART": {
+          "value": {
+            "$Date": {
+              "fullYear": 2024,
+              "month": 2,
+              "monthDay": 14
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTEND": {
+          "value": {
+            "$Date": {
+              "fullYear": 2024,
+              "month": 2,
+              "monthDay": 15
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTSTAMP": {
+          "$DateTime": {
+            "fullYear": 2008,
+            "month": 1,
+            "monthDay": 1,
+            "hour": 0,
+            "minute": 0,
+            "seconds": 0,
+            "utc": true
+          }
+        },
+        "LOCATION": {
+          "$Text": "International"
+        },
+        "PRIORITY": {
+          "$Text": "5"
+        },
+        "LAST-MODIFIED": {
+          "$Text": "20210707T000000Z"
+        },
+        "SEQUENCE": {
+          "$Text": "1"
+        },
+        "SUMMARY": {
+          "value": {
+            "$Text": "St. Valentine's Day (Not a Public Holiday)"
+          },
+          "parameters": {
+            "LANGUAGE": "en-us"
+          }
+        },
+        "TRANSP": {
+          "$Text": "OPAQUE"
+        },
+        "X-MICROSOFT-CDO-BUSYSTATUS": {
+          "$Text": "BUSY"
+        },
+        "X-MICROSOFT-CDO-IMPORTANCE": {
+          "$Text": "1"
+        },
+        "X-MICROSOFT-DISALLOW-COUNTER": {
+          "$Text": "FALSE"
+        },
+        "X-MS-OLK-ALLOWEXTERNCHECK": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-AUTOFILLLOCATION": {
+          "$Text": "FALSE"
+        },
+        "X-MICROSOFT-CDO-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-CONFTYPE": {
+          "$Text": "0"
+        }
+      },
+      "components": []
+    },
+    {
+      "kind": "VEVENT",
+      "properties": {
+        "CLASS": {
+          "$Text": "PUBLIC"
+        },
+        "UID": {
+          "$Text": "2024-02-14INTL3320regnap@www.officeholidays.com"
+        },
+        "CREATED": {
+          "$Text": "20230314T140237Z"
+        },
+        "DESCRIPTION": {
+          "$Text": " Lent marks the start of the Easter cycle in the Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com"
+        },
+        "URL": {
+          "$Text": "https://www.officeholidays.com/holidays/various/lent"
+        },
+        "DTSTART": {
+          "value": {
+            "$Date": {
+              "fullYear": 2024,
+              "month": 2,
+              "monthDay": 14
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTEND": {
+          "value": {
+            "$Date": {
+              "fullYear": 2024,
+              "month": 2,
+              "monthDay": 15
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTSTAMP": {
+          "$DateTime": {
+            "fullYear": 2008,
+            "month": 1,
+            "monthDay": 1,
+            "hour": 0,
+            "minute": 0,
+            "seconds": 0,
+            "utc": true
+          }
+        },
+        "LOCATION": {
+          "$Text": "International"
+        },
+        "PRIORITY": {
+          "$Text": "5"
+        },
+        "LAST-MODIFIED": {
+          "$Text": "20210707T000000Z"
+        },
+        "SEQUENCE": {
+          "$Text": "1"
+        },
+        "SUMMARY": {
+          "value": {
+            "$Text": "Lent (Not a Public Holiday)"
+          },
+          "parameters": {
+            "LANGUAGE": "en-us"
+          }
+        },
+        "TRANSP": {
+          "$Text": "OPAQUE"
+        },
+        "X-MICROSOFT-CDO-BUSYSTATUS": {
+          "$Text": "BUSY"
+        },
+        "X-MICROSOFT-CDO-IMPORTANCE": {
+          "$Text": "1"
+        },
+        "X-MICROSOFT-DISALLOW-COUNTER": {
+          "$Text": "FALSE"
+        },
+        "X-MS-OLK-ALLOWEXTERNCHECK": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-AUTOFILLLOCATION": {
+          "$Text": "FALSE"
+        },
+        "X-MICROSOFT-CDO-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-CONFTYPE": {
+          "$Text": "0"
+        }
+      },
+      "components": []
+    },
+    {
+      "kind": "VEVENT",
+      "properties": {
+        "CLASS": {
+          "$Text": "PUBLIC"
+        },
+        "UID": {
+          "$Text": "2024-03-18INTL3321regnap@www.officeholidays.com"
+        },
+        "CREATED": {
+          "$Text": "20230314T140237Z"
+        },
+        "DESCRIPTION": {
+          "$Text": " Great Lent marks the start of the Easter cycle in the Orthodox Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com"
+        },
+        "URL": {
+          "$Text": "https://www.officeholidays.com/holidays/various/orthodox-lent"
+        },
+        "DTSTART": {
+          "value": {
+            "$Date": {
+              "fullYear": 2024,
+              "month": 3,
+              "monthDay": 18
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTEND": {
+          "value": {
+            "$Date": {
+              "fullYear": 2024,
+              "month": 3,
+              "monthDay": 19
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTSTAMP": {
+          "$DateTime": {
+            "fullYear": 2008,
+            "month": 1,
+            "monthDay": 1,
+            "hour": 0,
+            "minute": 0,
+            "seconds": 0,
+            "utc": true
+          }
+        },
+        "LOCATION": {
+          "$Text": "International"
+        },
+        "PRIORITY": {
+          "$Text": "5"
+        },
+        "LAST-MODIFIED": {
+          "$Text": "20210707T000000Z"
+        },
+        "SEQUENCE": {
+          "$Text": "1"
+        },
+        "SUMMARY": {
+          "value": {
+            "$Text": "Orthodox Lent (Not a Public Holiday)"
+          },
+          "parameters": {
+            "LANGUAGE": "en-us"
+          }
+        },
+        "TRANSP": {
+          "$Text": "OPAQUE"
+        },
+        "X-MICROSOFT-CDO-BUSYSTATUS": {
+          "$Text": "BUSY"
+        },
+        "X-MICROSOFT-CDO-IMPORTANCE": {
+          "$Text": "1"
+        },
+        "X-MICROSOFT-DISALLOW-COUNTER": {
+          "$Text": "FALSE"
+        },
+        "X-MS-OLK-ALLOWEXTERNCHECK": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-AUTOFILLLOCATION": {
+          "$Text": "FALSE"
+        },
+        "X-MICROSOFT-CDO-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-CONFTYPE": {
+          "$Text": "0"
+        }
+      },
+      "components": []
+    },
+    {
+      "kind": "VEVENT",
+      "properties": {
+        "CLASS": {
+          "$Text": "PUBLIC"
+        },
+        "UID": {
+          "$Text": "2024-04-01INTL26regnap@www.officeholidays.com"
+        },
+        "CREATED": {
+          "$Text": "20230314T140237Z"
+        },
+        "DESCRIPTION": {
+          "$Text": " The day is observed by trying to play a practical joke on a victim who becomes known as an April Fool. The practical jokes range from simple to elaborate.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com"
+        },
+        "URL": {
+          "$Text": "https://www.officeholidays.com/holidays/various/april-fools-day"
+        },
+        "DTSTART": {
+          "value": {
+            "$Date": {
+              "fullYear": 2024,
+              "month": 4,
+              "monthDay": 1
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTEND": {
+          "value": {
+            "$Date": {
+              "fullYear": 2024,
+              "month": 4,
+              "monthDay": 2
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTSTAMP": {
+          "$DateTime": {
+            "fullYear": 2008,
+            "month": 1,
+            "monthDay": 1,
+            "hour": 0,
+            "minute": 0,
+            "seconds": 0,
+            "utc": true
+          }
+        },
+        "LOCATION": {
+          "$Text": "International"
+        },
+        "PRIORITY": {
+          "$Text": "5"
+        },
+        "LAST-MODIFIED": {
+          "$Text": "20210707T000000Z"
+        },
+        "SEQUENCE": {
+          "$Text": "1"
+        },
+        "SUMMARY": {
+          "value": {
+            "$Text": "April Fools Day (Not a Public Holiday)"
+          },
+          "parameters": {
+            "LANGUAGE": "en-us"
+          }
+        },
+        "TRANSP": {
+          "$Text": "OPAQUE"
+        },
+        "X-MICROSOFT-CDO-BUSYSTATUS": {
+          "$Text": "BUSY"
+        },
+        "X-MICROSOFT-CDO-IMPORTANCE": {
+          "$Text": "1"
+        },
+        "X-MICROSOFT-DISALLOW-COUNTER": {
+          "$Text": "FALSE"
+        },
+        "X-MS-OLK-ALLOWEXTERNCHECK": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-AUTOFILLLOCATION": {
+          "$Text": "FALSE"
+        },
+        "X-MICROSOFT-CDO-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-CONFTYPE": {
+          "$Text": "0"
+        }
+      },
+      "components": []
+    },
+    {
+      "kind": "VEVENT",
+      "properties": {
+        "CLASS": {
+          "$Text": "PUBLIC"
+        },
+        "UID": {
+          "$Text": "2024-04-22INTL262regnap@www.officeholidays.com"
+        },
+        "CREATED": {
+          "$Text": "20230314T140237Z"
+        },
+        "DESCRIPTION": {
+          "$Text": " Marks the anniversary of the birth of the modern environmental movement in 1970\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com"
+        },
+        "URL": {
+          "$Text": "https://www.officeholidays.com/holidays/various/earth-day"
+        },
+        "DTSTART": {
+          "value": {
+            "$Date": {
+              "fullYear": 2024,
+              "month": 4,
+              "monthDay": 22
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTEND": {
+          "value": {
+            "$Date": {
+              "fullYear": 2024,
+              "month": 4,
+              "monthDay": 23
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTSTAMP": {
+          "$DateTime": {
+            "fullYear": 2008,
+            "month": 1,
+            "monthDay": 1,
+            "hour": 0,
+            "minute": 0,
+            "seconds": 0,
+            "utc": true
+          }
+        },
+        "LOCATION": {
+          "$Text": "International"
+        },
+        "PRIORITY": {
+          "$Text": "5"
+        },
+        "LAST-MODIFIED": {
+          "$Text": "20210707T000000Z"
+        },
+        "SEQUENCE": {
+          "$Text": "1"
+        },
+        "SUMMARY": {
+          "value": {
+            "$Text": "Earth Day (Not a Public Holiday)"
+          },
+          "parameters": {
+            "LANGUAGE": "en-us"
+          }
+        },
+        "TRANSP": {
+          "$Text": "OPAQUE"
+        },
+        "X-MICROSOFT-CDO-BUSYSTATUS": {
+          "$Text": "BUSY"
+        },
+        "X-MICROSOFT-CDO-IMPORTANCE": {
+          "$Text": "1"
+        },
+        "X-MICROSOFT-DISALLOW-COUNTER": {
+          "$Text": "FALSE"
+        },
+        "X-MS-OLK-ALLOWEXTERNCHECK": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-AUTOFILLLOCATION": {
+          "$Text": "FALSE"
+        },
+        "X-MICROSOFT-CDO-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-CONFTYPE": {
+          "$Text": "0"
+        }
+      },
+      "components": []
+    },
+    {
+      "kind": "VEVENT",
+      "properties": {
+        "CLASS": {
+          "$Text": "PUBLIC"
+        },
+        "UID": {
+          "$Text": "2024-10-31INTL365regnap@www.officeholidays.com"
+        },
+        "CREATED": {
+          "$Text": "20230314T140237Z"
+        },
+        "DESCRIPTION": {
+          "$Text": " Ireland is believed to be the birthplace of the Halloween festival.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com"
+        },
+        "URL": {
+          "$Text": "https://www.officeholidays.com/holidays/various/halloween"
+        },
+        "DTSTART": {
+          "value": {
+            "$Date": {
+              "fullYear": 2024,
+              "month": 10,
+              "monthDay": 31
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTEND": {
+          "value": {
+            "$Date": {
+              "fullYear": 2024,
+              "month": 11,
+              "monthDay": 1
+            }
+          },
+          "parameters": {
+            "VALUE": "DATE"
+          }
+        },
+        "DTSTAMP": {
+          "$DateTime": {
+            "fullYear": 2008,
+            "month": 1,
+            "monthDay": 1,
+            "hour": 0,
+            "minute": 0,
+            "seconds": 0,
+            "utc": true
+          }
+        },
+        "LOCATION": {
+          "$Text": "International"
+        },
+        "PRIORITY": {
+          "$Text": "5"
+        },
+        "LAST-MODIFIED": {
+          "$Text": "20210707T000000Z"
+        },
+        "SEQUENCE": {
+          "$Text": "1"
+        },
+        "SUMMARY": {
+          "value": {
+            "$Text": "Halloween (Not a Public Holiday)"
+          },
+          "parameters": {
+            "LANGUAGE": "en-us"
+          }
+        },
+        "TRANSP": {
+          "$Text": "OPAQUE"
+        },
+        "X-MICROSOFT-CDO-BUSYSTATUS": {
+          "$Text": "BUSY"
+        },
+        "X-MICROSOFT-CDO-IMPORTANCE": {
+          "$Text": "1"
+        },
+        "X-MICROSOFT-DISALLOW-COUNTER": {
+          "$Text": "FALSE"
+        },
+        "X-MS-OLK-ALLOWEXTERNCHECK": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-AUTOFILLLOCATION": {
+          "$Text": "FALSE"
+        },
+        "X-MICROSOFT-CDO-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT": {
+          "$Text": "TRUE"
+        },
+        "X-MS-OLK-CONFTYPE": {
+          "$Text": "0"
+        }
+      },
+      "components": []
+    }
+  ]
+}

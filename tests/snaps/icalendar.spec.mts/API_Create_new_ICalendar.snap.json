@@ -1,0 +1,19 @@
+{
+  "kind": "VCALENDAR",
+  "properties": {
+    "FOO": {
+      "$Date": {
+        "fullYear": 2023,
+        "month": 3,
+        "monthDay": 19
+      }
+    }
+  },
+  "components": [
+    {
+      "kind": "EVENT",
+      "properties": {},
+      "components": []
+    }
+  ]
+}

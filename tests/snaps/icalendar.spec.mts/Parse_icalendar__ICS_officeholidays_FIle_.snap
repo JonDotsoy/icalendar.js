@@ -1,0 +1,1522 @@
+ICalendar {
+  kind: 'VCALENDAR',
+  properties: Map(9) {
+    'VERSION' => PropertyValue {
+      value: Text { value: '2.0', meta: undefined },
+      parameters: Map(0) {}
+    },
+    'PRODID' => PropertyValue {
+      value: Text { value: '-//Office Holidays Ltd.//EN', meta: undefined },
+      parameters: Map(0) {}
+    },
+    'X-WR-CALNAME' => PropertyValue {
+      value: Text { value: 'International Holidays', meta: undefined },
+      parameters: Map(0) {}
+    },
+    'X-WR-CALDESC' => PropertyValue {
+      value: Text {
+        value: 'Public Holidays in International. Provided by http://www.officeholidays.com',
+        meta: undefined
+      },
+      parameters: Map(0) {}
+    },
+    'REFRESH-INTERVAL' => PropertyValue {
+      value: Duration { value: 'PT48H', meta: undefined },
+      parameters: Map(1) { 'VALUE' => 'DURATION' }
+    },
+    'X-PUBLISHED-TTL' => PropertyValue {
+      value: Text { value: 'PT48H', meta: undefined },
+      parameters: Map(0) {}
+    },
+    'CALSCALE' => PropertyValue {
+      value: Text { value: 'GREGORIAN', meta: undefined },
+      parameters: Map(0) {}
+    },
+    'METHOD' => PropertyValue {
+      value: Text { value: 'PUBLISH', meta: undefined },
+      parameters: Map(0) {}
+    },
+    'X-MS-OLK-FORCEINSPECTOROPEN' => PropertyValue {
+      value: Text { value: 'TRUE', meta: undefined },
+      parameters: Map(0) {}
+    }
+  },
+  components: Set(12) {
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(22) {
+        'CLASS' => PropertyValue {
+          value: Text { value: 'PUBLIC', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'UID' => PropertyValue {
+          value: Text {
+            value: '2023-02-14INTL809regnap@www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'CREATED' => PropertyValue {
+          value: Text { value: '20230314T140237Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DESCRIPTION' => PropertyValue {
+          value: Text {
+            value: ' Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names, as all three of the saints are martyrs.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'URL' => PropertyValue {
+          value: Text {
+            value: 'https://www.officeholidays.com/holidays/various/st-valentines-day',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTART' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2023, month: 2, monthDay: 14 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTEND' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2023, month: 2, monthDay: 15 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2008,
+              month: 1,
+              monthDay: 1,
+              hour: 0,
+              minute: 0,
+              seconds: 0,
+              utc: true
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'LOCATION' => PropertyValue {
+          value: Text { value: 'International', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'PRIORITY' => PropertyValue {
+          value: Text { value: '5', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'LAST-MODIFIED' => PropertyValue {
+          value: Text { value: '20210707T000000Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SEQUENCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SUMMARY' => PropertyValue {
+          value: Text {
+            value: "St. Valentine's Day (Not a Public Holiday)",
+            meta: undefined
+          },
+          parameters: Map(1) { 'LANGUAGE' => 'en-us' }
+        },
+        'TRANSP' => PropertyValue {
+          value: Text { value: 'OPAQUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-BUSYSTATUS' => PropertyValue {
+          value: Text { value: 'BUSY', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-IMPORTANCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-DISALLOW-COUNTER' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-ALLOWEXTERNCHECK' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-AUTOFILLLOCATION' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-CONFTYPE' => PropertyValue {
+          value: Text { value: '0', meta: undefined },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    },
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(22) {
+        'CLASS' => PropertyValue {
+          value: Text { value: 'PUBLIC', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'UID' => PropertyValue {
+          value: Text {
+            value: '2023-02-22INTL3320regnap@www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'CREATED' => PropertyValue {
+          value: Text { value: '20230314T140237Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DESCRIPTION' => PropertyValue {
+          value: Text {
+            value: ' Lent marks the start of the Easter cycle in the Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'URL' => PropertyValue {
+          value: Text {
+            value: 'https://www.officeholidays.com/holidays/various/lent',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTART' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2023, month: 2, monthDay: 22 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTEND' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2023, month: 2, monthDay: 23 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2008,
+              month: 1,
+              monthDay: 1,
+              hour: 0,
+              minute: 0,
+              seconds: 0,
+              utc: true
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'LOCATION' => PropertyValue {
+          value: Text { value: 'International', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'PRIORITY' => PropertyValue {
+          value: Text { value: '5', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'LAST-MODIFIED' => PropertyValue {
+          value: Text { value: '20210707T000000Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SEQUENCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SUMMARY' => PropertyValue {
+          value: Text {
+            value: 'Lent (Not a Public Holiday)',
+            meta: undefined
+          },
+          parameters: Map(1) { 'LANGUAGE' => 'en-us' }
+        },
+        'TRANSP' => PropertyValue {
+          value: Text { value: 'OPAQUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-BUSYSTATUS' => PropertyValue {
+          value: Text { value: 'BUSY', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-IMPORTANCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-DISALLOW-COUNTER' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-ALLOWEXTERNCHECK' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-AUTOFILLLOCATION' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-CONFTYPE' => PropertyValue {
+          value: Text { value: '0', meta: undefined },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    },
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(22) {
+        'CLASS' => PropertyValue {
+          value: Text { value: 'PUBLIC', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'UID' => PropertyValue {
+          value: Text {
+            value: '2023-02-27INTL3321regnap@www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'CREATED' => PropertyValue {
+          value: Text { value: '20230314T140237Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DESCRIPTION' => PropertyValue {
+          value: Text {
+            value: ' Great Lent marks the start of the Easter cycle in the Orthodox Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'URL' => PropertyValue {
+          value: Text {
+            value: 'https://www.officeholidays.com/holidays/various/orthodox-lent',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTART' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2023, month: 2, monthDay: 27 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTEND' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2023, month: 2, monthDay: 28 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2008,
+              month: 1,
+              monthDay: 1,
+              hour: 0,
+              minute: 0,
+              seconds: 0,
+              utc: true
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'LOCATION' => PropertyValue {
+          value: Text { value: 'International', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'PRIORITY' => PropertyValue {
+          value: Text { value: '5', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'LAST-MODIFIED' => PropertyValue {
+          value: Text { value: '20210707T000000Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SEQUENCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SUMMARY' => PropertyValue {
+          value: Text {
+            value: 'Orthodox Lent (Not a Public Holiday)',
+            meta: undefined
+          },
+          parameters: Map(1) { 'LANGUAGE' => 'en-us' }
+        },
+        'TRANSP' => PropertyValue {
+          value: Text { value: 'OPAQUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-BUSYSTATUS' => PropertyValue {
+          value: Text { value: 'BUSY', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-IMPORTANCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-DISALLOW-COUNTER' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-ALLOWEXTERNCHECK' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-AUTOFILLLOCATION' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-CONFTYPE' => PropertyValue {
+          value: Text { value: '0', meta: undefined },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    },
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(22) {
+        'CLASS' => PropertyValue {
+          value: Text { value: 'PUBLIC', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'UID' => PropertyValue {
+          value: Text {
+            value: '2023-04-01INTL26regnap@www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'CREATED' => PropertyValue {
+          value: Text { value: '20230314T140237Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DESCRIPTION' => PropertyValue {
+          value: Text {
+            value: ' The day is observed by trying to play a practical joke on a victim who becomes known as an April Fool. The practical jokes range from simple to elaborate.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'URL' => PropertyValue {
+          value: Text {
+            value: 'https://www.officeholidays.com/holidays/various/april-fools-day',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTART' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2023, month: 4, monthDay: 1 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTEND' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2023, month: 4, monthDay: 2 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2008,
+              month: 1,
+              monthDay: 1,
+              hour: 0,
+              minute: 0,
+              seconds: 0,
+              utc: true
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'LOCATION' => PropertyValue {
+          value: Text { value: 'International', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'PRIORITY' => PropertyValue {
+          value: Text { value: '5', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'LAST-MODIFIED' => PropertyValue {
+          value: Text { value: '20210707T000000Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SEQUENCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SUMMARY' => PropertyValue {
+          value: Text {
+            value: 'April Fools Day (Not a Public Holiday)',
+            meta: undefined
+          },
+          parameters: Map(1) { 'LANGUAGE' => 'en-us' }
+        },
+        'TRANSP' => PropertyValue {
+          value: Text { value: 'OPAQUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-BUSYSTATUS' => PropertyValue {
+          value: Text { value: 'BUSY', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-IMPORTANCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-DISALLOW-COUNTER' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-ALLOWEXTERNCHECK' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-AUTOFILLLOCATION' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-CONFTYPE' => PropertyValue {
+          value: Text { value: '0', meta: undefined },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    },
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(22) {
+        'CLASS' => PropertyValue {
+          value: Text { value: 'PUBLIC', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'UID' => PropertyValue {
+          value: Text {
+            value: '2023-04-22INTL262regnap@www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'CREATED' => PropertyValue {
+          value: Text { value: '20230314T140237Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DESCRIPTION' => PropertyValue {
+          value: Text {
+            value: ' Marks the anniversary of the birth of the modern environmental movement in 1970\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'URL' => PropertyValue {
+          value: Text {
+            value: 'https://www.officeholidays.com/holidays/various/earth-day',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTART' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2023, month: 4, monthDay: 22 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTEND' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2023, month: 4, monthDay: 23 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2008,
+              month: 1,
+              monthDay: 1,
+              hour: 0,
+              minute: 0,
+              seconds: 0,
+              utc: true
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'LOCATION' => PropertyValue {
+          value: Text { value: 'International', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'PRIORITY' => PropertyValue {
+          value: Text { value: '5', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'LAST-MODIFIED' => PropertyValue {
+          value: Text { value: '20210707T000000Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SEQUENCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SUMMARY' => PropertyValue {
+          value: Text {
+            value: 'Earth Day (Not a Public Holiday)',
+            meta: undefined
+          },
+          parameters: Map(1) { 'LANGUAGE' => 'en-us' }
+        },
+        'TRANSP' => PropertyValue {
+          value: Text { value: 'OPAQUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-BUSYSTATUS' => PropertyValue {
+          value: Text { value: 'BUSY', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-IMPORTANCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-DISALLOW-COUNTER' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-ALLOWEXTERNCHECK' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-AUTOFILLLOCATION' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-CONFTYPE' => PropertyValue {
+          value: Text { value: '0', meta: undefined },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    },
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(22) {
+        'CLASS' => PropertyValue {
+          value: Text { value: 'PUBLIC', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'UID' => PropertyValue {
+          value: Text {
+            value: '2023-10-31INTL365regnap@www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'CREATED' => PropertyValue {
+          value: Text { value: '20230314T140237Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DESCRIPTION' => PropertyValue {
+          value: Text {
+            value: ' Ireland is believed to be the birthplace of the Halloween festival.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'URL' => PropertyValue {
+          value: Text {
+            value: 'https://www.officeholidays.com/holidays/various/halloween',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTART' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2023, month: 10, monthDay: 31 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTEND' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2023, month: 11, monthDay: 1 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2008,
+              month: 1,
+              monthDay: 1,
+              hour: 0,
+              minute: 0,
+              seconds: 0,
+              utc: true
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'LOCATION' => PropertyValue {
+          value: Text { value: 'International', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'PRIORITY' => PropertyValue {
+          value: Text { value: '5', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'LAST-MODIFIED' => PropertyValue {
+          value: Text { value: '20210707T000000Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SEQUENCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SUMMARY' => PropertyValue {
+          value: Text {
+            value: 'Halloween (Not a Public Holiday)',
+            meta: undefined
+          },
+          parameters: Map(1) { 'LANGUAGE' => 'en-us' }
+        },
+        'TRANSP' => PropertyValue {
+          value: Text { value: 'OPAQUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-BUSYSTATUS' => PropertyValue {
+          value: Text { value: 'BUSY', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-IMPORTANCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-DISALLOW-COUNTER' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-ALLOWEXTERNCHECK' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-AUTOFILLLOCATION' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-CONFTYPE' => PropertyValue {
+          value: Text { value: '0', meta: undefined },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    },
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(22) {
+        'CLASS' => PropertyValue {
+          value: Text { value: 'PUBLIC', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'UID' => PropertyValue {
+          value: Text {
+            value: '2024-02-14INTL809regnap@www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'CREATED' => PropertyValue {
+          value: Text { value: '20230314T140237Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DESCRIPTION' => PropertyValue {
+          value: Text {
+            value: ' Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names, as all three of the saints are martyrs.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'URL' => PropertyValue {
+          value: Text {
+            value: 'https://www.officeholidays.com/holidays/various/st-valentines-day',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTART' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2024, month: 2, monthDay: 14 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTEND' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2024, month: 2, monthDay: 15 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2008,
+              month: 1,
+              monthDay: 1,
+              hour: 0,
+              minute: 0,
+              seconds: 0,
+              utc: true
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'LOCATION' => PropertyValue {
+          value: Text { value: 'International', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'PRIORITY' => PropertyValue {
+          value: Text { value: '5', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'LAST-MODIFIED' => PropertyValue {
+          value: Text { value: '20210707T000000Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SEQUENCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SUMMARY' => PropertyValue {
+          value: Text {
+            value: "St. Valentine's Day (Not a Public Holiday)",
+            meta: undefined
+          },
+          parameters: Map(1) { 'LANGUAGE' => 'en-us' }
+        },
+        'TRANSP' => PropertyValue {
+          value: Text { value: 'OPAQUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-BUSYSTATUS' => PropertyValue {
+          value: Text { value: 'BUSY', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-IMPORTANCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-DISALLOW-COUNTER' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-ALLOWEXTERNCHECK' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-AUTOFILLLOCATION' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-CONFTYPE' => PropertyValue {
+          value: Text { value: '0', meta: undefined },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    },
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(22) {
+        'CLASS' => PropertyValue {
+          value: Text { value: 'PUBLIC', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'UID' => PropertyValue {
+          value: Text {
+            value: '2024-02-14INTL3320regnap@www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'CREATED' => PropertyValue {
+          value: Text { value: '20230314T140237Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DESCRIPTION' => PropertyValue {
+          value: Text {
+            value: ' Lent marks the start of the Easter cycle in the Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'URL' => PropertyValue {
+          value: Text {
+            value: 'https://www.officeholidays.com/holidays/various/lent',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTART' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2024, month: 2, monthDay: 14 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTEND' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2024, month: 2, monthDay: 15 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2008,
+              month: 1,
+              monthDay: 1,
+              hour: 0,
+              minute: 0,
+              seconds: 0,
+              utc: true
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'LOCATION' => PropertyValue {
+          value: Text { value: 'International', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'PRIORITY' => PropertyValue {
+          value: Text { value: '5', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'LAST-MODIFIED' => PropertyValue {
+          value: Text { value: '20210707T000000Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SEQUENCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SUMMARY' => PropertyValue {
+          value: Text {
+            value: 'Lent (Not a Public Holiday)',
+            meta: undefined
+          },
+          parameters: Map(1) { 'LANGUAGE' => 'en-us' }
+        },
+        'TRANSP' => PropertyValue {
+          value: Text { value: 'OPAQUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-BUSYSTATUS' => PropertyValue {
+          value: Text { value: 'BUSY', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-IMPORTANCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-DISALLOW-COUNTER' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-ALLOWEXTERNCHECK' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-AUTOFILLLOCATION' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-CONFTYPE' => PropertyValue {
+          value: Text { value: '0', meta: undefined },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    },
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(22) {
+        'CLASS' => PropertyValue {
+          value: Text { value: 'PUBLIC', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'UID' => PropertyValue {
+          value: Text {
+            value: '2024-03-18INTL3321regnap@www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'CREATED' => PropertyValue {
+          value: Text { value: '20230314T140237Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DESCRIPTION' => PropertyValue {
+          value: Text {
+            value: ' Great Lent marks the start of the Easter cycle in the Orthodox Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'URL' => PropertyValue {
+          value: Text {
+            value: 'https://www.officeholidays.com/holidays/various/orthodox-lent',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTART' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2024, month: 3, monthDay: 18 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTEND' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2024, month: 3, monthDay: 19 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2008,
+              month: 1,
+              monthDay: 1,
+              hour: 0,
+              minute: 0,
+              seconds: 0,
+              utc: true
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'LOCATION' => PropertyValue {
+          value: Text { value: 'International', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'PRIORITY' => PropertyValue {
+          value: Text { value: '5', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'LAST-MODIFIED' => PropertyValue {
+          value: Text { value: '20210707T000000Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SEQUENCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SUMMARY' => PropertyValue {
+          value: Text {
+            value: 'Orthodox Lent (Not a Public Holiday)',
+            meta: undefined
+          },
+          parameters: Map(1) { 'LANGUAGE' => 'en-us' }
+        },
+        'TRANSP' => PropertyValue {
+          value: Text { value: 'OPAQUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-BUSYSTATUS' => PropertyValue {
+          value: Text { value: 'BUSY', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-IMPORTANCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-DISALLOW-COUNTER' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-ALLOWEXTERNCHECK' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-AUTOFILLLOCATION' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-CONFTYPE' => PropertyValue {
+          value: Text { value: '0', meta: undefined },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    },
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(22) {
+        'CLASS' => PropertyValue {
+          value: Text { value: 'PUBLIC', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'UID' => PropertyValue {
+          value: Text {
+            value: '2024-04-01INTL26regnap@www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'CREATED' => PropertyValue {
+          value: Text { value: '20230314T140237Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DESCRIPTION' => PropertyValue {
+          value: Text {
+            value: ' The day is observed by trying to play a practical joke on a victim who becomes known as an April Fool. The practical jokes range from simple to elaborate.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'URL' => PropertyValue {
+          value: Text {
+            value: 'https://www.officeholidays.com/holidays/various/april-fools-day',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTART' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2024, month: 4, monthDay: 1 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTEND' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2024, month: 4, monthDay: 2 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2008,
+              month: 1,
+              monthDay: 1,
+              hour: 0,
+              minute: 0,
+              seconds: 0,
+              utc: true
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'LOCATION' => PropertyValue {
+          value: Text { value: 'International', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'PRIORITY' => PropertyValue {
+          value: Text { value: '5', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'LAST-MODIFIED' => PropertyValue {
+          value: Text { value: '20210707T000000Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SEQUENCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SUMMARY' => PropertyValue {
+          value: Text {
+            value: 'April Fools Day (Not a Public Holiday)',
+            meta: undefined
+          },
+          parameters: Map(1) { 'LANGUAGE' => 'en-us' }
+        },
+        'TRANSP' => PropertyValue {
+          value: Text { value: 'OPAQUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-BUSYSTATUS' => PropertyValue {
+          value: Text { value: 'BUSY', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-IMPORTANCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-DISALLOW-COUNTER' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-ALLOWEXTERNCHECK' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-AUTOFILLLOCATION' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-CONFTYPE' => PropertyValue {
+          value: Text { value: '0', meta: undefined },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    },
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(22) {
+        'CLASS' => PropertyValue {
+          value: Text { value: 'PUBLIC', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'UID' => PropertyValue {
+          value: Text {
+            value: '2024-04-22INTL262regnap@www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'CREATED' => PropertyValue {
+          value: Text { value: '20230314T140237Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DESCRIPTION' => PropertyValue {
+          value: Text {
+            value: ' Marks the anniversary of the birth of the modern environmental movement in 1970\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'URL' => PropertyValue {
+          value: Text {
+            value: 'https://www.officeholidays.com/holidays/various/earth-day',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTART' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2024, month: 4, monthDay: 22 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTEND' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2024, month: 4, monthDay: 23 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2008,
+              month: 1,
+              monthDay: 1,
+              hour: 0,
+              minute: 0,
+              seconds: 0,
+              utc: true
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'LOCATION' => PropertyValue {
+          value: Text { value: 'International', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'PRIORITY' => PropertyValue {
+          value: Text { value: '5', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'LAST-MODIFIED' => PropertyValue {
+          value: Text { value: '20210707T000000Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SEQUENCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SUMMARY' => PropertyValue {
+          value: Text {
+            value: 'Earth Day (Not a Public Holiday)',
+            meta: undefined
+          },
+          parameters: Map(1) { 'LANGUAGE' => 'en-us' }
+        },
+        'TRANSP' => PropertyValue {
+          value: Text { value: 'OPAQUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-BUSYSTATUS' => PropertyValue {
+          value: Text { value: 'BUSY', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-IMPORTANCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-DISALLOW-COUNTER' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-ALLOWEXTERNCHECK' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-AUTOFILLLOCATION' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-CONFTYPE' => PropertyValue {
+          value: Text { value: '0', meta: undefined },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    },
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(22) {
+        'CLASS' => PropertyValue {
+          value: Text { value: 'PUBLIC', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'UID' => PropertyValue {
+          value: Text {
+            value: '2024-10-31INTL365regnap@www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'CREATED' => PropertyValue {
+          value: Text { value: '20230314T140237Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DESCRIPTION' => PropertyValue {
+          value: Text {
+            value: ' Ireland is believed to be the birthplace of the Halloween festival.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'URL' => PropertyValue {
+          value: Text {
+            value: 'https://www.officeholidays.com/holidays/various/halloween',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTART' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2024, month: 10, monthDay: 31 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTEND' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2024, month: 11, monthDay: 1 },
+            meta: undefined
+          },
+          parameters: Map(1) { 'VALUE' => 'DATE' }
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2008,
+              month: 1,
+              monthDay: 1,
+              hour: 0,
+              minute: 0,
+              seconds: 0,
+              utc: true
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'LOCATION' => PropertyValue {
+          value: Text { value: 'International', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'PRIORITY' => PropertyValue {
+          value: Text { value: '5', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'LAST-MODIFIED' => PropertyValue {
+          value: Text { value: '20210707T000000Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SEQUENCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'SUMMARY' => PropertyValue {
+          value: Text {
+            value: 'Halloween (Not a Public Holiday)',
+            meta: undefined
+          },
+          parameters: Map(1) { 'LANGUAGE' => 'en-us' }
+        },
+        'TRANSP' => PropertyValue {
+          value: Text { value: 'OPAQUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-BUSYSTATUS' => PropertyValue {
+          value: Text { value: 'BUSY', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-IMPORTANCE' => PropertyValue {
+          value: Text { value: '1', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-DISALLOW-COUNTER' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-ALLOWEXTERNCHECK' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-AUTOFILLLOCATION' => PropertyValue {
+          value: Text { value: 'FALSE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-CDO-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT' => PropertyValue {
+          value: Text { value: 'TRUE', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-MS-OLK-CONFTYPE' => PropertyValue {
+          value: Text { value: '0', meta: undefined },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    }
+  }
+}

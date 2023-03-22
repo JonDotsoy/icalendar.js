@@ -1,0 +1,83 @@
+{
+  "kind": "VCALENDAR",
+  "properties": {
+    "VERSION": {
+      "$Text": "2.0"
+    },
+    "PRODID": {
+      "$Text": "-//ZContent.net//Zap Calendar 1.0//EN"
+    },
+    "CALSCALE": {
+      "$Text": "GREGORIAN"
+    },
+    "METHOD": {
+      "$Text": "PUBLISH"
+    }
+  },
+  "components": [
+    {
+      "kind": "VEVENT",
+      "properties": {
+        "SUMMARY": {
+          "$Text": "Abraham Lincoln"
+        },
+        "UID": {
+          "$Text": "c7614cff-3549-4a00-9152-d25cc1fe077d"
+        },
+        "SEQUENCE": {
+          "$Text": "0"
+        },
+        "STATUS": {
+          "$Text": "CONFIRMED"
+        },
+        "TRANSP": {
+          "$Text": "TRANSPARENT"
+        },
+        "RRULE": {
+          "$Text": "FREQ=YEARLY;INTERVAL=1;BYMONTH=2;BYMONTHDAY=12"
+        },
+        "DTSTART": {
+          "$Date": {
+            "fullYear": 2008,
+            "month": 2,
+            "monthDay": 12
+          }
+        },
+        "DTEND": {
+          "$Date": {
+            "fullYear": 2008,
+            "month": 2,
+            "monthDay": 13
+          }
+        },
+        "DTSTAMP": {
+          "$DateTime": {
+            "fullYear": 2015,
+            "month": 4,
+            "monthDay": 21,
+            "hour": 14,
+            "minute": 14,
+            "seconds": 3,
+            "utc": false
+          }
+        },
+        "CATEGORIES": {
+          "$Text": "U.S. Presidents,Civil War People"
+        },
+        "LOCATION": {
+          "$Text": "Hodgenville\\, Kentucky"
+        },
+        "GEO": {
+          "$Text": "37.5739497;-85.7399606"
+        },
+        "DESCRIPTION": {
+          "$Text": "Born February 12\\, 1809\\nSixteenth President (1861-1865)\\n\\n\\n\\nhttp://AmericanHistoryCalendar.com"
+        },
+        "URL": {
+          "$Text": "http://americanhistorycalendar.com/peoplecalendar/1,328-abraham-lincoln"
+        }
+      },
+      "components": []
+    }
+  ]
+}

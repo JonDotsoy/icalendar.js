@@ -8,22 +8,23 @@ const SNAP_WRITE = process.env.SNAP_WRITE === "true";
 
 const SNAPS_DIRECTORY = new URL("./", import.meta.url)
 
-const inspect = (obj: any) => util.inspect(obj, { depth: Infinity, maxArrayLength: Infinity, maxStringLength: Infinity })
+const utilInspect = (obj: any) => util.inspect(obj, { depth: Infinity, maxArrayLength: Infinity, maxStringLength: Infinity })
 
 export const createSnapDirectory = (from: URL | string) => {
     const directoryLocation = new URL(`${path.basename(from instanceof URL ? from.pathname : from)}/`, SNAPS_DIRECTORY)
 
     if (!existsSync(directoryLocation)) mkdirSync(directoryLocation, { recursive: true })
 
-    const snap = (nameArg: string, format: "json" | "object" = "object") => {
+    const snap = (nameArg: string, format: "json" | "object" = "object", ext: `.${string}` | `` = "", useInspect: boolean = true) => {
         const name = nameArg.replace(/\W/g, "_")
 
-        let ext: string = ""
         if (format === "json") {
             ext = ".json"
+            useInspect = false
         }
 
         const snapLocation = new URL(`${name}.snap${ext}`, directoryLocation)
+        const inspect = useInspect ? utilInspect : (v: any) => v
 
         const write = async (obj: any) => {
             await fs.mkdir(new URL("./", snapLocation), { recursive: true })

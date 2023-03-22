@@ -1,0 +1,120 @@
+ICalendar {
+  kind: 'VCALENDAR',
+  properties: Map(4) {
+    'VERSION' => PropertyValue {
+      value: Text { value: '2.0', meta: undefined },
+      parameters: Map(0) {}
+    },
+    'PRODID' => PropertyValue {
+      value: Text {
+        value: '-//ZContent.net//Zap Calendar 1.0//EN',
+        meta: undefined
+      },
+      parameters: Map(0) {}
+    },
+    'CALSCALE' => PropertyValue {
+      value: Text { value: 'GREGORIAN', meta: undefined },
+      parameters: Map(0) {}
+    },
+    'METHOD' => PropertyValue {
+      value: Text { value: 'PUBLISH', meta: undefined },
+      parameters: Map(0) {}
+    }
+  },
+  components: Set(1) {
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(14) {
+        'SUMMARY' => PropertyValue {
+          value: Text { value: 'Abraham Lincoln', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'UID' => PropertyValue {
+          value: Text {
+            value: 'c7614cff-3549-4a00-9152-d25cc1fe077d',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'SEQUENCE' => PropertyValue {
+          value: Text { value: '0', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'STATUS' => PropertyValue {
+          value: Text { value: 'CONFIRMED', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'TRANSP' => PropertyValue {
+          value: Text { value: 'TRANSPARENT', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'RRULE' => PropertyValue {
+          value: Text {
+            value: 'FREQ=YEARLY;INTERVAL=1;BYMONTH=2;BYMONTHDAY=12',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTART' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2008, month: 2, monthDay: 12 },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTEND' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2008, month: 2, monthDay: 13 },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2015,
+              month: 4,
+              monthDay: 21,
+              hour: 14,
+              minute: 14,
+              seconds: 3,
+              utc: false
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'CATEGORIES' => PropertyValue {
+          value: Text {
+            value: 'U.S. Presidents,Civil War People',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'LOCATION' => PropertyValue {
+          value: Text { value: 'Hodgenville\\, Kentucky', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'GEO' => PropertyValue {
+          value: Text { value: '37.5739497;-85.7399606', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DESCRIPTION' => PropertyValue {
+          value: Text {
+            value: 'Born February 12\\, 1809\\nSixteenth President (1861-1865)\\n\\n\\n\\nhttp://AmericanHistoryCalendar.com',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'URL' => PropertyValue {
+          value: Text {
+            value: 'http://americanhistorycalendar.com/peoplecalendar/1,328-abraham-lincoln',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    }
+  }
+}

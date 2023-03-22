@@ -1,146 +1,83 @@
-import * as ast from "./ast.mjs";
+import * as astMjs from "./ast.mjs";
+import { Lexer } from "./lexer.mjs";
 import * as propertyTypes from "./property_types.mjs";
 
-const typeNameToPropertyTypes = {
-    BINARY: new propertyTypes.Binary(),
-    BOOLEAN: new propertyTypes.Boolean(),
-    "CAL-ADDRESS": new propertyTypes.CalendarUserAddress(),
-    DATE: new propertyTypes.Date(),
-    "DATE-TIME": new propertyTypes.DateTime(),
-    DURATION: new propertyTypes.Duration(),
-    FLOAT: new propertyTypes.Float(),
-    INTEGER: new propertyTypes.Integer(),
-    PERIOD: new propertyTypes.PeriodOfTime(),
-    RECUR: new propertyTypes.RecurrenceRule(),
-    TEXT: new propertyTypes.Text(),
-    TIME: new propertyTypes.Time(),
-    URI: new propertyTypes.URI(),
-    "UTC-OFFSET": new propertyTypes.UTCOffset(),
-} satisfies Record<string, propertyTypes.TYPE>;
-
-const isTypeNameValid = (
-    val: any
-): val is keyof typeof typeNameToPropertyTypes =>
-    typeof val === "string" && val in typeNameToPropertyTypes;
-
 const typeNameByPropertyName = {
-    ACTION: "TEXT",
-    ATTENDEE: "TEXT",
-    COMPLETED: "DATE-TIME",
-    CONTACT: "TEXT",
-    CREATED: "DATE-TIME",
-    DTEND: "TEXT",
-    DTSTAMP: "DATE-TIME",
-    DTSTART: "TEXT",
-    DUE: "TEXT",
-    DURATION: "TEXT",
-    EXDATE: "TEXT",
-    EXRULE: "TEXT",
-    FREEBUSY: "TEXT",
-    GEO: "TEXT",
-    "LAST-MODIFIED": "DATE-TIME",
-    LOCATION: "TEXT",
-    ORGANIZER: "TEXT",
-    "PERCENT-COMPLETE": "INTEGER",
-    PRIORITY: "INTEGER",
-    RDATE: "TEXT",
-    "RECURRENCE-ID": "TEXT",
-    "RELATED-TO": "TEXT",
-    REPEAT: "INTEGER",
-    "REQUEST-STATUS": "TEXT",
-    RESOURCES: "TEXT",
-    RRULE: "TEXT",
-    SEQUENCE: "INTEGER",
-    STATUS: "TEXT",
-    SUMMARY: "TEXT",
-    TRANSP: "TEXT",
-    TRIGGER: "TEXT",
-    TZID: "TEXT",
-    TZNAME: "TEXT",
-    TZOFFSETFROM: "TEXT",
-    TZOFFSETTO: "TEXT",
-    TZURL: "TEXT",
-    UID: "TEXT",
-    URL: "TEXT",
-    "X-MS-OLK-FORCEINSPECTOROPEN": "BOOLEAN",
-    "X-MICROSOFT-CDO-IMPORTANCE": "INTEGER",
-    "X-MICROSOFT-DISALLOW-COUNTER": "BOOLEAN",
-    "X-MS-OLK-ALLOWEXTERNCHECK": "BOOLEAN",
-    "X-MS-OLK-AUTOFILLLOCATION": "BOOLEAN",
-    "X-MICROSOFT-CDO-ALLDAYEVENT": "BOOLEAN",
-    "X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT": "BOOLEAN",
-    "X-MS-OLK-CONFTYPE": "INTEGER",
-} satisfies Record<string, keyof typeof typeNameToPropertyTypes>;
-
-const isTypeNameKeyValid = (
-    val: any
-): val is keyof typeof typeNameByPropertyName =>
-    typeof val === "string" && val in typeNameByPropertyName;
-const inferTypeName = (val: any) => {
-    if (isTypeNameKeyValid(val)) return typeNameByPropertyName[val];
-    return null;
+    DTEND: propertyTypes.Date,
+    DTSTAMP: propertyTypes.DateTime,
+    DTSTART: propertyTypes.Date,
 };
 
+const isPropertyName = (
+    propName: string
+): propName is keyof typeof typeNameByPropertyName =>
+    propName in typeNameByPropertyName;
+
+const determinatePropertyType = (node: astMjs.PropertyParameterNode) => {
+    const propName = node.name.value;
+    const altRepValue = node.altRepNodes.find(
+        (altRep) => altRep.name.value === "VALUE"
+    )?.value.value;
+
+    const altRepTypeClass = propertyTypes.selectTypeClass(altRepValue);
+
+    if (altRepTypeClass) return altRepTypeClass;
+
+    if (isPropertyName(propName)) return typeNameByPropertyName[propName];
+
+    return propertyTypes.Text;
+};
+
+const withParser = (
+    value: any
+): value is {
+    parse: (value: string, node: astMjs.PropertyParameterNode) => any;
+} => typeof value === "function" && typeof value.parse === "function";
+
 export class PropertyValue {
-    private constructor(
-        readonly value: any,
+    constructor(
+        readonly value: propertyTypes.Type<any>,
         readonly parameters = new Map<string, string>()
     ) {}
 
+    *_toICS(): Iterable<string> {
+        for (const [paramKey, value] of this.parameters.entries()) {
+            yield `;${paramKey}=${value}`;
+        }
+
+        yield `:${this.value.toICS()}`;
+    }
+
+    toICS(): string {
+        return Array.from(this._toICS()).join("");
+    }
+
     toJSON() {
-        if (this.parameters.size === 0) return this.value;
+        if (this.parameters.size === 0) return this.value.toJSON();
         return {
             value: this.value,
             parameters: Object.fromEntries(this.parameters),
         };
     }
 
-    static from(node: ast.PropertyParameterNode) {
-        const parameters = new Map<string, string>();
-        for (const altRep of node.altRepNodes) {
-            parameters.set(altRep.name.value, altRep.value.value);
-        }
-        const parameterValue =
-            parameters.get("VALUE") ?? inferTypeName(node.name.value);
-        const propertyType = isTypeNameValid(parameterValue)
-            ? typeNameToPropertyTypes[parameterValue]
-            : typeNameToPropertyTypes.TEXT;
+    static from(node: astMjs.PropertyParameterNode) {
+        const PropertyType = determinatePropertyType(node);
+
         return new PropertyValue(
-            propertyType.parse(node.value.value, parameters),
-            parameters
+            withParser(PropertyType)
+                ? PropertyType.parse(node.value.value, node)
+                : new PropertyType(node.value.value),
+            new Map(
+                node.altRepNodes.map((altRep) => [
+                    altRep.name.value,
+                    altRep.value.value,
+                ])
+            )
         );
     }
 }
 
-class PropertyAlias {
-    private constructor(
-        readonly name: string,
-        readonly type: typeof propertyTypes.TYPE
-    ) {}
-
-    static for<T extends typeof propertyTypes.TYPE<any>>(
-        name: string,
-        type: T
-    ): propertyTypes.RType<T> {
-        return new PropertyAlias(name, type) as any;
-    }
-}
-
-const customProperties = (entry: Record<string, any>) => {
-    for (const [propKey, propValue] of Object.entries(entry)) {
-        if (propValue instanceof PropertyAlias) {
-            Object.defineProperty(entry, propKey, {
-                enumerable: true,
-                get() {},
-                set(v: any) {
-                    // return null
-                },
-            });
-        }
-    }
-};
-
-type LikeICalendarPayload = ast.ModuleNode;
+type LikeICalendarPayload = astMjs.ModuleNode | Uint8Array;
 
 /**
  * @external https://www.rfc-editor.org/rfc/rfc2445.txt
@@ -150,6 +87,25 @@ export class VComponent {
     components = new Set<VComponent>();
 
     constructor(readonly kind: string) {}
+
+    *_toICS(): Iterable<string> {
+        yield `BEGIN:${this.kind}`;
+        for (const [propKey, propValue] of this.properties.entries()) {
+            yield `${propKey}${propValue.toICS()}`;
+        }
+        for (const vComponent of this.components.values()) {
+            yield* vComponent._toICS();
+        }
+        yield `END:${this.kind}`;
+    }
+
+    toICS(): string {
+        return `${Array.from(this._toICS()).join("\r\n")}\r\n`;
+    }
+
+    toString(): string {
+        return this.toICS();
+    }
 
     toJSON() {
         return {
@@ -170,7 +126,20 @@ export class ICalendar extends VComponent {
         this.components = node.components;
     }
 
-    static parseVComponent(node: ast.VComponentNode) {
+    *_toICS(): Iterable<string> {
+        for (const line of super._toICS()) {
+            yield line.substring(0, 61);
+            let r = line.substring(61);
+            while (r) {
+                let a = r.substring(0, 60);
+                if (!a) break;
+                yield ` ${a}`;
+                r = r.substring(60);
+            }
+        }
+    }
+
+    static parseVComponent(node: astMjs.VComponentNode) {
         const vComponent = new VComponent(node.componentKind);
 
         for (const subNode of node.nodes) {
@@ -188,12 +157,29 @@ export class ICalendar extends VComponent {
         return vComponent;
     }
 
-    static from(module?: LikeICalendarPayload) {
-        if (!module) return new ICalendar(new VComponent("VCALENDAR"));
-        return ICalendar.fromMultiple(module).at(0) ?? null;
+    static from(payload: LikeICalendarPayload) {
+        const toAST = () => {
+            if (payload instanceof Uint8Array) {
+                const tokens = Lexer.from(payload);
+                return astMjs.AST.from(payload, tokens);
+            }
+            return payload;
+        };
+
+        const iCalendar = ICalendar.fromMultiple(toAST()).at(0);
+
+        if (!iCalendar) {
+            throw new Error();
+        }
+
+        return iCalendar;
     }
 
-    static fromMultiple(module: ast.ModuleNode) {
+    static create() {
+        return new ICalendar(new VComponent("VCALENDAR"));
+    }
+
+    static fromMultiple(module: astMjs.ModuleNode) {
         const iCalendars: ICalendar[] = [];
 
         for (const node of module.nodes) {

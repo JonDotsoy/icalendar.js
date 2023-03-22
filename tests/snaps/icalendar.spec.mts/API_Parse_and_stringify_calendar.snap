@@ -1,0 +1,53 @@
+ICalendar {
+  kind: 'VCALENDAR',
+  properties: Map(1) {
+    'ATTACH' => PropertyValue {
+      value: Binary {
+        value: 'AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgIAAAICAgADAwMAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAAAAAABNEMQAAAAAAAkQgAAAAAAJEREQgAAACECQ0QgEgAAQxQzM0E0AABERCRCREQAADRDJEJEQwAAAhA0QwEQAAAAAEREAAAAAAAAREQAAAAAAAAkQgAAAAAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+        meta: undefined
+      },
+      parameters: Map(3) {
+        'FMTTYPE' => 'image/vnd.microsoft.icon',
+        'ENCODING' => 'BASE64',
+        'VALUE' => 'BINARY'
+      }
+    }
+  },
+  components: Set(1) {
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(3) {
+        'DTSTART' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2008, month: 2, monthDay: 12 },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTEND' => PropertyValue {
+          value: Date {
+            value: { fullYear: 2008, month: 2, monthDay: 13 },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2015,
+              month: 4,
+              monthDay: 21,
+              hour: 14,
+              minute: 14,
+              seconds: 3,
+              utc: true
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    }
+  }
+}

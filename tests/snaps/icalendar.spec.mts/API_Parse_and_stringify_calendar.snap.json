@@ -1,0 +1,48 @@
+{
+  "kind": "VCALENDAR",
+  "properties": {
+    "ATTACH": {
+      "value": {
+        "$Binary": "AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgIAAAICAgADAwMAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAAAAAABNEMQAAAAAAAkQgAAAAAAJEREQgAAACECQ0QgEgAAQxQzM0E0AABERCRCREQAADRDJEJEQwAAAhA0QwEQAAAAAEREAAAAAAAAREQAAAAAAAAkQgAAAAAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      },
+      "parameters": {
+        "FMTTYPE": "image/vnd.microsoft.icon",
+        "ENCODING": "BASE64",
+        "VALUE": "BINARY"
+      }
+    }
+  },
+  "components": [
+    {
+      "kind": "VEVENT",
+      "properties": {
+        "DTSTART": {
+          "$Date": {
+            "fullYear": 2008,
+            "month": 2,
+            "monthDay": 12
+          }
+        },
+        "DTEND": {
+          "$Date": {
+            "fullYear": 2008,
+            "month": 2,
+            "monthDay": 13
+          }
+        },
+        "DTSTAMP": {
+          "$DateTime": {
+            "fullYear": 2015,
+            "month": 4,
+            "monthDay": 21,
+            "hour": 14,
+            "minute": 14,
+            "seconds": 3,
+            "utc": true
+          }
+        }
+      },
+      "components": []
+    }
+  ]
+}

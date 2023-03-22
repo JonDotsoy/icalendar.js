@@ -2,6 +2,7 @@
     "type": "module",
     "scripts": {
         "test": "node --test --loader ts-node/esm tests/*.spec.mts",
+        "test:watch": "node --watch --test --loader ts-node/esm tests/*.spec.mts",
         "fmt": "prettier -w .",
         "lint": "prettier --check .",
         "build": "rollup --config rollup.config.js",
