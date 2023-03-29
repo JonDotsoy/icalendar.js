@@ -1,8 +1,13 @@
-import * as astMjs from "./ast.mjs";
+import {
+    ModuleNode,
+    PropertyParameterNode,
+    VComponentNode,
+} from "./ast_types.mjs";
 import { Lexer } from "./lexer.mjs";
+import { AST } from "./ast.mjs";
 import * as propertyTypes from "./property_types.mjs";
 
-const typeNameByPropertyName = {
+const defaultTypeToPropertyName = {
     DTEND: propertyTypes.Date,
     DTSTAMP: propertyTypes.DateTime,
     DTSTART: propertyTypes.Date,
@@ -10,10 +15,10 @@ const typeNameByPropertyName = {
 
 const isPropertyName = (
     propName: string
-): propName is keyof typeof typeNameByPropertyName =>
-    propName in typeNameByPropertyName;
+): propName is keyof typeof defaultTypeToPropertyName =>
+    propName in defaultTypeToPropertyName;
 
-const determinatePropertyType = (node: astMjs.PropertyParameterNode) => {
+const determinatePropertyType = (node: PropertyParameterNode) => {
     const propName = node.name.value;
     const altRepValue = node.altRepNodes.find(
         (altRep) => altRep.name.value === "VALUE"
@@ -23,7 +28,7 @@ const determinatePropertyType = (node: astMjs.PropertyParameterNode) => {
 
     if (altRepTypeClass) return altRepTypeClass;
 
-    if (isPropertyName(propName)) return typeNameByPropertyName[propName];
+    if (isPropertyName(propName)) return defaultTypeToPropertyName[propName];
 
     return propertyTypes.Text;
 };
@@ -31,7 +36,7 @@ const determinatePropertyType = (node: astMjs.PropertyParameterNode) => {
 const withParser = (
     value: any
 ): value is {
-    parse: (value: string, node: astMjs.PropertyParameterNode) => any;
+    parse: (value: string, node: PropertyParameterNode) => any;
 } => typeof value === "function" && typeof value.parse === "function";
 
 export class PropertyValue {
@@ -60,7 +65,7 @@ export class PropertyValue {
         };
     }
 
-    static from(node: astMjs.PropertyParameterNode) {
+    static from(node: PropertyParameterNode) {
         const PropertyType = determinatePropertyType(node);
 
         return new PropertyValue(
@@ -77,7 +82,7 @@ export class PropertyValue {
     }
 }
 
-type LikeICalendarPayload = astMjs.ModuleNode | Uint8Array;
+type LikeICalendarPayload = ModuleNode | Uint8Array;
 
 /**
  * @external https://www.rfc-editor.org/rfc/rfc2445.txt
@@ -88,19 +93,19 @@ export class VComponent {
 
     constructor(readonly kind: string) {}
 
-    *_toICS(): Iterable<string> {
+    *toICSLines(): Iterable<string> {
         yield `BEGIN:${this.kind}`;
         for (const [propKey, propValue] of this.properties.entries()) {
             yield `${propKey}${propValue.toICS()}`;
         }
         for (const vComponent of this.components.values()) {
-            yield* vComponent._toICS();
+            yield* vComponent.toICSLines();
         }
         yield `END:${this.kind}`;
     }
 
     toICS(): string {
-        return `${Array.from(this._toICS()).join("\r\n")}\r\n`;
+        return `${Array.from(this.toICSLines()).join("\r\n")}\r\n`;
     }
 
     toString(): string {
@@ -126,8 +131,37 @@ export class ICalendar extends VComponent {
         this.components = node.components;
     }
 
-    *_toICS(): Iterable<string> {
-        for (const line of super._toICS()) {
+    *filterComponentsByRange(
+        epochMillisecondsFrom: number,
+        epochMillisecondsTo: number
+    ): any {
+        for (const component of this.components) {
+            const propertyTypeToEpochMilliseconds = (value: unknown) =>
+                value instanceof propertyTypes.Date ||
+                value instanceof propertyTypes.DateTime
+                    ? value.toEpochMilliseconds()
+                    : null;
+
+            const dtStartEpochMilliseconds = propertyTypeToEpochMilliseconds(
+                component.properties.get("DTSTART")?.value
+            );
+            const dtEndEpochMilliseconds = propertyTypeToEpochMilliseconds(
+                component.properties.get("DTEND")?.value
+            );
+
+            if (
+                dtStartEpochMilliseconds &&
+                dtEndEpochMilliseconds &&
+                epochMillisecondsFrom <= dtStartEpochMilliseconds &&
+                dtEndEpochMilliseconds <= epochMillisecondsTo
+            ) {
+                yield component;
+            }
+        }
+    }
+
+    *toICSLines(): Iterable<string> {
+        for (const line of super.toICSLines()) {
             yield line.substring(0, 61);
             let r = line.substring(61);
             while (r) {
@@ -139,7 +173,7 @@ export class ICalendar extends VComponent {
         }
     }
 
-    static parseVComponent(node: astMjs.VComponentNode) {
+    static parseVComponent(node: VComponentNode) {
         const vComponent = new VComponent(node.componentKind);
 
         for (const subNode of node.nodes) {
@@ -161,7 +195,7 @@ export class ICalendar extends VComponent {
         const toAST = () => {
             if (payload instanceof Uint8Array) {
                 const tokens = Lexer.from(payload);
-                return astMjs.AST.from(payload, tokens);
+                return AST.from(payload, tokens);
             }
             return payload;
         };
@@ -179,7 +213,7 @@ export class ICalendar extends VComponent {
         return new ICalendar(new VComponent("VCALENDAR"));
     }
 
-    static fromMultiple(module: astMjs.ModuleNode) {
+    static fromMultiple(module: ModuleNode) {
         const iCalendars: ICalendar[] = [];
 
         for (const node of module.nodes) {

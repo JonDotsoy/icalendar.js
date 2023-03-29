@@ -1,29 +1,16 @@
-import { appendFileSync, writeFileSync } from "fs";
-import Module from "module";
-import util from "util";
 import * as lexer from "./lexer.mjs";
-
-writeFileSync(".dbg", new Uint8Array([]));
-const inspect = (o: any) =>
-    util.inspect(o, {
-        depth: Infinity,
-        maxArrayLength: Infinity,
-        maxStringLength: Infinity,
-    });
-const dbg = (...args: any[]) =>
-    appendFileSync(
-        ".dbg",
-        `${new Date().toLocaleString(undefined, {
-            timeStyle: "full",
-            dateStyle: "full",
-        })}\n${getStack()}\n${args.map((a) => `${inspect(a)}\n`).join("")}\n`
-    );
-
-const getStack = () => {
-    const err = new Error();
-    Error.captureStackTrace(err, dbg);
-    return err.stack;
-};
+import {
+    Node,
+    ModuleNode,
+    PropertyParameterNameNode,
+    PropertyParameterValueNode,
+    PropertyParameterNode,
+    AltRepParamNameNode,
+    AltRepParamValueNode,
+    AltRepParamNode,
+    VComponentNode,
+    CommentNode,
+} from "./ast_types.mjs";
 
 function tokensToString(payload: Uint8Array, tokens: lexer.Token[]): string {
     return new TextDecoder().decode(
@@ -40,72 +27,6 @@ function tokensToString(payload: Uint8Array, tokens: lexer.Token[]): string {
             )
         )
     );
-}
-
-type Kind =
-    | "Module"
-    | "PropertyParameter"
-    | "PropertyParameterName"
-    | "PropertyParameterValue"
-    | "AltRepParam"
-    | "AltRepParamName"
-    | "AltRepParamValue"
-    | "VComment"
-    | "VComponent";
-
-export interface Node {
-    kind: Kind;
-    span: { start: lexer.Span; end: lexer.Span };
-}
-
-export interface ModuleNode extends Node {
-    kind: "Module";
-    nodes: (PropertyParameterNode | VComponentNode)[];
-}
-
-export interface PropertyParameterNameNode extends Node {
-    kind: "PropertyParameterName";
-    value: string;
-}
-
-export interface PropertyParameterValueNode extends Node {
-    kind: "PropertyParameterValue";
-    value: any;
-    // tokens: lexer.Token[]
-}
-
-export interface PropertyParameterNode extends Node {
-    kind: "PropertyParameter";
-    name: PropertyParameterNameNode;
-    value: PropertyParameterValueNode;
-    altRepNodes: AltRepParamNode[];
-}
-
-export interface AltRepParamNameNode extends Node {
-    kind: "AltRepParamName";
-    value: string;
-}
-
-export interface AltRepParamValueNode extends Node {
-    kind: "AltRepParamValue";
-    value: string;
-}
-
-export interface AltRepParamNode extends Node {
-    kind: "AltRepParam";
-    name: AltRepParamNameNode;
-    value: AltRepParamValueNode;
-}
-
-export interface VComponentNode extends Node {
-    kind: "VComponent";
-    componentKind: string;
-    nodes: (VComponentNode | PropertyParameterNode)[];
-}
-
-export interface CommentNode extends Node {
-    kind: "VComment";
-    value: string;
 }
 
 class TokenListReader {
@@ -494,9 +415,7 @@ export class AST {
             new TokenListReader(tokens, { pos: 0 }),
             new Set()
         );
-        dbg(tokens);
         const moduleNode = ast.parse();
-        dbg(moduleNode);
         return moduleNode;
     }
 }

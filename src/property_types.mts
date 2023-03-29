@@ -1,5 +1,5 @@
-import { writeFileSync } from "fs";
-import * as astMjs from "./ast.mjs";
+import { Temporal } from "@js-temporal/polyfill";
+import { PropertyParameterNode } from "./ast_types.mjs";
 
 export abstract class Type<T, M = any> {
     constructor(readonly value: T, readonly meta?: M) {}
@@ -15,7 +15,11 @@ export abstract class Type<T, M = any> {
 
 export class Text extends Type<string> {
     toICS(): string {
-        return this.value;
+        return this.value.replace(/\n/g, "\\n");
+    }
+
+    static parse(value: string, _node: PropertyParameterNode) {
+        return new Text(value);
     }
 }
 
@@ -28,7 +32,7 @@ export class Binary extends Type<string> {
         return new Uint8Array(Buffer.from(this.value, "base64"));
     }
 
-    static parse(value: string, node: astMjs.PropertyParameterNode) {
+    static parse(value: string, node: PropertyParameterNode) {
         // const encoding = node.altRepNodes.find(altRep => altRep.name.value === "ENCODING")?.value.value ?? 'BASE64'
 
         return new Binary(value);
@@ -50,19 +54,53 @@ export class CalendarUserAddress extends Type<string> {
     }
 }
 
+const dateParse = (
+    value: string,
+    node: PropertyParameterNode
+): Date | DateTime => {
+    if (DateTime.regExpDateFormat.test(value))
+        return DateTime[dateParseSymbol](value, node);
+    if (Date.regExpDateFormat.test(value))
+        return Date[dateParseSymbol](value, node);
+    throw new Error(`Invalid date format ${value}`);
+};
+
+const dateParseSymbol = Symbol("dateParse");
+
 export class Date extends Type<{
     fullYear: number;
     month: number;
     monthDay: number;
+    timeZone?: string;
 }> {
-    static parse(value: string, node: astMjs.PropertyParameterNode) {
-        const match = /^(\d{4})(\d{2})(\d{2})$/.exec(value)!;
+    static readonly regExpDateFormat = /^(\d{4})(\d{2})(\d{2})$/;
+
+    static parse = dateParse;
+
+    static [dateParseSymbol](value: string, node: PropertyParameterNode) {
+        const match = Date.regExpDateFormat.exec(value)!;
 
         return new Date({
             fullYear: Number(match.at(1)!),
             month: Number(match.at(2)!),
             monthDay: Number(match.at(3)!),
         });
+    }
+
+    toZonedDateTime() {
+        return Temporal.ZonedDateTime.from({
+            timeZone: this.value.timeZone ?? "UTC",
+            year: this.value.fullYear,
+            month: this.value.month,
+            day: this.value.monthDay,
+        });
+    }
+
+    /**
+     * Return the epoch milliseconds value
+     */
+    toEpochMilliseconds(): number {
+        return this.toZonedDateTime().epochMilliseconds;
     }
 
     toICS(): string {
@@ -82,6 +120,7 @@ export class DateTime extends Type<{
     minute: number;
     seconds: number;
     utc: boolean;
+    timeZone?: string;
 }> {
     toICS(): string {
         const fullYearStr = this.value.fullYear.toString().padStart(4, "0");
@@ -95,10 +134,16 @@ export class DateTime extends Type<{
         return `${fullYearStr}${monthStr}${monthDayStr}T${hourStr}${minuteStr}${secondsStr}${utcStr}`;
     }
 
-    static parse(value: string) {
-        const match = /^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})(Z)?$/.exec(
-            value
-        )!;
+    static parse = dateParse;
+
+    static readonly regExpDateFormat =
+        /^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})(Z)?$/;
+
+    static [dateParseSymbol](
+        value: string,
+        node: PropertyParameterNode
+    ): Date | DateTime {
+        const match = DateTime.regExpDateFormat.exec(value)!;
 
         return new DateTime({
             fullYear: Number(match.at(1)!),
@@ -109,6 +154,25 @@ export class DateTime extends Type<{
             seconds: Number(match.at(6)!),
             utc: match.at(7) === "Z",
         });
+    }
+
+    toZonedDateTime() {
+        return Temporal.ZonedDateTime.from({
+            timeZone: this.value.utc ? "UTC" : this.value.timeZone ?? "UTC",
+            year: this.value.fullYear,
+            month: this.value.month,
+            day: this.value.monthDay,
+            hour: this.value.hour,
+            minute: this.value.minute,
+            second: this.value.seconds,
+        });
+    }
+
+    /**
+     * Return the epoch milliseconds value
+     */
+    toEpochMilliseconds(): number {
+        return this.toZonedDateTime().toInstant().epochMilliseconds;
     }
 }
 

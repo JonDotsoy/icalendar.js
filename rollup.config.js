@@ -1,4 +1,5 @@
 import swcModule from "rollup-plugin-swc";
+import ts from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 
 /** @type {import("rollup-plugin-swc")["default"]} */
@@ -25,13 +26,8 @@ const config = [
     },
     {
         input,
-        plugins: swc({
-            jsc: {
-                parser: {
-                    syntax: "typescript",
-                },
-            },
-        }),
+        plugins: ts(),
+        external: ["@js-temporal/polyfill"],
         output: [
             {
                 entryFileNames: "[name].cjs",

@@ -2,6 +2,38 @@
 
 Modern module to parse and stringify iCalendar to Javascript.
 
+## Features of iCalendar.js:
+
+-   Parse an `ICalendar` object from a BufferArray
+-   Serialize to **RFC 5545** ICS format from an `ICalendar` object
+-   Provides an API to filter components of an `ICalendar` object
+
+## Installing
+
+Using npm:
+
+```shell
+$ npm add icalendar.js
+```
+
+On Deno
+
+```ts
+import { ICalendar } from "npm:icalendar.js";
+```
+
+## Example
+
+```ts
+import { ICalendar } from "icalendar.js";
+
+const res = await fetch("https:source/....ics");
+const payload = await res.arrayBuffer();
+const icalendar = ICalendar.from();
+
+icalendar.filterComponentsByRange(Date.UTC(2023, 2, 10), Date.UTC(2023, 2, 15));
+```
+
 ## Parse ICS File
 
 **Sample Load:**
@@ -11,9 +43,7 @@ import { ICalendar } from "icalendar.js";
 
 const location = new URL("sample.ics", import.meta.url);
 const payload = await readFile(location);
-const tokens = Lexer.from(payload);
-const ast = AST.from(tokens);
-const icalendar = ICalendar.from(ast);
+const icalendar = ICalendar.from(payload);
 // =>
 // ICalendar
 //   kind: 'VCALENDAR',
@@ -134,4 +164,5 @@ const tokens = Lexer.from(payload);
 // ...
 ```
 
-> Look this full [sample](https://codesandbox.io/p/sandbox/loving-snyder-r647mw?file=%2Fapp%2Fcalendar.ics&selection=%5B%7B%22endColumn%22%3A30%2C%22endLineNumber%22%3A9%2C%22startColumn%22%3A30%2C%22startLineNumber%22%3A9%7D%5D)
+> Look this full
+> [sample](https://codesandbox.io/p/sandbox/loving-snyder-r647mw?file=%2Fapp%2Fcalendar.ics&selection=%5B%7B%22endColumn%22%3A30%2C%22endLineNumber%22%3A9%2C%22startColumn%22%3A30%2C%22startLineNumber%22%3A9%7D%5D)

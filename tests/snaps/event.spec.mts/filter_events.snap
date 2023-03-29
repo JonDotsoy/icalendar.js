@@ -1,0 +1,26 @@
+[
+  VComponent {
+    kind: 'VEVENT',
+    properties: Map(3) {
+      'SUMMARY' => PropertyValue {
+        value: Text { value: 'text', meta: undefined },
+        parameters: Map(0) {}
+      },
+      'DTSTART' => PropertyValue {
+        value: Date {
+          value: { fullYear: 2023, month: 3, monthDay: 12 },
+          meta: undefined
+        },
+        parameters: Map(0) {}
+      },
+      'DTEND' => PropertyValue {
+        value: Date {
+          value: { fullYear: 2023, month: 3, monthDay: 13 },
+          meta: undefined
+        },
+        parameters: Map(0) {}
+      }
+    },
+    components: Set(0) {}
+  }
+]
