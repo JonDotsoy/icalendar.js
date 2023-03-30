@@ -83,7 +83,7 @@ export class PropertyValue {
     }
 }
 
-type LikeICalendarPayload = ModuleNode | Uint8Array;
+type LikeICalendarPayload = ModuleNode | ArrayBuffer | Uint8Array;
 
 /**
  * @external https://www.rfc-editor.org/rfc/rfc2445.txt
@@ -195,6 +195,11 @@ export class ICalendar extends VComponent {
 
     static from(payload: LikeICalendarPayload) {
         const toAST = () => {
+            if (payload instanceof ArrayBuffer) {
+                const bff = new Uint8Array(payload);
+                const tokens = Lexer.from(bff);
+                return AST.from(bff, tokens);
+            }
             if (payload instanceof Uint8Array) {
                 const tokens = Lexer.from(payload);
                 return AST.from(payload, tokens);
