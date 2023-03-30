@@ -218,6 +218,10 @@ export class ICalendar extends VComponent {
         return vComponent;
     }
 
+    static fromJSON(value: unknown): ICalendar {
+        return new ICalendar(VComponent.fromJSON(value));
+    }
+
     static from(payload: LikeICalendarPayload) {
         const toAST = () => {
             if (payload instanceof ArrayBuffer) {

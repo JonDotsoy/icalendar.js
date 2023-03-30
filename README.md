@@ -76,6 +76,14 @@ event.properties.set(
 fs.writeFile("myfile.ics", iCalendar.toICS());
 ```
 
+## Serialize and Deserialize iCalendar Objects to JSON
+
+To serialize an `ICalendar` object to JSON, you can use the `JSON.stringify(icalendar)` method. This will convert the ICalendar object into a JSON string, which can be stored or sent over a network.
+
+To deserialize an ICalendar object from a JSON string, you can first use the `JSON.parse(payload)` method to convert the JSON string into a JavaScript object. Then, you can create a new `ICalendar` object from the JavaScript object using the static `ICalendar.fromJSON(object)` method.
+
+This way, iCalendar.js enables bidirectional conversion between `ICalendar` objects and JSON, which can be useful for storage, transfer, and manipulation of data.
+
 ## Parse ICS File
 
 **Sample Load:**
