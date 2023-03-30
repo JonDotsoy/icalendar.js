@@ -7,6 +7,8 @@ Modern module to parse and stringify iCalendar to Javascript.
 -   Parse an `ICalendar` object from a BufferArray
 -   Serialize to **RFC 5545** ICS format from an `ICalendar` object
 -   Deserialize from **RFC 5545** ICS format to an `ICalendar` object
+-   Convert from an `ICalendar` object to JSON
+-   Convert from JSON to an `ICalendar` object
 -   Provides an API to filter components of an `ICalendar` object
 
 ## Installing

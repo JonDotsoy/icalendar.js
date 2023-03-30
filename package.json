@@ -65,6 +65,7 @@
         "RFC5545"
     ],
     "dependencies": {
-        "@js-temporal/polyfill": "^0.4.3"
+        "@js-temporal/polyfill": "^0.4.3",
+        "zod": "^3.21.4"
     }
 }

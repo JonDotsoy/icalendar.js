@@ -7,6 +7,7 @@ import { Lexer } from "./lexer.mjs";
 import { AST } from "./ast.mjs";
 import * as propertyTypes from "./property_types.mjs";
 import { SerializeICSOptions } from "./SerializeICSOptions.mjs";
+import { VComponentJSONSchema } from "./ICalendarJSONSchema.mjs";
 
 const defaultTypeToPropertyName = {
     DTEND: propertyTypes.Date,
@@ -119,6 +120,30 @@ export class VComponent {
             properties: Object.fromEntries(this.properties),
             components: Array.from(this.components),
         };
+    }
+
+    static fromJSON(value: unknown): VComponent {
+        const componentJson = VComponentJSONSchema.parse(value);
+
+        const endComponent = new VComponent(componentJson.kind);
+
+        componentJson.components.forEach((component) => {
+            endComponent.components.add(VComponent.fromJSON(component));
+        });
+
+        Object.entries(componentJson.properties).forEach(([key, value]) => {
+            endComponent.properties.set(
+                key,
+                new PropertyValue(
+                    value.value,
+                    value.parameters
+                        ? new Map(Object.entries(value.parameters))
+                        : undefined
+                )
+            );
+        });
+
+        return endComponent;
     }
 }
 

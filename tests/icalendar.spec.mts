@@ -119,7 +119,7 @@ test("parse property type Text 2", async (t) => {
 test("serialize ICalendar object", async (t) => {
     const payload = await demo(t.name, ".ics").read();
 
-    const iCalendar = ICalendar.from(payload)!;
+    const iCalendar = ICalendar.from(payload);
 
     await snap(t.name).assertSnapOf(iCalendar);
     await snap(t.name, undefined, ".ics", false).assertSnapOf(
@@ -127,4 +127,22 @@ test("serialize ICalendar object", async (t) => {
             lineSize: 100,
         })
     );
+});
+
+test("Serialize to JSON", async (t) => {
+    const payload = await demo(t.name, ".ics").read();
+
+    const iCalendar = ICalendar.from(payload);
+
+    await snap(t.name, undefined, undefined, false).assertSnapOf(
+        JSON.stringify(iCalendar, null, 2)
+    );
+});
+
+test("Deserialize to ICalendar ", async (t) => {
+    const payload = JSON.parse(await demo(t.name, ".json").readUTF8());
+
+    const iCalendar = ICalendar.fromJSON(payload);
+
+    await snap(t.name).assertSnapOf(iCalendar);
 });
