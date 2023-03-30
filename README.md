@@ -1,4 +1,4 @@
-# iCalendar parser
+# icalendar.js
 
 Modern module to parse and stringify iCalendar to Javascript.
 
