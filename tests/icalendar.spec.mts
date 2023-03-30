@@ -16,6 +16,9 @@ test("Parse icalendar (ICS FIle)", async (t) => {
     const icalendar = ICalendar.from(ast);
 
     await snap(t.name).assertSnapOf(icalendar);
+    await snap(t.name, undefined, ".ics", false).assertSnapOf(
+        icalendar.toICS()
+    );
 });
 
 test("Parse icalendar (ICS officeholidays FIle)", async (t) => {
@@ -118,6 +121,7 @@ test("serialize ICalendar object", async (t) => {
 
     const iCalendar = ICalendar.from(payload)!;
 
+    await snap(t.name).assertSnapOf(iCalendar);
     await snap(t.name, undefined, ".ics", false).assertSnapOf(
         iCalendar.toICS({
             lineSize: 100,

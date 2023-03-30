@@ -49,5 +49,6 @@ DESCRIPTION:Here is a new Class:\n\n<?php\n\n/**\n * This is
  /\"\, $row\, $matches)\;\n\t\t\treturn (sizeof($matches) == 
  0) ? false : array_splice($matches\, 1\, 2)\;\n\t\t}\n\n\t}\
  n
+TAGS:PHP,TRANSFORMER,READ - 0\,2
 END:VEVENT
 END:VCALENDAR
