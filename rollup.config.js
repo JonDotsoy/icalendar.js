@@ -9,6 +9,7 @@ const input = {
     lexer: "src/lexer.mts",
     ast: "src/ast.mts",
     icalendar: "src/icalendar.mts",
+    property_types: "src/property_types.mts",
 };
 
 /**

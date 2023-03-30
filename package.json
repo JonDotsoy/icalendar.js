@@ -6,7 +6,7 @@
         "fmt": "prettier -w .",
         "lint": "prettier --check .",
         "build": "rollup --config rollup.config.js",
-        "prepack": "npm run fmt && npm run build",
+        "prepack": "npm run fmt &&  npm run test && npm run build",
         "prepare": "husky install"
     },
     "devDependencies": {
@@ -38,6 +38,10 @@
         "./ast": {
             "require": "./dist/ast.cjs",
             "import": "./dist/ast.mjs"
+        },
+        "./property_types": {
+            "require": "./dist/property_types.cjs",
+            "import": "./dist/property_types.mjs"
         }
     },
     "typesVersions": {

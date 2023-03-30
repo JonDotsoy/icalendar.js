@@ -30,9 +30,48 @@ import { ICalendar } from "icalendar.js";
 
 const res = await fetch("https:source/....ics");
 const payload = await res.arrayBuffer();
-const icalendar = ICalendar.from();
+const icalendar = ICalendar.from(payload);
 
 icalendar.filterComponentsByRange(Date.UTC(2023, 2, 10), Date.UTC(2023, 2, 15));
+```
+
+Create a new `ICalendar` object and write a ICS file.
+
+```ts
+import { ICalendar, VComponent, PropertyValue } from "icalendar.js";
+import * as propertyTypes from "icalendar.js/property_types";
+
+const calendar = ICalendar.create();
+const event = new VComponent("VEVENT");
+
+calendar.components.add(event);
+
+event.properties.set(
+    "SUMMARY",
+    new PropertyValue(new propertyTypes.Text(`text`))
+);
+event.properties.set(
+    "DTSTART",
+    new PropertyValue(
+        new propertyTypes.Date({
+            fullYear: 2023,
+            month: 3,
+            monthDay: 12,
+        })
+    )
+);
+event.properties.set(
+    "DTEND",
+    new PropertyValue(
+        new propertyTypes.Date({
+            fullYear: 2023,
+            month: 3,
+            monthDay: 13,
+        })
+    )
+);
+
+fs.writeFile("myfile.ics", iCalendar.toICS());
 ```
 
 ## Parse ICS File
