@@ -116,12 +116,12 @@ export class Binary extends Type<string> {
     }
 }
 
-export class Boolean extends Type<string> {
-    // parse(value: any, properties: Map<string, string>) {
-    //     return { $Boolean: value === "TRUE" };
-    // }
+export class Boolean extends Type<boolean> {
+    static parse(value: string, _node: PropertyParameterNode) {
+        return new Boolean(value === "TRUE");
+    }
     toICS(): string {
-        return this.value;
+        return this.value ? "TRUE" : "FALSE";
     }
 }
 
