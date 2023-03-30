@@ -24,7 +24,7 @@
     },
     "name": "icalendar.js",
     "description": "Modern module to parse and stringify iCalendar to Javascript.",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "author": "Jonathan Delgado <hi@jon.soy> (https://jon.soy)",
     "exports": {
         ".": {
