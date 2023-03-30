@@ -1,10 +1,11 @@
 import { Temporal } from "@js-temporal/polyfill";
 import { PropertyParameterNode } from "./ast_types.mjs";
+import { SerializeICSOptions } from "./SerializeICSOptions.mjs";
 
 export abstract class Type<T, M = any> {
     constructor(readonly value: T, readonly meta?: M) {}
 
-    abstract toICS(): string;
+    abstract toICS(options?: SerializeICSOptions): string;
 
     toJSON() {
         return {
@@ -13,59 +14,89 @@ export abstract class Type<T, M = any> {
     }
 }
 
-export class Text extends Type<string> {
+export class Text extends Type<string | string[]> {
     toICS(): string {
-        return this.value;
+        const list = Array.isArray(this.value) ? this.value : [this.value];
+        return list.map(Text.escape).join(",");
     }
 
-    private static readonly escapeChars: Record<string, Uint8Array> = {
-        "\\": new TextEncoder().encode("\\"),
-        ",": new TextEncoder().encode(","),
-        ".": new TextEncoder().encode("."),
-        n: new TextEncoder().encode("\n"),
-        N: new TextEncoder().encode("\n"),
-        t: new TextEncoder().encode("\t"),
-        r: new TextEncoder().encode("\r"),
-        b: new TextEncoder().encode("\b"),
-        ";": new TextEncoder().encode(";"),
-    };
+    static escape(value: string) {
+        const valueBufferArray = new TextEncoder().encode(value);
+        const output: number[] = [];
+
+        for (let index = 0; index < valueBufferArray.length; index += 1) {
+            const char = valueBufferArray[index];
+
+            const scapeChar = Text.getEscapeChars(char);
+
+            if (scapeChar) {
+                output.push(
+                    "\\".charCodeAt(0),
+                    ...new TextEncoder().encode(scapeChar)
+                );
+                continue;
+            }
+
+            output.push(char);
+        }
+
+        return new TextDecoder().decode(new Uint8Array(output));
+    }
+
+    private static readonly escapeChars = new Map<string, Uint8Array>([
+        ["\\", new TextEncoder().encode("\\")],
+        [",", new TextEncoder().encode(",")],
+        [".", new TextEncoder().encode(".")],
+        ["'", new TextEncoder().encode("'")],
+        ['"', new TextEncoder().encode('"')],
+        ["n", new TextEncoder().encode("\n")],
+        ["N", new TextEncoder().encode("\n")],
+        ["t", new TextEncoder().encode("\t")],
+        ["r", new TextEncoder().encode("\r")],
+        ["b", new TextEncoder().encode("\b")],
+        [";", new TextEncoder().encode(";")],
+    ]);
+
+    private static getEscapeChars(charToFind: number) {
+        for (const [char, [escapeChar]] of Text.escapeChars.entries()) {
+            if (charToFind === escapeChar) return char;
+        }
+    }
+
+    private static getCharByEscapeChar(escapeCharFind: number) {
+        for (const [char, escapeChar] of Text.escapeChars.entries()) {
+            if (escapeCharFind === char.charCodeAt(0)) return escapeChar;
+        }
+    }
 
     static parse(value: string, _node: PropertyParameterNode) {
         const textBufferArray: Uint8Array = new TextEncoder().encode(value);
-        const payload: number[] = [];
+        const list: string[] = [];
+        let payload: number[] = [];
 
         for (let index = 0; index < textBufferArray.length; index += 1) {
             const char = textBufferArray[index];
             if (char === "\\".charCodeAt(0)) {
                 const nextChar = textBufferArray[index + 1];
-                if (String.fromCharCode(nextChar) in Text.escapeChars) {
-                    payload.push(
-                        ...Text.escapeChars[String.fromCharCode(nextChar)]
-                    );
+                const escapeChar = Text.getCharByEscapeChar(nextChar);
+                if (escapeChar) {
+                    payload.push(...escapeChar);
                     index += 1;
                     continue;
                 }
             }
+            if (char === ",".charCodeAt(0)) {
+                list.push(new TextDecoder().decode(new Uint8Array(payload)));
+                payload = [];
+                continue;
+            }
             payload.push(char);
         }
 
-        return new Text(new TextDecoder().decode(new Uint8Array(payload)));
-        // return new Text(value.replace(/(\\(n|t|r|b|f|v|'|"|;|,|\.))/g, (_, m) => {
-        //     switch (m) {
-        //         case "\\n": return "\n";
-        //         case "\\t": return "\t";
-        //         // case "\\r": return "\r";
-        //         // case "\\b": return "\b";
-        //         // case "\\f": return "\f";
-        //         // case "\\v": return "\v";
-        //         // case "\\'": return "\'";
-        //         // case "\\\"": return "\"";
-        //         // case "\\\;": return "\;";
-        //         // case "\\\,": return "\,";
-        //         // case "\\\.": return "\.";
-        //     }
-        //     return m
-        // }));
+        const lastItem = new TextDecoder().decode(new Uint8Array(payload));
+        list.push(lastItem);
+
+        return new Text(list.length === 1 ? lastItem : list);
     }
 }
 

@@ -1,3 +1,4 @@
+import assert from "assert";
 import { test } from "node:test";
 import { AST } from "../src/ast.mjs";
 import { ICalendar, PropertyValue, VComponent } from "../src/icalendar.mjs";
@@ -95,7 +96,31 @@ test("parse property type Text", async (t) => {
         iCalendar.components.values().next().value.properties.get("DESCRIPTION")
             .value.value
     );
+    await snap(t.name, "json", undefined, false).assertSnapOf(
+        iCalendar.components.values().next().value.properties.get("DESCRIPTION")
+            .value.value
+    );
     await snap(t.name, undefined, ".ics", false).assertSnapOf(
         iCalendar.toICS()
+    );
+});
+
+test("parse property type Text 2", async (t) => {
+    const payload = await demo(t.name, ".ics").read();
+
+    const iCalendar = ICalendar.from(payload)!;
+
+    assert.equal(new TextDecoder().decode(payload), iCalendar.toICS());
+});
+
+test("serialize ICalendar object", async (t) => {
+    const payload = await demo(t.name, ".ics").read();
+
+    const iCalendar = ICalendar.from(payload)!;
+
+    await snap(t.name, undefined, ".ics", false).assertSnapOf(
+        iCalendar.toICS({
+            lineSize: 100,
+        })
     );
 });

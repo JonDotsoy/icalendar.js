@@ -6,6 +6,7 @@ import {
 import { Lexer } from "./lexer.mjs";
 import { AST } from "./ast.mjs";
 import * as propertyTypes from "./property_types.mjs";
+import { SerializeICSOptions } from "./SerializeICSOptions.mjs";
 
 const defaultTypeToPropertyName = {
     DTEND: propertyTypes.Date,
@@ -45,7 +46,7 @@ export class PropertyValue {
         readonly parameters = new Map<string, string>()
     ) {}
 
-    *_toICS(): Iterable<string> {
+    *_toICS(options?: SerializeICSOptions): Iterable<string> {
         for (const [paramKey, value] of this.parameters.entries()) {
             yield `;${paramKey}=${value}`;
         }
@@ -53,8 +54,8 @@ export class PropertyValue {
         yield `:${this.value.toICS()}`;
     }
 
-    toICS(): string {
-        return Array.from(this._toICS()).join("");
+    toICS(options?: SerializeICSOptions): string {
+        return Array.from(this._toICS(options)).join("");
     }
 
     toJSON() {
@@ -93,19 +94,19 @@ export class VComponent {
 
     constructor(readonly kind: string) {}
 
-    *toICSLines(): Iterable<string> {
+    *toICSLines(options?: SerializeICSOptions): Iterable<string> {
         yield `BEGIN:${this.kind}`;
         for (const [propKey, propValue] of this.properties.entries()) {
             yield `${propKey}${propValue.toICS()}`;
         }
         for (const vComponent of this.components.values()) {
-            yield* vComponent.toICSLines();
+            yield* vComponent.toICSLines(options);
         }
         yield `END:${this.kind}`;
     }
 
-    toICS(): string {
-        return `${Array.from(this.toICSLines()).join("\r\n")}\r\n`;
+    toICS(options?: SerializeICSOptions): string {
+        return `${Array.from(this.toICSLines(options)).join("\r\n")}\r\n`;
     }
 
     toString(): string {
@@ -160,15 +161,16 @@ export class ICalendar extends VComponent {
         }
     }
 
-    *toICSLines(): Iterable<string> {
-        for (const line of super.toICSLines()) {
-            yield line.substring(0, 61);
-            let r = line.substring(61);
+    *toICSLines(options?: SerializeICSOptions): Iterable<string> {
+        const lineSize = options?.lineSize ?? 61;
+        for (const line of super.toICSLines(options)) {
+            yield line.substring(0, lineSize);
+            let r = line.substring(lineSize);
             while (r) {
-                let a = r.substring(0, 60);
+                let a = r.substring(0, lineSize - 1);
                 if (!a) break;
                 yield ` ${a}`;
-                r = r.substring(60);
+                r = r.substring(lineSize - 1);
             }
         }
     }

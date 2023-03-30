@@ -62,7 +62,10 @@
           }
         },
         "CATEGORIES": {
-          "$Text": "U.S. Presidents,Civil War People"
+          "$Text": [
+            "U.S. Presidents",
+            "Civil War People"
+          ]
         },
         "LOCATION": {
           "$Text": "Hodgenville, Kentucky"
@@ -74,7 +77,10 @@
           "$Text": "Born February 12, 1809\nSixteenth President (1861-1865)\n\n\n\nhttp://AmericanHistoryCalendar.com"
         },
         "URL": {
-          "$Text": "http://americanhistorycalendar.com/peoplecalendar/1,328-abraham-lincoln"
+          "$Text": [
+            "http://americanhistorycalendar.com/peoplecalendar/1",
+            "328-abraham-lincoln"
+          ]
         }
       },
       "components": []

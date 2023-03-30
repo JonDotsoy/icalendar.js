@@ -48,7 +48,10 @@
           "$Text": "20230314T140237Z"
         },
         "DESCRIPTION": {
-          "$Text": " Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names, as all three of the saints are martyrs.\n\nNot a public holiday\n\nInformation provided by www.officeholidays.com"
+          "$Text": [
+            " Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names",
+            " as all three of the saints are martyrs.\n\nNot a public holiday\n\nInformation provided by www.officeholidays.com"
+          ]
         },
         "URL": {
           "$Text": "https://www.officeholidays.com/holidays/various/st-valentines-day"
@@ -666,7 +669,10 @@
           "$Text": "20230314T140237Z"
         },
         "DESCRIPTION": {
-          "$Text": " Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names, as all three of the saints are martyrs.\n\nNot a public holiday\n\nInformation provided by www.officeholidays.com"
+          "$Text": [
+            " Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names",
+            " as all three of the saints are martyrs.\n\nNot a public holiday\n\nInformation provided by www.officeholidays.com"
+          ]
         },
         "URL": {
           "$Text": "https://www.officeholidays.com/holidays/various/st-valentines-day"

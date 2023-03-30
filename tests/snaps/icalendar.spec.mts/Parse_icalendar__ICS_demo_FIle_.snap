@@ -97,7 +97,7 @@ ICalendar {
         },
         'CATEGORIES' => PropertyValue {
           value: Text {
-            value: 'U.S. Presidents,Civil War People',
+            value: [ 'U.S. Presidents', 'Civil War People' ],
             meta: undefined
           },
           parameters: Map(0) {}
@@ -124,7 +124,10 @@ ICalendar {
         },
         'URL' => PropertyValue {
           value: Text {
-            value: 'http://americanhistorycalendar.com/peoplecalendar/1,328-abraham-lincoln',
+            value: [
+              'http://americanhistorycalendar.com/peoplecalendar/1',
+              '328-abraham-lincoln'
+            ],
             meta: undefined
           },
           parameters: Map(0) {}

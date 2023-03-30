@@ -62,11 +62,14 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: ' Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names, as all three of the saints are martyrs.\n' +
-              '\n' +
-              'Not a public holiday\n' +
-              '\n' +
-              'Information provided by www.officeholidays.com',
+            value: [
+              ' Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names',
+              ' as all three of the saints are martyrs.\n' +
+                '\n' +
+                'Not a public holiday\n' +
+                '\n' +
+                'Information provided by www.officeholidays.com'
+            ],
             meta: undefined
           },
           parameters: Map(0) {}
@@ -890,11 +893,14 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: ' Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names, as all three of the saints are martyrs.\n' +
-              '\n' +
-              'Not a public holiday\n' +
-              '\n' +
-              'Information provided by www.officeholidays.com',
+            value: [
+              ' Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names',
+              ' as all three of the saints are martyrs.\n' +
+                '\n' +
+                'Not a public holiday\n' +
+                '\n' +
+                'Information provided by www.officeholidays.com'
+            ],
             meta: undefined
           },
           parameters: Map(0) {}
