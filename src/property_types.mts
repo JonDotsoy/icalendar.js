@@ -341,6 +341,10 @@ export class URI extends Type<string> {
     toICS(): string {
         return this.value;
     }
+
+    toURL(base?: URL | string): URL {
+        return new URL(this.value, base);
+    }
 }
 
 export class UTCOffset extends Type<string> {
