@@ -42,14 +42,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 1, monthDay: 2 },
+            value: {
+              fullYear: 2023,
+              month: 1,
+              monthDay: 2,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 1, monthDay: 3 },
+            value: {
+              fullYear: 2023,
+              month: 1,
+              monthDay: 3,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -63,7 +73,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -119,14 +130,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 9, monthDay: 16 },
+            value: {
+              fullYear: 2022,
+              month: 9,
+              monthDay: 16,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 9, monthDay: 17 },
+            value: {
+              fullYear: 2022,
+              month: 9,
+              monthDay: 17,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -140,7 +161,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -196,14 +218,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 3, monthDay: 29 },
+            value: {
+              fullYear: 2024,
+              month: 3,
+              monthDay: 29,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 3, monthDay: 30 },
+            value: {
+              fullYear: 2024,
+              month: 3,
+              monthDay: 30,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -217,7 +249,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -270,14 +303,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 4, monthDay: 7 },
+            value: {
+              fullYear: 2023,
+              month: 4,
+              monthDay: 7,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 4, monthDay: 8 },
+            value: {
+              fullYear: 2023,
+              month: 4,
+              monthDay: 8,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -291,7 +334,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -344,14 +388,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 3, monthDay: 30 },
+            value: {
+              fullYear: 2024,
+              month: 3,
+              monthDay: 30,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 3, monthDay: 31 },
+            value: {
+              fullYear: 2024,
+              month: 3,
+              monthDay: 31,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -365,7 +419,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -418,14 +473,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 4, monthDay: 8 },
+            value: {
+              fullYear: 2023,
+              month: 4,
+              monthDay: 8,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 4, monthDay: 9 },
+            value: {
+              fullYear: 2023,
+              month: 4,
+              monthDay: 9,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -439,7 +504,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -492,14 +558,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 6, monthDay: 29 },
+            value: {
+              fullYear: 2024,
+              month: 6,
+              monthDay: 29,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 6, monthDay: 30 },
+            value: {
+              fullYear: 2024,
+              month: 6,
+              monthDay: 30,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -513,7 +589,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -566,14 +643,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 6, monthDay: 26 },
+            value: {
+              fullYear: 2023,
+              month: 6,
+              monthDay: 26,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 6, monthDay: 27 },
+            value: {
+              fullYear: 2023,
+              month: 6,
+              monthDay: 27,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -587,7 +674,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -640,14 +728,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 12, monthDay: 25 },
+            value: {
+              fullYear: 2024,
+              month: 12,
+              monthDay: 25,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 12, monthDay: 26 },
+            value: {
+              fullYear: 2024,
+              month: 12,
+              monthDay: 26,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -661,7 +759,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -714,14 +813,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 12, monthDay: 25 },
+            value: {
+              fullYear: 2023,
+              month: 12,
+              monthDay: 25,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 12, monthDay: 26 },
+            value: {
+              fullYear: 2023,
+              month: 12,
+              monthDay: 26,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -735,7 +844,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -788,14 +898,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 12, monthDay: 25 },
+            value: {
+              fullYear: 2022,
+              month: 12,
+              monthDay: 25,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 12, monthDay: 26 },
+            value: {
+              fullYear: 2022,
+              month: 12,
+              monthDay: 26,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -809,7 +929,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -862,14 +983,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 8, monthDay: 15 },
+            value: {
+              fullYear: 2024,
+              month: 8,
+              monthDay: 15,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 8, monthDay: 16 },
+            value: {
+              fullYear: 2024,
+              month: 8,
+              monthDay: 16,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -883,7 +1014,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -936,14 +1068,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 8, monthDay: 15 },
+            value: {
+              fullYear: 2023,
+              month: 8,
+              monthDay: 15,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 8, monthDay: 16 },
+            value: {
+              fullYear: 2023,
+              month: 8,
+              monthDay: 16,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -957,7 +1099,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1010,14 +1153,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 3, monthDay: 28 },
+            value: {
+              fullYear: 2024,
+              month: 3,
+              monthDay: 28,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 3, monthDay: 29 },
+            value: {
+              fullYear: 2024,
+              month: 3,
+              monthDay: 29,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1031,7 +1184,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1054,7 +1208,8 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: 'Celebración\\nPara ocultar las celebraciones\\, ve a Configuración en Google Calendar > Festivos en Chile',
+            value: 'Celebración\n' +
+              'Para ocultar las celebraciones, ve a Configuración en Google Calendar > Festivos en Chile',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -1087,14 +1242,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 4, monthDay: 6 },
+            value: {
+              fullYear: 2023,
+              month: 4,
+              monthDay: 6,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 4, monthDay: 7 },
+            value: {
+              fullYear: 2023,
+              month: 4,
+              monthDay: 7,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1108,7 +1273,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1131,7 +1297,8 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: 'Celebración\\nPara ocultar las celebraciones\\, ve a Configuración en Google Calendar > Festivos en Chile',
+            value: 'Celebración\n' +
+              'Para ocultar las celebraciones, ve a Configuración en Google Calendar > Festivos en Chile',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -1164,14 +1331,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 9, monthDay: 20 },
+            value: {
+              fullYear: 2024,
+              month: 9,
+              monthDay: 20,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 9, monthDay: 21 },
+            value: {
+              fullYear: 2024,
+              month: 9,
+              monthDay: 21,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1185,7 +1362,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1238,14 +1416,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 6, monthDay: 20 },
+            value: {
+              fullYear: 2024,
+              month: 6,
+              monthDay: 20,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 6, monthDay: 21 },
+            value: {
+              fullYear: 2024,
+              month: 6,
+              monthDay: 21,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1259,7 +1447,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1315,14 +1504,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 6, monthDay: 21 },
+            value: {
+              fullYear: 2023,
+              month: 6,
+              monthDay: 21,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 6, monthDay: 22 },
+            value: {
+              fullYear: 2023,
+              month: 6,
+              monthDay: 22,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1336,7 +1535,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1392,14 +1592,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 10, monthDay: 31 },
+            value: {
+              fullYear: 2024,
+              month: 10,
+              monthDay: 31,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 11, monthDay: 1 },
+            value: {
+              fullYear: 2024,
+              month: 11,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1413,7 +1623,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1469,14 +1680,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 10, monthDay: 27 },
+            value: {
+              fullYear: 2023,
+              month: 10,
+              monthDay: 27,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 10, monthDay: 28 },
+            value: {
+              fullYear: 2023,
+              month: 10,
+              monthDay: 28,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1490,7 +1711,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1546,14 +1768,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 10, monthDay: 31 },
+            value: {
+              fullYear: 2022,
+              month: 10,
+              monthDay: 31,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 11, monthDay: 1 },
+            value: {
+              fullYear: 2022,
+              month: 11,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1567,7 +1799,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1623,14 +1856,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 5, monthDay: 1 },
+            value: {
+              fullYear: 2024,
+              month: 5,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 5, monthDay: 2 },
+            value: {
+              fullYear: 2024,
+              month: 5,
+              monthDay: 2,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1644,7 +1887,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1697,14 +1941,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 5, monthDay: 1 },
+            value: {
+              fullYear: 2023,
+              month: 5,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 5, monthDay: 2 },
+            value: {
+              fullYear: 2023,
+              month: 5,
+              monthDay: 2,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1718,7 +1972,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1771,14 +2026,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 10, monthDay: 12 },
+            value: {
+              fullYear: 2024,
+              month: 10,
+              monthDay: 12,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 10, monthDay: 13 },
+            value: {
+              fullYear: 2024,
+              month: 10,
+              monthDay: 13,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1792,7 +2057,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1848,14 +2114,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 10, monthDay: 9 },
+            value: {
+              fullYear: 2023,
+              month: 10,
+              monthDay: 9,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 10, monthDay: 10 },
+            value: {
+              fullYear: 2023,
+              month: 10,
+              monthDay: 10,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1869,7 +2145,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1925,14 +2202,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 10, monthDay: 10 },
+            value: {
+              fullYear: 2022,
+              month: 10,
+              monthDay: 10,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 10, monthDay: 11 },
+            value: {
+              fullYear: 2022,
+              month: 10,
+              monthDay: 11,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1946,7 +2233,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -2002,14 +2290,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 11, monthDay: 1 },
+            value: {
+              fullYear: 2024,
+              month: 11,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 11, monthDay: 2 },
+            value: {
+              fullYear: 2024,
+              month: 11,
+              monthDay: 2,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -2023,7 +2321,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -2076,14 +2375,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 11, monthDay: 1 },
+            value: {
+              fullYear: 2023,
+              month: 11,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 11, monthDay: 2 },
+            value: {
+              fullYear: 2023,
+              month: 11,
+              monthDay: 2,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -2097,7 +2406,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -2150,14 +2460,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 11, monthDay: 1 },
+            value: {
+              fullYear: 2022,
+              month: 11,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 11, monthDay: 2 },
+            value: {
+              fullYear: 2022,
+              month: 11,
+              monthDay: 2,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -2171,7 +2491,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -2224,14 +2545,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 5, monthDay: 21 },
+            value: {
+              fullYear: 2024,
+              month: 5,
+              monthDay: 21,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 5, monthDay: 22 },
+            value: {
+              fullYear: 2024,
+              month: 5,
+              monthDay: 22,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -2245,7 +2576,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -2298,14 +2630,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 5, monthDay: 21 },
+            value: {
+              fullYear: 2023,
+              month: 5,
+              monthDay: 21,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 5, monthDay: 22 },
+            value: {
+              fullYear: 2023,
+              month: 5,
+              monthDay: 22,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -2319,7 +2661,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -2372,14 +2715,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 9, monthDay: 19 },
+            value: {
+              fullYear: 2024,
+              month: 9,
+              monthDay: 19,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 9, monthDay: 20 },
+            value: {
+              fullYear: 2024,
+              month: 9,
+              monthDay: 20,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -2393,7 +2746,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -2449,14 +2803,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 9, monthDay: 19 },
+            value: {
+              fullYear: 2023,
+              month: 9,
+              monthDay: 19,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 9, monthDay: 20 },
+            value: {
+              fullYear: 2023,
+              month: 9,
+              monthDay: 20,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -2470,7 +2834,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -2526,14 +2891,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 7, monthDay: 16 },
+            value: {
+              fullYear: 2024,
+              month: 7,
+              monthDay: 16,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 7, monthDay: 17 },
+            value: {
+              fullYear: 2024,
+              month: 7,
+              monthDay: 17,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -2547,7 +2922,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -2603,14 +2979,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 7, monthDay: 16 },
+            value: {
+              fullYear: 2023,
+              month: 7,
+              monthDay: 16,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 7, monthDay: 17 },
+            value: {
+              fullYear: 2023,
+              month: 7,
+              monthDay: 17,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -2624,7 +3010,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -2680,14 +3067,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 12, monthDay: 8 },
+            value: {
+              fullYear: 2024,
+              month: 12,
+              monthDay: 8,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 12, monthDay: 9 },
+            value: {
+              fullYear: 2024,
+              month: 12,
+              monthDay: 9,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -2701,7 +3098,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -2757,14 +3155,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 12, monthDay: 8 },
+            value: {
+              fullYear: 2023,
+              month: 12,
+              monthDay: 8,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 12, monthDay: 9 },
+            value: {
+              fullYear: 2023,
+              month: 12,
+              monthDay: 9,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -2778,7 +3186,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -2834,14 +3243,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 12, monthDay: 8 },
+            value: {
+              fullYear: 2022,
+              month: 12,
+              monthDay: 8,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 12, monthDay: 9 },
+            value: {
+              fullYear: 2022,
+              month: 12,
+              monthDay: 9,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -2855,7 +3274,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -2911,14 +3331,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 3, monthDay: 31 },
+            value: {
+              fullYear: 2024,
+              month: 3,
+              monthDay: 31,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 4, monthDay: 1 },
+            value: {
+              fullYear: 2024,
+              month: 4,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -2932,7 +3362,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -2955,7 +3386,8 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: 'Celebración\\nPara ocultar las celebraciones\\, ve a Configuración en Google Calendar > Festivos en Chile',
+            value: 'Celebración\n' +
+              'Para ocultar las celebraciones, ve a Configuración en Google Calendar > Festivos en Chile',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -2988,14 +3420,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 4, monthDay: 9 },
+            value: {
+              fullYear: 2023,
+              month: 4,
+              monthDay: 9,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 4, monthDay: 10 },
+            value: {
+              fullYear: 2023,
+              month: 4,
+              monthDay: 10,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -3009,7 +3451,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -3032,7 +3475,8 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: 'Celebración\\nPara ocultar las celebraciones\\, ve a Configuración en Google Calendar > Festivos en Chile',
+            value: 'Celebración\n' +
+              'Para ocultar las celebraciones, ve a Configuración en Google Calendar > Festivos en Chile',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -3065,14 +3509,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 5, monthDay: 30 },
+            value: {
+              fullYear: 2024,
+              month: 5,
+              monthDay: 30,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 5, monthDay: 31 },
+            value: {
+              fullYear: 2024,
+              month: 5,
+              monthDay: 31,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -3086,7 +3540,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -3109,7 +3564,8 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: 'Celebración\\nPara ocultar las celebraciones\\, ve a Configuración en Google Calendar > Festivos en Chile',
+            value: 'Celebración\n' +
+              'Para ocultar las celebraciones, ve a Configuración en Google Calendar > Festivos en Chile',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -3142,14 +3598,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 6, monthDay: 8 },
+            value: {
+              fullYear: 2023,
+              month: 6,
+              monthDay: 8,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 6, monthDay: 9 },
+            value: {
+              fullYear: 2023,
+              month: 6,
+              monthDay: 9,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -3163,7 +3629,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -3186,7 +3653,8 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: 'Celebración\\nPara ocultar las celebraciones\\, ve a Configuración en Google Calendar > Festivos en Chile',
+            value: 'Celebración\n' +
+              'Para ocultar las celebraciones, ve a Configuración en Google Calendar > Festivos en Chile',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -3219,14 +3687,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 1, monthDay: 1 },
+            value: {
+              fullYear: 2024,
+              month: 1,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 1, monthDay: 2 },
+            value: {
+              fullYear: 2024,
+              month: 1,
+              monthDay: 2,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -3240,7 +3718,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -3293,14 +3772,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 1, monthDay: 1 },
+            value: {
+              fullYear: 2023,
+              month: 1,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 1, monthDay: 2 },
+            value: {
+              fullYear: 2023,
+              month: 1,
+              monthDay: 2,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -3314,7 +3803,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -3367,14 +3857,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 9, monthDay: 18 },
+            value: {
+              fullYear: 2024,
+              month: 9,
+              monthDay: 18,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 9, monthDay: 19 },
+            value: {
+              fullYear: 2024,
+              month: 9,
+              monthDay: 19,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -3388,7 +3888,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -3444,14 +3945,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 9, monthDay: 18 },
+            value: {
+              fullYear: 2023,
+              month: 9,
+              monthDay: 18,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 9, monthDay: 19 },
+            value: {
+              fullYear: 2023,
+              month: 9,
+              monthDay: 19,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -3465,7 +3976,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -3521,14 +4033,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 9, monthDay: 4 },
+            value: {
+              fullYear: 2022,
+              month: 9,
+              monthDay: 4,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 9, monthDay: 5 },
+            value: {
+              fullYear: 2022,
+              month: 9,
+              monthDay: 5,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -3542,7 +4064,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -3595,14 +4118,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 6, monthDay: 21 },
+            value: {
+              fullYear: 2022,
+              month: 6,
+              monthDay: 21,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 6, monthDay: 22 },
+            value: {
+              fullYear: 2022,
+              month: 6,
+              monthDay: 22,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -3616,7 +4149,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -3672,14 +4206,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 6, monthDay: 27 },
+            value: {
+              fullYear: 2022,
+              month: 6,
+              monthDay: 27,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 6, monthDay: 28 },
+            value: {
+              fullYear: 2022,
+              month: 6,
+              monthDay: 28,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -3693,7 +4237,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -3746,14 +4291,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 1, monthDay: 1 },
+            value: {
+              fullYear: 2022,
+              month: 1,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 1, monthDay: 2 },
+            value: {
+              fullYear: 2022,
+              month: 1,
+              monthDay: 2,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -3767,7 +4322,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -3820,14 +4376,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 6, monthDay: 16 },
+            value: {
+              fullYear: 2022,
+              month: 6,
+              monthDay: 16,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 6, monthDay: 17 },
+            value: {
+              fullYear: 2022,
+              month: 6,
+              monthDay: 17,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -3841,7 +4407,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -3864,7 +4431,8 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: 'Celebración\\nPara ocultar las celebraciones\\, ve a Configuración en Google Calendar > Festivos en Chile',
+            value: 'Celebración\n' +
+              'Para ocultar las celebraciones, ve a Configuración en Google Calendar > Festivos en Chile',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -3897,14 +4465,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 9, monthDay: 18 },
+            value: {
+              fullYear: 2022,
+              month: 9,
+              monthDay: 18,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 9, monthDay: 19 },
+            value: {
+              fullYear: 2022,
+              month: 9,
+              monthDay: 19,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -3918,7 +4496,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -3974,14 +4553,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 8, monthDay: 15 },
+            value: {
+              fullYear: 2022,
+              month: 8,
+              monthDay: 15,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 8, monthDay: 16 },
+            value: {
+              fullYear: 2022,
+              month: 8,
+              monthDay: 16,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -3995,7 +4584,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -4048,14 +4638,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 5, monthDay: 1 },
+            value: {
+              fullYear: 2022,
+              month: 5,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 5, monthDay: 2 },
+            value: {
+              fullYear: 2022,
+              month: 5,
+              monthDay: 2,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -4069,7 +4669,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -4122,14 +4723,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 7, monthDay: 16 },
+            value: {
+              fullYear: 2022,
+              month: 7,
+              monthDay: 16,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 7, monthDay: 17 },
+            value: {
+              fullYear: 2022,
+              month: 7,
+              monthDay: 17,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -4143,7 +4754,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -4199,14 +4811,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 4, monthDay: 16 },
+            value: {
+              fullYear: 2022,
+              month: 4,
+              monthDay: 16,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 4, monthDay: 17 },
+            value: {
+              fullYear: 2022,
+              month: 4,
+              monthDay: 17,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -4220,7 +4842,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -4273,14 +4896,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 4, monthDay: 14 },
+            value: {
+              fullYear: 2022,
+              month: 4,
+              monthDay: 14,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 4, monthDay: 15 },
+            value: {
+              fullYear: 2022,
+              month: 4,
+              monthDay: 15,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -4294,7 +4927,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -4317,7 +4951,8 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: 'Celebración\\nPara ocultar las celebraciones\\, ve a Configuración en Google Calendar > Festivos en Chile',
+            value: 'Celebración\n' +
+              'Para ocultar las celebraciones, ve a Configuración en Google Calendar > Festivos en Chile',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -4350,14 +4985,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 5, monthDay: 21 },
+            value: {
+              fullYear: 2022,
+              month: 5,
+              monthDay: 21,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 5, monthDay: 22 },
+            value: {
+              fullYear: 2022,
+              month: 5,
+              monthDay: 22,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -4371,7 +5016,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -4424,14 +5070,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 9, monthDay: 19 },
+            value: {
+              fullYear: 2022,
+              month: 9,
+              monthDay: 19,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 9, monthDay: 20 },
+            value: {
+              fullYear: 2022,
+              month: 9,
+              monthDay: 20,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -4445,7 +5101,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -4501,14 +5158,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 4, monthDay: 15 },
+            value: {
+              fullYear: 2022,
+              month: 4,
+              monthDay: 15,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 4, monthDay: 16 },
+            value: {
+              fullYear: 2022,
+              month: 4,
+              monthDay: 16,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -4522,7 +5189,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -4575,14 +5243,24 @@ ICalendar {
       properties: Map(12) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 4, monthDay: 17 },
+            value: {
+              fullYear: 2022,
+              month: 4,
+              monthDay: 17,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2022, month: 4, monthDay: 18 },
+            value: {
+              fullYear: 2022,
+              month: 4,
+              monthDay: 18,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -4596,7 +5274,8 @@ ICalendar {
               hour: 18,
               minute: 56,
               seconds: 21,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -4619,7 +5298,8 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: 'Celebración\\nPara ocultar las celebraciones\\, ve a Configuración en Google Calendar > Festivos en Chile',
+            value: 'Celebración\n' +
+              'Para ocultar las celebraciones, ve a Configuración en Google Calendar > Festivos en Chile',
             meta: undefined
           },
           parameters: Map(0) {}

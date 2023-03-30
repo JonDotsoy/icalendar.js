@@ -1,0 +1,303 @@
+ICalendar {
+  kind: 'VCALENDAR',
+  properties: Map(2) {
+    'PRODID' => PropertyValue {
+      value: Text {
+        value: '-//Mozilla.org/NONSGML Mozilla Calendar V1.1//EN',
+        meta: undefined
+      },
+      parameters: Map(0) {}
+    },
+    'VERSION' => PropertyValue {
+      value: Text { value: '2.0', meta: undefined },
+      parameters: Map(0) {}
+    }
+  },
+  components: Set(2) {
+    VComponent {
+      kind: 'VTIMEZONE',
+      properties: Map(2) {
+        'TZID' => PropertyValue {
+          value: Text { value: 'Europe/Berlin', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'X-LIC-LOCATION' => PropertyValue {
+          value: Text { value: 'Europe/Berlin', meta: undefined },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(2) {
+        VComponent {
+          kind: 'DAYLIGHT',
+          properties: Map(5) {
+            'TZOFFSETFROM' => PropertyValue {
+              value: Text { value: '+0100', meta: undefined },
+              parameters: Map(0) {}
+            },
+            'TZOFFSETTO' => PropertyValue {
+              value: Text { value: '+0200', meta: undefined },
+              parameters: Map(0) {}
+            },
+            'TZNAME' => PropertyValue {
+              value: Text { value: 'CEST', meta: undefined },
+              parameters: Map(0) {}
+            },
+            'DTSTART' => PropertyValue {
+              value: DateTime {
+                value: {
+                  fullYear: 1970,
+                  month: 3,
+                  monthDay: 29,
+                  hour: 2,
+                  minute: 0,
+                  seconds: 0,
+                  utc: false,
+                  timeZone: undefined
+                },
+                meta: undefined
+              },
+              parameters: Map(0) {}
+            },
+            'RRULE' => PropertyValue {
+              value: Text {
+                value: 'FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3',
+                meta: undefined
+              },
+              parameters: Map(0) {}
+            }
+          },
+          components: Set(0) {}
+        },
+        VComponent {
+          kind: 'STANDARD',
+          properties: Map(5) {
+            'TZOFFSETFROM' => PropertyValue {
+              value: Text { value: '+0200', meta: undefined },
+              parameters: Map(0) {}
+            },
+            'TZOFFSETTO' => PropertyValue {
+              value: Text { value: '+0100', meta: undefined },
+              parameters: Map(0) {}
+            },
+            'TZNAME' => PropertyValue {
+              value: Text { value: 'CET', meta: undefined },
+              parameters: Map(0) {}
+            },
+            'DTSTART' => PropertyValue {
+              value: DateTime {
+                value: {
+                  fullYear: 1970,
+                  month: 10,
+                  monthDay: 25,
+                  hour: 3,
+                  minute: 0,
+                  seconds: 0,
+                  utc: false,
+                  timeZone: undefined
+                },
+                meta: undefined
+              },
+              parameters: Map(0) {}
+            },
+            'RRULE' => PropertyValue {
+              value: Text {
+                value: 'FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10',
+                meta: undefined
+              },
+              parameters: Map(0) {}
+            }
+          },
+          components: Set(0) {}
+        }
+      }
+    },
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(9) {
+        'CREATED' => PropertyValue {
+          value: Text { value: '20140107T092011Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'LAST-MODIFIED' => PropertyValue {
+          value: Text { value: '20140107T121503Z', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DTSTAMP' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2014,
+              month: 1,
+              monthDay: 7,
+              hour: 12,
+              minute: 15,
+              seconds: 3,
+              utc: true,
+              timeZone: undefined
+            },
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'UID' => PropertyValue {
+          value: Text {
+            value: '20f78720-d755-4de7-92e5-e41af487e4db',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        },
+        'SUMMARY' => PropertyValue {
+          value: Text { value: 'Just a Test', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DTSTART' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2014,
+              month: 1,
+              monthDay: 2,
+              hour: 11,
+              minute: 0,
+              seconds: 0,
+              utc: false,
+              timeZone: 'Europe/Berlin'
+            },
+            meta: undefined
+          },
+          parameters: Map(1) { 'TZID' => 'Europe/Berlin' }
+        },
+        'DTEND' => PropertyValue {
+          value: DateTime {
+            value: {
+              fullYear: 2014,
+              month: 1,
+              monthDay: 2,
+              hour: 12,
+              minute: 0,
+              seconds: 0,
+              utc: false,
+              timeZone: 'Europe/Berlin'
+            },
+            meta: undefined
+          },
+          parameters: Map(1) { 'TZID' => 'Europe/Berlin' }
+        },
+        'X-MOZ-GENERATION' => PropertyValue {
+          value: Text { value: '4', meta: undefined },
+          parameters: Map(0) {}
+        },
+        'DESCRIPTION' => PropertyValue {
+          value: Text {
+            value: 'Here is a new Class:\n' +
+              '\n' +
+              '<?php\n' +
+              '\n' +
+              '/**\n' +
+              ' * This is iCalParse\n' +
+              ' *\n' +
+              ' * @category Parser\n' +
+              ' * @author   Timo Henke <phpstuff@thenke.de>\n' +
+              ' * @license  http://www.opensource.org/licenses/mit-license.php  MIT License\n' +
+              ' */\n' +
+              '\n' +
+              '\tclass iCalParse\n' +
+              '\t{\n' +
+              '\t\tconst VERSION = "1.0";\n' +
+              '\n' +
+              '\t\tpublic function doParse( $data )\n' +
+              '\t\t{\n' +
+              "\t\t\t$lines = preg_split('/\\r?\\n/',$data,-1, PREG_SPLIT_NO_EMPTY);\n" +
+              "    \t\tif( preg_match('/^BEGIN:VCALENDAR/i',$lines[0]) && preg_match('/^END:VCALENDAR/i',$lines[sizeof($lines)-1]) )\n" +
+              '    \t\t{\n' +
+              '\t\t\t\t$res = array();\n' +
+              '\t\t\t\t$addTo = array();\n' +
+              "\t\t\t\t$addToElement = '';\n" +
+              '\t\t\t\tforeach ($lines as $line)\n' +
+              '\t\t\t\t{\n' +
+              "\t\t\t\t\tif( preg_match('/^(BEGIN|END):(VTODO|VEVENT|VCALENDAR|DAYLIGHT|VTIMEZONE|STANDARD)/s',$line,$m) )\n" +
+              '\t\t\t\t\t{\n' +
+              '\t\t\t\t\t\tswitch( $m[1] )\n' +
+              '\t\t\t\t\t\t{\n' +
+              "\t\t\t\t\t\t\tcase 'BEGIN' :\n" +
+              "\t\t\t\t\t\t\t\t$addTo[] = trim( (sizeof($addTo) > 0 ? $addTo[sizeof($addTo)-1] : '') . '/' . $m[2],'/');\n" +
+              '\t\t\t\t\t\t\t\tbreak;\n' +
+              "\t\t\t\t\t\t\tcase 'END' :\n" +
+              '\t\t\t\t\t\t\t\tarray_pop($addTo);\n' +
+              '\t\t\t\t\t\t\t\tbreak;\n' +
+              '\t\t\t\t\t\t}\n' +
+              '\t\t\t\t\t\tif( sizeof($addTo) > 0 )\n' +
+              '\t\t\t\t\t\t{\n' +
+              '\t\t\t\t\t\t\t$addToElement = $addTo[sizeof($addTo)-1];\n' +
+              '\t\t\t\t\t\t}\n' +
+              '\t\t\t\t\t}\n' +
+              '\t\t\t\t\telse\n' +
+              '\t\t\t\t\t{\n' +
+              "\t\t\t\t\t\tif( substr($line,0,1) != ' ' )\n" +
+              '\t\t\t\t\t\t{\n' +
+              '\t\t\t                list($lastkey,$value) = $this->splitKeyValue($line);\n' +
+              "\t\t\t\t\t\t\t$this->arrayPathSet($res,$addToElement.'/'.$lastkey,$value);\n" +
+              '\n' +
+              '\t\t\t\t\t\t}\n' +
+              '\t\t\t\t\t\telse\n' +
+              '\t\t\t\t\t\t{\n' +
+              "\t\t\t\t\t\t\t$this->arrayPathSet($res,$addToElement.'/'.$lastkey,$this->arrayPathGet($res,$addToElement.'/'.$lastkey) . substr($line,1));\n" +
+              '\t\t\t\t\t\t}\n' +
+              '\t\t\t\t\t}\n' +
+              '\t\t\t\t}\n' +
+              '   \t\t\t}\n' +
+              '   \t\t\treturn $res;\n' +
+              '\t\t}\n' +
+              '\n' +
+              '\t\tfunction arrayPathSet(&$a, $path, $value)\n' +
+              '\t\t{\n' +
+              "\t\t\t$p = explode('/',$path);\n" +
+              '\t\t\t$key = array_shift($p);\n' +
+              '\t\t\tif (empty($p))\n' +
+              '\t\t\t{\n' +
+              '\t\t\t\t$a[$key] = $value;\n' +
+              '\t\t\t}\n' +
+              '\t\t\telse\n' +
+              '\t\t\t{\n' +
+              '\t\t\t\tif (!isset($a[$key]) || !is_array($a[$key]))\n' +
+              '\t\t\t\t{\n' +
+              '\t\t\t\t\t$a[$key] = array();\n' +
+              '\t\t\t\t}\n' +
+              "\t\t\t\t$this->arrayPathSet($a[$key], implode('/',$p), $value);\n" +
+              '\t\t\t}\n' +
+              '\t\t}\n' +
+              '\n' +
+              '\t\tfunction arrayPathGet($data, $path)\n' +
+              '\t\t{\n' +
+              '\t\t\t$found = true;\n' +
+              `\t\t\t$path = explode("/", trim($path,'/'));\n` +
+              '\t\t\t$r = count($path);\n' +
+              '\t\t\tfor( $x = 0; ($x < $r && $found); $x++ )\n' +
+              '\t\t\t{\n' +
+              '\t\t\t\t$key = $path[$x];\n' +
+              '\t\t\t\tif (isset($data[$key]))\n' +
+              '\t\t\t\t{\n' +
+              '\t\t\t\t\t$data = $data[$key];\n' +
+              '\t\t\t\t}\n' +
+              '\t\t\t\telse\n' +
+              '\t\t\t\t{\n' +
+              '\t\t\t\t\t$found = false;\n' +
+              '\t\t\t\t}\n' +
+              '\t\t\t}\n' +
+              '\t\t\treturn $found ? $data : false;\n' +
+              '\t\t}\n' +
+              '\n' +
+              '\t\tpublic function splitKeyValue( $row )\n' +
+              '\t\t{\n' +
+              '\t\t\tpreg_match("/([^:]+)[:]([\\w\\W]*)/", $row, $matches);\n' +
+              '\t\t\treturn (sizeof($matches) == 0) ? false : array_splice($matches, 1, 2);\n' +
+              '\t\t}\n' +
+              '\n' +
+              '\t}\n',
+            meta: undefined
+          },
+          parameters: Map(0) {}
+        }
+      },
+      components: Set(0) {}
+    }
+  }
+}

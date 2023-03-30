@@ -19,14 +19,24 @@ ICalendar {
       properties: Map(3) {
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2008, month: 2, monthDay: 12 },
+            value: {
+              fullYear: 2008,
+              month: 2,
+              monthDay: 12,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(0) {}
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2008, month: 2, monthDay: 13 },
+            value: {
+              fullYear: 2008,
+              month: 2,
+              monthDay: 13,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(0) {}
@@ -40,7 +50,8 @@ ICalendar {
               hour: 14,
               minute: 14,
               seconds: 3,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },

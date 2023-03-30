@@ -62,7 +62,11 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: ' Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names, as all three of the saints are martyrs.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            value: ' Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names, as all three of the saints are martyrs.\n' +
+              '\n' +
+              'Not a public holiday\n' +
+              '\n' +
+              'Information provided by www.officeholidays.com',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -76,14 +80,24 @@ ICalendar {
         },
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 2, monthDay: 14 },
+            value: {
+              fullYear: 2023,
+              month: 2,
+              monthDay: 14,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 2, monthDay: 15 },
+            value: {
+              fullYear: 2023,
+              month: 2,
+              monthDay: 15,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -97,7 +111,8 @@ ICalendar {
               hour: 0,
               minute: 0,
               seconds: 0,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -185,7 +200,11 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: ' Lent marks the start of the Easter cycle in the Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            value: ' Lent marks the start of the Easter cycle in the Christian Church\n' +
+              '\n' +
+              'Not a public holiday\n' +
+              '\n' +
+              'Information provided by www.officeholidays.com',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -199,14 +218,24 @@ ICalendar {
         },
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 2, monthDay: 22 },
+            value: {
+              fullYear: 2023,
+              month: 2,
+              monthDay: 22,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 2, monthDay: 23 },
+            value: {
+              fullYear: 2023,
+              month: 2,
+              monthDay: 23,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -220,7 +249,8 @@ ICalendar {
               hour: 0,
               minute: 0,
               seconds: 0,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -308,7 +338,11 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: ' Great Lent marks the start of the Easter cycle in the Orthodox Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            value: ' Great Lent marks the start of the Easter cycle in the Orthodox Christian Church\n' +
+              '\n' +
+              'Not a public holiday\n' +
+              '\n' +
+              'Information provided by www.officeholidays.com',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -322,14 +356,24 @@ ICalendar {
         },
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 2, monthDay: 27 },
+            value: {
+              fullYear: 2023,
+              month: 2,
+              monthDay: 27,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 2, monthDay: 28 },
+            value: {
+              fullYear: 2023,
+              month: 2,
+              monthDay: 28,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -343,7 +387,8 @@ ICalendar {
               hour: 0,
               minute: 0,
               seconds: 0,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -431,7 +476,11 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: ' The day is observed by trying to play a practical joke on a victim who becomes known as an April Fool. The practical jokes range from simple to elaborate.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            value: ' The day is observed by trying to play a practical joke on a victim who becomes known as an April Fool. The practical jokes range from simple to elaborate.\n' +
+              '\n' +
+              'Not a public holiday\n' +
+              '\n' +
+              'Information provided by www.officeholidays.com',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -445,14 +494,24 @@ ICalendar {
         },
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 4, monthDay: 1 },
+            value: {
+              fullYear: 2023,
+              month: 4,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 4, monthDay: 2 },
+            value: {
+              fullYear: 2023,
+              month: 4,
+              monthDay: 2,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -466,7 +525,8 @@ ICalendar {
               hour: 0,
               minute: 0,
               seconds: 0,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -554,7 +614,11 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: ' Marks the anniversary of the birth of the modern environmental movement in 1970\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            value: ' Marks the anniversary of the birth of the modern environmental movement in 1970\n' +
+              '\n' +
+              'Not a public holiday\n' +
+              '\n' +
+              'Information provided by www.officeholidays.com',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -568,14 +632,24 @@ ICalendar {
         },
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 4, monthDay: 22 },
+            value: {
+              fullYear: 2023,
+              month: 4,
+              monthDay: 22,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 4, monthDay: 23 },
+            value: {
+              fullYear: 2023,
+              month: 4,
+              monthDay: 23,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -589,7 +663,8 @@ ICalendar {
               hour: 0,
               minute: 0,
               seconds: 0,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -677,7 +752,11 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: ' Ireland is believed to be the birthplace of the Halloween festival.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            value: ' Ireland is believed to be the birthplace of the Halloween festival.\n' +
+              '\n' +
+              'Not a public holiday\n' +
+              '\n' +
+              'Information provided by www.officeholidays.com',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -691,14 +770,24 @@ ICalendar {
         },
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 10, monthDay: 31 },
+            value: {
+              fullYear: 2023,
+              month: 10,
+              monthDay: 31,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2023, month: 11, monthDay: 1 },
+            value: {
+              fullYear: 2023,
+              month: 11,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -712,7 +801,8 @@ ICalendar {
               hour: 0,
               minute: 0,
               seconds: 0,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -800,7 +890,11 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: ' Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names, as all three of the saints are martyrs.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            value: ' Three different saints named Valentine are recognised by the Catholic Church. Valentine may not be the luckiest of names, as all three of the saints are martyrs.\n' +
+              '\n' +
+              'Not a public holiday\n' +
+              '\n' +
+              'Information provided by www.officeholidays.com',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -814,14 +908,24 @@ ICalendar {
         },
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 2, monthDay: 14 },
+            value: {
+              fullYear: 2024,
+              month: 2,
+              monthDay: 14,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 2, monthDay: 15 },
+            value: {
+              fullYear: 2024,
+              month: 2,
+              monthDay: 15,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -835,7 +939,8 @@ ICalendar {
               hour: 0,
               minute: 0,
               seconds: 0,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -923,7 +1028,11 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: ' Lent marks the start of the Easter cycle in the Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            value: ' Lent marks the start of the Easter cycle in the Christian Church\n' +
+              '\n' +
+              'Not a public holiday\n' +
+              '\n' +
+              'Information provided by www.officeholidays.com',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -937,14 +1046,24 @@ ICalendar {
         },
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 2, monthDay: 14 },
+            value: {
+              fullYear: 2024,
+              month: 2,
+              monthDay: 14,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 2, monthDay: 15 },
+            value: {
+              fullYear: 2024,
+              month: 2,
+              monthDay: 15,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -958,7 +1077,8 @@ ICalendar {
               hour: 0,
               minute: 0,
               seconds: 0,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1046,7 +1166,11 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: ' Great Lent marks the start of the Easter cycle in the Orthodox Christian Church\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            value: ' Great Lent marks the start of the Easter cycle in the Orthodox Christian Church\n' +
+              '\n' +
+              'Not a public holiday\n' +
+              '\n' +
+              'Information provided by www.officeholidays.com',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -1060,14 +1184,24 @@ ICalendar {
         },
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 3, monthDay: 18 },
+            value: {
+              fullYear: 2024,
+              month: 3,
+              monthDay: 18,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 3, monthDay: 19 },
+            value: {
+              fullYear: 2024,
+              month: 3,
+              monthDay: 19,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1081,7 +1215,8 @@ ICalendar {
               hour: 0,
               minute: 0,
               seconds: 0,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1169,7 +1304,11 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: ' The day is observed by trying to play a practical joke on a victim who becomes known as an April Fool. The practical jokes range from simple to elaborate.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            value: ' The day is observed by trying to play a practical joke on a victim who becomes known as an April Fool. The practical jokes range from simple to elaborate.\n' +
+              '\n' +
+              'Not a public holiday\n' +
+              '\n' +
+              'Information provided by www.officeholidays.com',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -1183,14 +1322,24 @@ ICalendar {
         },
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 4, monthDay: 1 },
+            value: {
+              fullYear: 2024,
+              month: 4,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 4, monthDay: 2 },
+            value: {
+              fullYear: 2024,
+              month: 4,
+              monthDay: 2,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1204,7 +1353,8 @@ ICalendar {
               hour: 0,
               minute: 0,
               seconds: 0,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1292,7 +1442,11 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: ' Marks the anniversary of the birth of the modern environmental movement in 1970\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            value: ' Marks the anniversary of the birth of the modern environmental movement in 1970\n' +
+              '\n' +
+              'Not a public holiday\n' +
+              '\n' +
+              'Information provided by www.officeholidays.com',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -1306,14 +1460,24 @@ ICalendar {
         },
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 4, monthDay: 22 },
+            value: {
+              fullYear: 2024,
+              month: 4,
+              monthDay: 22,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 4, monthDay: 23 },
+            value: {
+              fullYear: 2024,
+              month: 4,
+              monthDay: 23,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1327,7 +1491,8 @@ ICalendar {
               hour: 0,
               minute: 0,
               seconds: 0,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -1415,7 +1580,11 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: ' Ireland is believed to be the birthplace of the Halloween festival.\\n\\nNot a public holiday\\n\\nInformation provided by www.officeholidays.com',
+            value: ' Ireland is believed to be the birthplace of the Halloween festival.\n' +
+              '\n' +
+              'Not a public holiday\n' +
+              '\n' +
+              'Information provided by www.officeholidays.com',
             meta: undefined
           },
           parameters: Map(0) {}
@@ -1429,14 +1598,24 @@ ICalendar {
         },
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 10, monthDay: 31 },
+            value: {
+              fullYear: 2024,
+              month: 10,
+              monthDay: 31,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2024, month: 11, monthDay: 1 },
+            value: {
+              fullYear: 2024,
+              month: 11,
+              monthDay: 1,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(1) { 'VALUE' => 'DATE' }
@@ -1450,7 +1629,8 @@ ICalendar {
               hour: 0,
               minute: 0,
               seconds: 0,
-              utc: true
+              utc: true,
+              timeZone: undefined
             },
             meta: undefined
           },

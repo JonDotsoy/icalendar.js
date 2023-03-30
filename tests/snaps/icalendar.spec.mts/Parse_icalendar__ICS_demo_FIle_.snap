@@ -57,14 +57,24 @@ ICalendar {
         },
         'DTSTART' => PropertyValue {
           value: Date {
-            value: { fullYear: 2008, month: 2, monthDay: 12 },
+            value: {
+              fullYear: 2008,
+              month: 2,
+              monthDay: 12,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(0) {}
         },
         'DTEND' => PropertyValue {
           value: Date {
-            value: { fullYear: 2008, month: 2, monthDay: 13 },
+            value: {
+              fullYear: 2008,
+              month: 2,
+              monthDay: 13,
+              timeZone: undefined
+            },
             meta: undefined
           },
           parameters: Map(0) {}
@@ -78,7 +88,8 @@ ICalendar {
               hour: 14,
               minute: 14,
               seconds: 3,
-              utc: false
+              utc: false,
+              timeZone: undefined
             },
             meta: undefined
           },
@@ -92,7 +103,7 @@ ICalendar {
           parameters: Map(0) {}
         },
         'LOCATION' => PropertyValue {
-          value: Text { value: 'Hodgenville\\, Kentucky', meta: undefined },
+          value: Text { value: 'Hodgenville, Kentucky', meta: undefined },
           parameters: Map(0) {}
         },
         'GEO' => PropertyValue {
@@ -101,7 +112,12 @@ ICalendar {
         },
         'DESCRIPTION' => PropertyValue {
           value: Text {
-            value: 'Born February 12\\, 1809\\nSixteenth President (1861-1865)\\n\\n\\n\\nhttp://AmericanHistoryCalendar.com',
+            value: 'Born February 12, 1809\n' +
+              'Sixteenth President (1861-1865)\n' +
+              '\n' +
+              '\n' +
+              '\n' +
+              'http://AmericanHistoryCalendar.com',
             meta: undefined
           },
           parameters: Map(0) {}

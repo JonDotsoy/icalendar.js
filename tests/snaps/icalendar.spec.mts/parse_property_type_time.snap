@@ -1,0 +1,37 @@
+ICalendar {
+  kind: 'VCALENDAR',
+  properties: Map(2) {
+    'PRODID' => PropertyValue {
+      value: Text {
+        value: '-//Mozilla.org/NONSGML Mozilla Calendar V1.1//EN',
+        meta: undefined
+      },
+      parameters: Map(0) {}
+    },
+    'VERSION' => PropertyValue {
+      value: Text { value: '2.0', meta: undefined },
+      parameters: Map(0) {}
+    }
+  },
+  components: Set(1) {
+    VComponent {
+      kind: 'VEVENT',
+      properties: Map(1) {
+        'FOO' => PropertyValue {
+          value: Time {
+            value: {
+              hour: 8,
+              minute: 30,
+              seconds: 0,
+              utc: false,
+              timeZone: 'America/New_York'
+            },
+            meta: undefined
+          },
+          parameters: Map(2) { 'TZID' => 'America/New_York', 'VALUE' => 'TIME' }
+        }
+      },
+      components: Set(0) {}
+    }
+  }
+}

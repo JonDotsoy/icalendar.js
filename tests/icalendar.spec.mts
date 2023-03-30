@@ -1,5 +1,3 @@
-import { equal } from "node:assert";
-import { readFile, writeFile } from "node:fs/promises";
 import { test } from "node:test";
 import { AST } from "../src/ast.mjs";
 import { ICalendar, PropertyValue, VComponent } from "../src/icalendar.mjs";
@@ -70,4 +68,34 @@ test("API Parse and stringify calendar", async (t) => {
     await snap(t.name).assertSnapOf(iCalendar);
     await snap(t.name, "object", ".ics", false).assertSnapOf(iCalendar.toICS());
     await snap(t.name, "json").assertSnapOf(iCalendar);
+});
+
+test("parse payload icalendar without endline", async (t) => {
+    const payload = await demo(t.name, ".ics").read();
+
+    const iCalendar = ICalendar.from(payload)!;
+
+    await snap(t.name).assertSnapOf(iCalendar);
+});
+
+test("parse property type time", async (t) => {
+    const payload = await demo(t.name, ".ics").read();
+
+    const iCalendar = ICalendar.from(payload)!;
+
+    await snap(t.name).assertSnapOf(iCalendar);
+});
+
+test("parse property type Text", async (t) => {
+    const payload = await demo(t.name, ".ics").read();
+
+    const iCalendar = ICalendar.from(payload)!;
+
+    await snap(t.name, undefined, undefined, false).assertSnapOf(
+        iCalendar.components.values().next().value.properties.get("DESCRIPTION")
+            .value.value
+    );
+    await snap(t.name, undefined, ".ics", false).assertSnapOf(
+        iCalendar.toICS()
+    );
 });

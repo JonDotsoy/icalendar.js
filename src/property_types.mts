@@ -15,11 +15,57 @@ export abstract class Type<T, M = any> {
 
 export class Text extends Type<string> {
     toICS(): string {
-        return this.value.replace(/\n/g, "\\n");
+        return this.value;
     }
 
+    private static readonly escapeChars: Record<string, Uint8Array> = {
+        "\\": new TextEncoder().encode("\\"),
+        ",": new TextEncoder().encode(","),
+        ".": new TextEncoder().encode("."),
+        n: new TextEncoder().encode("\n"),
+        N: new TextEncoder().encode("\n"),
+        t: new TextEncoder().encode("\t"),
+        r: new TextEncoder().encode("\r"),
+        b: new TextEncoder().encode("\b"),
+        ";": new TextEncoder().encode(";"),
+    };
+
     static parse(value: string, _node: PropertyParameterNode) {
-        return new Text(value);
+        const textBufferArray: Uint8Array = new TextEncoder().encode(value);
+        const payload: number[] = [];
+
+        for (let index = 0; index < textBufferArray.length; index += 1) {
+            const char = textBufferArray[index];
+            if (char === "\\".charCodeAt(0)) {
+                const nextChar = textBufferArray[index + 1];
+                if (String.fromCharCode(nextChar) in Text.escapeChars) {
+                    payload.push(
+                        ...Text.escapeChars[String.fromCharCode(nextChar)]
+                    );
+                    index += 1;
+                    continue;
+                }
+            }
+            payload.push(char);
+        }
+
+        return new Text(new TextDecoder().decode(new Uint8Array(payload)));
+        // return new Text(value.replace(/(\\(n|t|r|b|f|v|'|"|;|,|\.))/g, (_, m) => {
+        //     switch (m) {
+        //         case "\\n": return "\n";
+        //         case "\\t": return "\t";
+        //         // case "\\r": return "\r";
+        //         // case "\\b": return "\b";
+        //         // case "\\f": return "\f";
+        //         // case "\\v": return "\v";
+        //         // case "\\'": return "\'";
+        //         // case "\\\"": return "\"";
+        //         // case "\\\;": return "\;";
+        //         // case "\\\,": return "\,";
+        //         // case "\\\.": return "\.";
+        //     }
+        //     return m
+        // }));
     }
 }
 
@@ -57,11 +103,13 @@ export class CalendarUserAddress extends Type<string> {
 const dateParse = (
     value: string,
     node: PropertyParameterNode
-): Date | DateTime => {
+): Date | DateTime | Time => {
     if (DateTime.regExpDateFormat.test(value))
         return DateTime[dateParseSymbol](value, node);
     if (Date.regExpDateFormat.test(value))
         return Date[dateParseSymbol](value, node);
+    if (Time.regExpDateFormat.test(value))
+        return Time[dateParseSymbol](value, node);
     throw new Error(`Invalid date format ${value}`);
 };
 
@@ -78,12 +126,16 @@ export class Date extends Type<{
     static parse = dateParse;
 
     static [dateParseSymbol](value: string, node: PropertyParameterNode) {
+        const timeZoneID = node.altRepNodes.find(
+            (altRep) => altRep.name.value === "TZID"
+        )?.value.value;
         const match = Date.regExpDateFormat.exec(value)!;
 
         return new Date({
             fullYear: Number(match.at(1)!),
             month: Number(match.at(2)!),
             monthDay: Number(match.at(3)!),
+            timeZone: timeZoneID,
         });
     }
 
@@ -142,7 +194,10 @@ export class DateTime extends Type<{
     static [dateParseSymbol](
         value: string,
         node: PropertyParameterNode
-    ): Date | DateTime {
+    ): DateTime {
+        const timeZoneID = node.altRepNodes.find(
+            (altRep) => altRep.name.value === "TZID"
+        )?.value.value;
         const match = DateTime.regExpDateFormat.exec(value)!;
 
         return new DateTime({
@@ -153,6 +208,7 @@ export class DateTime extends Type<{
             minute: Number(match.at(5)!),
             seconds: Number(match.at(6)!),
             utc: match.at(7) === "Z",
+            timeZone: timeZoneID,
         });
     }
 
@@ -214,9 +270,39 @@ export class RecurrenceRule extends Type<string> {
 
 // export class Text extends Type<string> { }
 
-export class Time extends Type<string> {
+export class Time extends Type<{
+    hour: number;
+    minute: number;
+    seconds: number;
+    utc: boolean;
+    timeZone?: string;
+}> {
     toICS(): string {
-        return this.value;
+        const hourStr = this.value.hour.toString().padStart(2, "0");
+        const minuteStr = this.value.minute.toString().padStart(2, "0");
+        const secondsStr = this.value.seconds.toString().padStart(2, "0");
+        const utcStr = this.value.utc ? "Z" : "";
+
+        return `${hourStr}${minuteStr}${secondsStr}${utcStr}`;
+    }
+
+    static parse = dateParse;
+
+    static readonly regExpDateFormat = /^(\d{2})(\d{2})(\d{2})(Z)?$/;
+
+    static [dateParseSymbol](value: string, node: PropertyParameterNode): Time {
+        const timeZoneID = node.altRepNodes.find(
+            (altRep) => altRep.name.value === "TZID"
+        )?.value.value;
+        const match = Time.regExpDateFormat.exec(value)!;
+
+        return new Time({
+            hour: Number(match.at(1)!),
+            minute: Number(match.at(2)!),
+            seconds: Number(match.at(3)!),
+            utc: match.at(4) === "Z",
+            timeZone: timeZoneID,
+        });
     }
 }
 
