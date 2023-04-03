@@ -46,8 +46,17 @@
     },
     "typesVersions": {
         "*": {
+            "lexer": [
+                "./dist/lexer.d.ts"
+            ],
+            "ast": [
+                "./dist/ast.d.ts"
+            ],
+            "property_types": [
+                "./dist/property_types.d.ts"
+            ],
             "*": [
-                "./types.d.ts"
+                "./dist/icalendar.d.ts"
             ]
         }
     },
